@@ -1,0 +1,35 @@
+name: Something about a journal is wrong
+description: A journal in the library has a wrong size, limit, style or template.
+title: "Wrong: "
+labels: ["journal correction"]
+body:
+  - type: input
+    id: journal
+    attributes:
+      label: Which journal
+      placeholder: Nature (journals/nature.json)
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What's wrong, and what it should be
+      placeholder: The double-column figure width is 183 mm, not 180 mm.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Where the journal says so (web address)
+      description: The journal's or its publisher's own page.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where you noticed it
+      options:
+        - prose (manuscripts, Word or PDF export, LaTeX)
+        - mosaic (figure sizes, Check)
+        - both
+        - reading the file

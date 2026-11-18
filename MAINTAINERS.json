@@ -1,0 +1,5 @@
+{
+ "note": "Who looks after which journals. owner: the library's owner. groups: {publisher group (a journal file's \"group\", else its \"publisher\"): [GitHub logins]}. A maintainer listed here is also added to .github/CODEOWNERS.",
+ "owner": "matthewwdavis",
+ "groups": {}
+}

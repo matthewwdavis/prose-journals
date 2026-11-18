@@ -1,0 +1,6 @@
+# Who reviews what. Every pull request to journals/ needs a review from one of the people named
+# here, and only they may set a journal's verified.status to "verified" (tools/check_journal.py
+# reads the logins from this file). Maintainers for a publisher's journals are added per group
+# in MAINTAINERS.json and here. (Later lines win over earlier ones.)
+* @matthewwdavis
+journals/** @matthewwdavis

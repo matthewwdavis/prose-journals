@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How to add a journal yourself
+    url: https://github.com/matthewwdavis/prose-journals/blob/main/CONTRIBUTING.md
+    about: In prose, My Journals ▸ Share… sends a journal of your own to the library for review. No code needed.

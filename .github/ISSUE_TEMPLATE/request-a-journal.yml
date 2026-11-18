@@ -1,0 +1,34 @@
+name: Ask for a journal
+description: The library doesn't have a journal you write for.
+title: "Add a journal: "
+labels: ["journal request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you. A maintainer or another author can set the journal up from what you give here.
+        If you'd like to add it yourself, prose does the GitHub parts for you: see CONTRIBUTING.md.
+  - type: input
+    id: name
+    attributes:
+      label: The journal's name
+      placeholder: Tree Genetics & Genomes
+    validations:
+      required: true
+  - type: input
+    id: guidelines
+    attributes:
+      label: Its author guidelines (web address)
+      placeholder: https://link.springer.com/journal/11295/submission-guidelines
+    validations:
+      required: true
+  - type: input
+    id: issn
+    attributes:
+      label: Its ISSN, if you know it
+      placeholder: 1614-2942
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else
+      description: Figure sizes, word limits, its LaTeX template, what you'd use it for.
