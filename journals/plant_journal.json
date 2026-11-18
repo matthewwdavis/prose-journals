@@ -2,7 +2,7 @@
  "format": 1,
  "id": "plant_journal",
  "name": "The Plant Journal",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "Wiley",
  "issn": {
@@ -29,6 +29,13 @@
  "captions": {
   "label": "Figure",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "to confirm",
+  "font": null,
+  "size": null,
+  "url": "https://onlinelibrary.wiley.com/page/journal/1365313x/homepage/forauthors.html",
+  "read": "not readable 2026-11-18 (Wiley refuses automated readers); the browser reading of 2026-11-16 noted no font; SEB's page (https://www.sebiology.org/journals/the-plant-journal.html, read 2026-11-18): 'No formatting requirements for initial submission of papers'"
  },
  "figure_refs": {
   "main": [
@@ -893,7 +900,7 @@
   },
   {
    "url": "https://web.archive.org/web/20221025115824/https://onlinelibrary.wiley.com/page/journal/1365313x/homepage/forauthors.html",
-   "what": "The author guidelines: the Internet Archive's copy of 2022-10-25 (the newest it has), read 2026-11-16. Old. Its text-file order: '(i) Summary, not exceeding 250 words; (ii) Significance statement of up to two sentences of no more than 75 words total; (iii) Introduction; (iv) Results; (v) Discussion; (vi) Experimental procedures; (vii) Accession numbers; (viii) Acknowledgements; (ix) Short legends for Supporting Information; (x) References; (xi) Tables; (xii) Figure legends'. 'Please provide up to 10 keywords'. A mandatory 'Data Statement section'. No author-contributions section. The conflict of interest statement is given in the submission process."
+   "what": "The author guidelines: the Internet Archive's copy of 2022-10-25 (the newest it has), read 2026-11-16. Old. Its text-file order: (1) Summary, at most 250 words; (2) Significance statement, one or two sentences and at most 75 words; (3) Introduction; (4) Results; (5) Discussion; (6) Experimental procedures; (7) Accession numbers; (8) Acknowledgements; (9) short legends for the Supporting Information; (10) References; (11) Tables; (12) Figure legends. 'Please provide up to 10 keywords'. A mandatory 'Data Statement section'. No author-contributions section. The conflict of interest statement is given in the submission process."
   }
  ],
  "evidence": {

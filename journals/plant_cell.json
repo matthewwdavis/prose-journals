@@ -2,7 +2,7 @@
  "format": 1,
  "id": "plant_cell",
  "name": "Plant Cell",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "Oxford University Press",
  "issn": {
@@ -29,6 +29,20 @@
  "captions": {
   "label": "Figure",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "stated",
+  "font": "Times New Roman",
+  "size": 12,
+  "fonts": [
+   "Arial",
+   "Times New Roman"
+  ],
+  "stage": "any",
+  "quote": "Your manuscript file should have: … 12-point type … Acceptable fonts: Arial, Times New Roman, Symbol font (for Greek characters)",
+  "url": "https://academic.oup.com/plcell/pages/author-guidelines",
+  "read": "read 2026-11-18",
+  "note": "Arial or Times New Roman: prose uses Times New Roman; Arial is as acceptable."
  },
  "figure_refs": {
   "main": [

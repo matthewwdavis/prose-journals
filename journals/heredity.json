@@ -2,7 +2,7 @@
  "format": 1,
  "id": "heredity",
  "name": "Heredity",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "Springer Nature",
  "issn": {
@@ -26,6 +26,14 @@
  "captions": {
   "label": "Fig.",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "none",
+  "font": null,
+  "size": null,
+  "quote": "Manuscripts should be double-spaced, with all margins at least 4 cm in width.",
+  "url": "https://www.nature.com/documents/HDY_GTA_0923.pdf",
+  "read": "read 2026-11-18: the 2023 PDF guide in full, no font or size (first submissions 'in any recognised double-spaced format that includes line numbers'); the current HTML guide (https://www.nature.com/hdy/authors-and-referees/gta) sends automated readers to a sign-in service"
  },
  "figure_refs": {
   "main": [
@@ -307,7 +315,7 @@
    "keywords": null
   },
   "counts": "'Main body of text (excluding abstract, tables/figures, and references) not to exceed 7,000 words.' (HTML guide, read 2026-11-16)",
-  "notes": "Heredity's Guide for Authors PDF, 'Revised 21/02/2023'. (Read 2026-11-14; the HTML guide below supersedes it.) Abstract: 'This should not exceed 250 words', on a separate page and also in the submission form. It should state the conceptual issue(s), the approach and the main findings. Display items: 'max. 8 figures or tables'. 'Composite figures containing more than three individual figures will count as two figures.' References: 'There should normally be no more than 100 references' (author-year style). Title page: 'A succinct title', and 'A running title of no more than 150 characters' with no abbreviations (the December 2021 guide said 50 characters). Original Articles contain, in order: cover letter (with a Conflict of Interest statement), title page, abstract, introduction, materials and methods, results, discussion, acknowledgements, author contribution statement, conflict of interest, data archiving (a section titled 'Data Archiving' is mandatory), references, figure legends, tables, and figures (uploaded separately). A graphical abstract is optional (9 cm wide x 5 cm high). Each supplementary file needs a text summary of no more than 50 words. Initial submissions may be 'in any recognised double-spaced format that includes line numbers'. No keywords are requested. 2026-11-16: the current HTML guide (https://www.nature.com/hdy/authors-and-referees/gta) was read and wins over the 2023 PDF: 'Title of the paper - succinct, informative, of 150 characters or less' (no running title on its title page); 'Unstructured abstract max. 250 words; Main body of text (excluding abstract, tables/figures, and references) not to exceed 7,000 words; Max 8 tables or figures; Max 100 references'; its component list adds a Research Ethics Statement after Data archiving.",
+  "notes": "Heredity's Guide for Authors PDF, 'Revised 21/02/2023'. (Read 2026-11-14; the HTML guide below supersedes it.) Abstract: 'This should not exceed 250 words', on a separate page and also in the submission form. It should state the conceptual issue(s), the approach and the main findings. Display items: 'max. 8 figures or tables'. 'Composite figures containing more than three individual figures will count as two figures.' References: 'There should normally be no more than 100 references' (author-year style). Title page: 'A succinct title', and 'A running title of no more than 150 characters' with no abbreviations (the December 2021 guide said 50 characters). Original Articles contain, in order: cover letter (with a Conflict of Interest statement), title page, abstract, introduction, materials and methods, results, discussion, acknowledgements, author contribution statement, conflict of interest, data archiving (a section titled 'Data Archiving' is mandatory), references, figure legends, tables, and figures (uploaded separately). A graphical abstract is optional (9 cm wide x 5 cm high). Each supplementary file needs a text summary of no more than 50 words. Initial submissions may be 'in any recognised double-spaced format that includes line numbers'. No keywords are requested. 2026-11-16: the current HTML guide (https://www.nature.com/hdy/authors-and-referees/gta) was read and wins over the 2023 PDF: 'Title of the paper - succinct, informative, of 150 characters or less' (no running title on its title page); an unstructured abstract of at most 250 words, a main text of at most 7,000 words (not counting the abstract, tables, figures and references), at most 8 tables or figures, and at most 100 references; its component list adds a Research Ethics Statement after Data archiving.",
   "unverified": null,
   "count": {
    "abstract": false,
@@ -779,7 +787,7 @@
     "required": null,
     "heading": null,
     "where": null,
-    "note": "No heading. 'Where a paper describes new simulations or analytical methods, Heredity requires authors to make any relevant software publicly available, wherever possible.'"
+    "note": "No heading. A paper describing new simulations or analytical methods must make the relevant software public, 'wherever possible'."
    },
    "ethics": {
     "required": true,

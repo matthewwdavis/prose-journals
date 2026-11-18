@@ -2,8 +2,8 @@
 
 A journal file says who publishes the journal, its page, the sections a manuscript has, how it names
 and captions figures, its house style, supplement, statements, word limits, reference style, LaTeX
-template, Word layout and its figure rules (sizes, panel labels, text, lines, resolution, files),
-with where each fact comes from. prose's docs/journal-format.md explains every field; the schema is
+template, Word layout, the font its author guidelines ask for in a manuscript ("manuscript_font") and
+its figure rules (sizes, panel labels, text, lines, resolution, files), with where each fact comes from. prose's docs/journal-format.md explains every field; the schema is
 journal.schema.json beside this file. Only "format", "id" and "name" are needed: everything else has
 a sensible default (complete()).
 

@@ -26,6 +26,19 @@
    "paper": {"enum": ["a4", "letter"]}, "margin_mm": {"type": "number", "minimum": 5, "maximum": 60}}},
   "captions": {"type": "object", "additionalProperties": false, "properties": {
    "label": {"type": "string", "minLength": 1, "maxLength": 20}, "bar": {"type": "boolean"}}},
+  "manuscript_font": {"type": "object", "additionalProperties": false, "required": ["status"],
+   "description": "The font and size the journal's own author guidelines ask for in a submitted manuscript (Nature: Times New Roman 12 pt), with where that is said. When status is \"stated\", prose's Typeset Pages, PDF, Submission Version and Word file use it in place of the template's (a document's own font still wins); \"none\": the guidelines name none, \"to confirm\": they couldn't be read.",
+   "properties": {
+   "status": {"enum": ["stated", "none", "to confirm"]},
+   "font": {"type": ["string", "null"], "minLength": 1, "description": "The font prose uses; null: none stated (the template's stays)."},
+   "size": {"type": ["number", "null"], "minimum": 6, "maximum": 24, "description": "The main text's size in points; the other styles keep their sizes in proportion."},
+   "fonts": {"type": "array", "items": {"type": "string"}, "description": "Every font the guidelines accept, where they name several (The Plant Cell: Arial, Times New Roman)."},
+   "preferred": {"type": "boolean", "description": "The guidelines prefer it rather than require it."},
+   "stage": {"enum": ["any", "first", "revision", "final"], "description": "Which submission it's stated for."},
+   "quote": {"type": "string", "description": "The guidelines' own words."},
+   "url": {"$ref": "#/$defs/url"},
+   "read": {"type": "string", "description": "How and when the page was read: read, browser, wayback or excerpt, with the date."},
+   "note": {"type": "string"}}},
   "text": {"type": "object", "additionalProperties": false, "properties": {
    "styles": {"type": "object", "propertyNames": {"enum": ["normal", "title", "h1", "h2", "h3", "quote", "caption"]},
               "additionalProperties": {"$ref": "#/$defs/style"}},

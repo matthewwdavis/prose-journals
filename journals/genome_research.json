@@ -2,7 +2,7 @@
  "format": 1,
  "id": "genome_research",
  "name": "Genome Research",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "Cold Spring Harbor Laboratory Press",
  "issn": {
@@ -29,6 +29,13 @@
  "captions": {
   "label": "Figure",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "none",
+  "font": null,
+  "size": null,
+  "url": "https://genome.cshlp.org/site/misc/ifora_mspreparation.xhtml",
+  "read": "browser 2026-11-16 (the live page): double-spaced, pages numbered; no font or size"
  },
  "figure_refs": {
   "main": [

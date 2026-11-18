@@ -2,7 +2,7 @@
  "format": 1,
  "id": "new_phytologist",
  "name": "New Phytologist",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "Wiley",
  "issn": {
@@ -29,6 +29,15 @@
  "captions": {
   "label": "Fig.",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "stated",
+  "font": "Times New Roman",
+  "size": 12,
+  "stage": "revision",
+  "url": "https://nph.onlinelibrary.wiley.com/hub/journal/14698137/about/author-guidelines",
+  "read": "browser 2026-11-16 (revised manuscripts: 1.5-line spaced, letter or A4, Times New Roman 12, lines and pages numbered; first submissions free format; from that reading's notes, not word for word); not readable 2026-11-18 (HTTP 403)",
+  "note": "Stated for revised manuscripts; the first submission is free format, so it does no harm there. No quotation: the words are to confirm in a browser."
  },
  "figure_refs": {
   "main": [
@@ -915,7 +924,7 @@
    }
   ],
   "statements": {
-   "_all": "excerpt: research papers are arranged under 'Summary, Introduction, Materials and Methods, Results, Discussion, Acknowledgements, Competing interests, Author contributions, Data availability and References'.",
+   "_all": "excerpt: research papers' sections, in order: Summary; Introduction; Materials and Methods; Results; Discussion; Acknowledgements; Competing interests; Author contributions; Data availability; References.",
    "author_contributions": {
     "required": true,
     "heading": "Author contributions",

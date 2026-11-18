@@ -2,7 +2,7 @@
  "format": 1,
  "id": "pnas",
  "name": "PNAS",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "National Academy of Sciences",
  "issn": {
@@ -30,6 +30,13 @@
  "captions": {
   "label": "Fig.",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "none",
+  "font": null,
+  "size": null,
+  "url": "https://www.pnas.org/author-center/submitting-your-manuscript",
+  "read": "browser 2026-11-16 (first submissions format-neutral; revised: Word, RTF or LaTeX, figures not embedded); no font or size. Not re-read 2026-11-18 (HTTP 403)"
  },
  "figure_refs": {
   "main": [

@@ -2,7 +2,7 @@
  "format": 1,
  "id": "g3",
  "name": "G3",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "Genetics Society of America",
  "issn": {
@@ -30,6 +30,15 @@
  "captions": {
   "label": "Figure",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "none",
+  "font": null,
+  "size": null,
+  "stage": "first",
+  "quote": "Initial submission in any format",
+  "url": "https://academic.oup.com/g3journal/pages/author-guidelines",
+  "read": "browser 2026-11-16 ('Preparing your manuscript': any format, line and page numbers; no font or size); 2026-11-18 the automated reader didn't reach that section, and GENETICS's page (the same society's, read in full) names none"
  },
  "figure_refs": {
   "main": [

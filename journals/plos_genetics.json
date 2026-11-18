@@ -2,7 +2,7 @@
  "format": 1,
  "id": "plos_genetics",
  "name": "PLOS Genetics",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "PLOS",
  "issn": {
@@ -30,6 +30,15 @@
  "captions": {
   "label": "Fig",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "none",
+  "font": null,
+  "size": null,
+  "quote": "Use a standard font size and any standard font, except for the font named “Symbol”.",
+  "url": "https://journals.plos.org/plosgenetics/s/submission-guidelines",
+  "read": "read 2026-11-18",
+  "note": "Any standard font and size: prose keeps its own."
  },
  "figure_refs": {
   "main": [

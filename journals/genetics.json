@@ -2,7 +2,7 @@
  "format": 1,
  "id": "genetics",
  "name": "Genetics",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "Genetics Society of America",
  "issn": {
@@ -26,6 +26,15 @@
  "captions": {
   "label": "Figure",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "none",
+  "font": null,
+  "size": null,
+  "stage": "first",
+  "quote": "Initial submission in any format",
+  "url": "https://academic.oup.com/genetics/pages/author-guidelines",
+  "read": "read 2026-11-18: the whole page, 'Preparing your manuscript' included, names no font or size for the text (only the graphical abstract's 'Font: Use a sans serif font such as Arial, 12–16 points.')"
  },
  "figure_refs": {
   "main": [
@@ -317,7 +326,7 @@
    "keywords": null
   },
   "counts": "No limit: 'Investigations are full-length research articles that present novel findings. There are no length restrictions.'",
-  "notes": "Abstract: 'Abstracts have a maximum length of 250 words, contain the name of the organism studied' and 'must not contain reference citations or abbreviations.' summary_words is the Article summary: 'Please provide a 100 word summary describing your research article so that editors, journal staff, and readers can understand what your article is about', in plain language without jargon or acronyms. Title page: the title ('avoid jargon and include the name of the organism under study'), all author names and affiliations, corresponding author email(s), 'A short running head of 50 characters or less', and keywords (no number given). No limits on figures, tables, legends, Methods or references. Protocol detail longer than two paragraphs goes to supplementary material. Figure titles and legends go in the manuscript file. Required: a Data Availability Statement under the heading 'Data availability', before the Acknowledgments; funding, with grant numbers, under its own subheading after the acknowledgements; a conflict of interest section where relevant; any AI use disclosed in the cover letter and in the Methods or Acknowledgements. Supplementary files at most 2 MB each and 10 MB in total. For comparison, Brief Investigations 'should not exceed 3000 words, excluding abstract, tables, figure legends, and literature cited.'",
+  "notes": "Abstract: 'Abstracts have a maximum length of 250 words, contain the name of the organism studied' and 'must not contain reference citations or abbreviations.' summary_words is the Article summary: 100 words on what the research article is about, for editors, journal staff and readers, in plain language without jargon or acronyms. Title page: the title ('avoid jargon and include the name of the organism under study'), all author names and affiliations, corresponding author email(s), 'A short running head of 50 characters or less', and keywords (no number given). No limits on figures, tables, legends, Methods or references. Protocol detail longer than two paragraphs goes to supplementary material. Figure titles and legends go in the manuscript file. Required: a Data Availability Statement under the heading 'Data availability', before the Acknowledgments; funding, with grant numbers, under its own subheading after the acknowledgements; a conflict of interest section where relevant; any AI use disclosed in the cover letter and in the Methods or Acknowledgements. Supplementary files at most 2 MB each and 10 MB in total. For comparison, Brief Investigations 'should not exceed 3000 words, excluding abstract, tables, figure legends, and literature cited.'",
   "count": {
    "abstract": false,
    "methods": true,

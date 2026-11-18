@@ -2,7 +2,7 @@
  "format": 1,
  "id": "science",
  "name": "Science",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "AAAS (Science)",
  "issn": {
@@ -26,6 +26,13 @@
  "captions": {
   "label": "Fig.",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "to confirm",
+  "font": null,
+  "size": null,
+  "url": "https://www.science.org/content/page/instructions-preparing-initial-manuscript",
+  "read": "not readable 2026-11-18 (HTTP 403); the browser reading of 2026-11-16 took only lengths and sections"
  },
  "figure_refs": {
   "main": [
@@ -280,7 +287,7 @@
    "references": 50,
    "keywords": null
   },
-  "counts": "'Research Articles should not exceed 3000 words (for the main text), plus an abstract, 3 to 5 display items (figures or tables) with brief legends, about 50 main-text references, and a structured acknowledgments section.' Materials and Methods go in the supplementary materials. An extended format online: 'the main text can be up to 6000 words, with as many as 6 display items ... and up to 100 main-text references', justified in the cover letter. (https://www.science.org/content/page/science-information-authors (read in a browser 2026-11-16))",
+  "counts": "Research Articles: a main text of at most 3,000 words, plus an abstract, 3 to 5 display items (figures or tables) with brief legends, about 50 main-text references and a structured acknowledgments section. Materials and Methods go in the supplementary materials. An extended format online: 'the main text can be up to 6000 words, with as many as 6 display items ... and up to 100 main-text references', justified in the cover letter. (https://www.science.org/content/page/science-information-authors (read in a browser 2026-11-16))",
   "notes": "science.org's instructions for an initial manuscript and for a revised one (read in a browser 2026-11-16; the initial page's Internet Archive copy of 2025-08-10 says the same): 'Titles should be no more than 96 characters (including spaces)'; 'The abstract should be 125 words or less', with no citations or abbreviations; figure captions start with a bold short title and no caption is over 200 words. Parts, in order: Title, Authors, Affiliations, Abstract, Main Text, References and Notes, Acknowledgments (with Funding, Author contributions, Diversity, equity, ethics, and inclusion [optional], Competing interests, and Data, code, and materials availability), List of Supplementary Materials, figure and table captions. Neither page asks for a one-sentence summary. Length limits: see counts (the information-for-authors page, read in a browser 2026-11-16).",
   "unverified": null,
   "count": {

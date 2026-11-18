@@ -2,7 +2,7 @@
  "format": 1,
  "id": "genome_biology",
  "name": "Genome Biology",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "BMC (Springer Nature)",
  "issn": {
@@ -29,6 +29,13 @@
  "captions": {
   "label": "Fig.",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "none",
+  "font": null,
+  "size": null,
+  "url": "https://link.springer.com/journal/13059/submission-guidelines",
+  "read": "browser 2026-11-16: double-line spacing, line and page numbers, Word, RTF or TeX; no font or size. Not re-read 2026-11-18 (sign-in redirect)"
  },
  "figure_refs": {
   "main": [

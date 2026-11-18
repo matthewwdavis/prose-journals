@@ -2,7 +2,7 @@
  "format": 1,
  "id": "horticulture_research",
  "name": "Horticulture Research",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "Oxford University Press",
  "issn": {
@@ -29,6 +29,13 @@
  "captions": {
   "label": "Figure",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "none",
+  "font": null,
+  "size": null,
+  "url": "https://academic.oup.com/hr/pages/general-instructions",
+  "read": "read 2026-11-18: 'Manuscript Preparation: Format, Structure, and Style' names no font or size"
  },
  "figure_refs": {
   "main": [
@@ -286,7 +293,7 @@
    "keywords": null
   },
   "counts": "Not stated: the page gives 'Article—Maximum Word Count: 6,000' without saying what is counted.",
-  "notes": "'Abstracts have a maximum length of 250 words and must not contain reference citations or abbreviations.' 'references—maximum references: 50'. 'tables and figures—maximum of 6 figures and 6 tables'. Title page: the title (no limit given) and 'a short running head of 50 characters or less'. No keyword, summary, Methods or legend limits. Required sections: 'Abstract, Introduction, Results, Discussion, Materials and methods, Acknowledgments, Contributions, Data availability statement, Conflict of interests, Supplementary information, References, Figure legends, Tables and Figures'. Figures, legends and tables go 'within the text at first place which mentioned it'. Each figure needs alt text preceded by 'Alt text:', and funding is declared with grant numbers. Supplementary files at most 2 MB each.",
+  "notes": "'Abstracts have a maximum length of 250 words and must not contain reference citations or abbreviations.' 'references—maximum references: 50'. 'tables and figures—maximum of 6 figures and 6 tables'. Title page: the title (no limit given) and 'a short running head of 50 characters or less'. No keyword, summary, Methods or legend limits. Required sections (13): Abstract; Introduction; Results; Discussion; Materials and methods; Acknowledgments; Contributions; Data availability statement; Conflict of interests; Supplementary information; References; Figure legends; Tables and Figures. Figures, legends and tables go 'within the text at first place which mentioned it'. Each figure needs alt text preceded by 'Alt text:', and funding is declared with grant numbers. Supplementary files at most 2 MB each.",
   "count": {
    "abstract": false,
    "methods": true,
@@ -928,7 +935,7 @@
    }
   ],
   "statements": {
-   "_all": "'Each submission must contain the following sections: Abstract, Introduction, Results, Discussion, Materials and methods, Acknowledgments, Contributions, Data availability statement, Conflict of interests, Supplementary information, References, Figure legends, Tables and Figures.'",
+   "_all": "Every submission needs 13 sections: Abstract; Introduction; Results; Discussion; Materials and methods; Acknowledgments; Contributions; Data availability statement; Conflict of interests; Supplementary information; References; Figure legends; Tables and Figures.",
    "author_contributions": {
     "required": true,
     "heading": "Contributions",

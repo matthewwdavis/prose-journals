@@ -2,7 +2,7 @@
  "format": 1,
  "id": "nature",
  "name": "Nature",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "Springer Nature",
  "issn": {
@@ -29,6 +29,17 @@
  "captions": {
   "label": "Fig.",
   "bar": true
+ },
+ "manuscript_font": {
+  "status": "stated",
+  "font": "Times New Roman",
+  "size": 12,
+  "preferred": true,
+  "stage": "any",
+  "quote": "a ‘standard’ font, preferably 12-point Times New Roman",
+  "url": "https://www.nature.com/nature/for-authors/final-submission",
+  "read": "excerpt 2026-11-18 (nature.com sends automated readers to a sign-in service); browser 2026-11-16: the formatting guide and the initial-submission page (https://www.nature.com/nature/for-authors/formatting-guide) ask for double spacing, line numbers and 12-pt Times New Roman, preferred",
+  "note": "The quotation is from a search excerpt of the page: confirm its exact words in a browser."
  },
  "figure_refs": {
   "main": [
@@ -368,7 +379,7 @@
    "keywords": null
   },
   "counts": null,
-  "notes": "Read in a browser 2026-11-16: the formatting guide and the initial-submission page (https://www.nature.com/nature/for-authors/initial-submission). Title: 'Titles must fit on two lines in print (75 characters including spaces)'. Summary paragraph 'ideally of no more than 200 words'. 'main text of 2,500 words and 4 modest display items ... for a typical 6 page article and 4300 words and 5-6 modest display items for a typical 8 page article; as a guideline up to 50 references'. Methods 'typically do not exceed 3,000 words'; 'Methods-only references do not count against your reference limit.' Legends: the initial-submission page says 'Figure legends of <250 words each', the formatting guide 'Legends should be fewer than 300 words each' (250 kept: the two pages differ). Up to ten Extended Data items. 'Word counts refer to the text of the paper. Title, author list, acknowledgements and references are not included'. Earlier (2026-11-13): the 2018 brief guide (https://www.nature.com/documents/nature_3a_initial_revised_submissions.pdf).",
+  "notes": "Read in a browser 2026-11-16: the formatting guide and the initial-submission page (https://www.nature.com/nature/for-authors/initial-submission). Title: 'Titles must fit on two lines in print (75 characters including spaces)'. Summary paragraph 'ideally of no more than 200 words'. A typical 6-page article: a main text of 2,500 words and 4 modest display items; a typical 8-page article: 4,300 words and 5–6 modest display items; up to 50 references as a guideline. Methods 'typically do not exceed 3,000 words'; 'Methods-only references do not count against your reference limit.' Legends: the initial-submission page says 'Figure legends of <250 words each', the formatting guide 'Legends should be fewer than 300 words each' (250 kept: the two pages differ). Up to ten Extended Data items. 'Word counts refer to the text of the paper. Title, author list, acknowledgements and references are not included'. Earlier (2026-11-13): the 2018 brief guide (https://www.nature.com/documents/nature_3a_initial_revised_submissions.pdf).",
   "unverified": null,
   "count": {
    "abstract": true,

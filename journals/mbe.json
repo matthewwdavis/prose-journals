@@ -2,7 +2,7 @@
  "format": 1,
  "id": "mbe",
  "name": "Molecular Biology and Evolution",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "Oxford University Press",
  "issn": {
@@ -30,6 +30,13 @@
  "captions": {
   "label": "Figure",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "none",
+  "font": null,
+  "size": null,
+  "url": "https://academic.oup.com/mbe/pages/author-guidelines",
+  "read": "browser 2026-11-16 ('Preparing your manuscript': double spaced, about 25 mm margins, line numbers recommended); no font or size"
  },
  "text": {
   "numbered_headings": true
@@ -298,7 +305,7 @@
     "abstract_words": 250
    },
    "counts": "No main-text limit for Discoveries appeared in the excerpts.",
-   "notes": "'Discoveries, Methods, Resources, Reviews and Protocols have an abstract of up to 250 words.' For comparison, Brief Communications and Perspectives 'begin with an abstract of up to 150 words. The main text is to be no more than 2,000 words and may contain subsections and up to three figures or tables.' New submissions are a single PDF containing 'the main text, tables, figure captions, and figures', with supplementary material in one separate PDF where possible. The abstract is typically followed by Introduction, Results, Discussion and Materials and Methods, and Results and Discussion may be combined. The cover page should have a brief, informative title accessible to general readers. No keyword, significance-statement, figure or reference limit appeared."
+   "notes": "'Discoveries, Methods, Resources, Reviews and Protocols have an abstract of up to 250 words.' For comparison, Brief Communications and Perspectives have an abstract of up to 150 words and a main text of at most 2,000 words, with subsections allowed and up to three figures or tables. New submissions are a single PDF containing 'the main text, tables, figure captions, and figures', with supplementary material in one separate PDF where possible. The abstract is typically followed by Introduction, Results, Discussion and Materials and Methods, and Results and Discussion may be combined. The cover page should have a brief, informative title accessible to general readers. No keyword, significance-statement, figure or reference limit appeared."
   },
   "count": {
    "abstract": false,

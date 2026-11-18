@@ -2,7 +2,7 @@
  "format": 1,
  "id": "molecular_plant",
  "name": "Molecular Plant",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "Cell Press",
  "issn": {
@@ -29,6 +29,15 @@
  "captions": {
   "label": "Figure",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "stated",
+  "font": "Times New Roman",
+  "size": 12,
+  "stage": "any",
+  "url": "https://www.cell.com/molecular-plant/article-types",
+  "read": "browser 2026-11-16 (the Research article tab: Times New Roman 12 pt, 1.5 line spacing, continuous line numbers; from that reading's notes, not word for word); not readable 2026-11-18 (HTTP 403)",
+  "note": "No quotation: the words are to confirm in a browser."
  },
  "figure_refs": {
   "main": [
@@ -307,7 +316,7 @@
    "references": null,
    "keywords": null
   },
-  "counts": "'A research article should not exceed 7,000 words in the main text (excluding the title page, references, figure legends, and tables) and have no more than 7 display items (main figures and tables).' (https://www.cell.com/molecular-plant/article-types, Research article tab (read in a browser 2026-11-16))",
+  "counts": "Research articles: at most 7,000 words of main text (not counting the title page, references, figure legends and tables) and at most 7 display items (main figures and tables). (https://www.cell.com/molecular-plant/article-types, Research article tab (read in a browser 2026-11-16))",
   "notes": "The live author page (https://www.cell.com/molecular-plant/authors (read in a browser 2026-11-16)): 'The abstract consists of a single paragraph of no more than 250 words'; 'Please include several keywords with your submission under the abstract' (no number); a running title of 'no more than 50 characters, including spaces'; the title 'should occupy no more than three lines of type. Each line should contain no more than 50 characters, including spaces' (title_chars 150 is that, three lines of 50). Its article-types page gives the 7,000 words and 7 display items. Text in Word, 12-point Times New Roman, 1.5 line spacing, continuous line numbers. (2026-11-16 earlier: the same from the Internet Archive's copy of 2025-05-28.)",
   "unverified": null,
   "count": {
@@ -345,13 +354,13 @@
  },
  "word": {
   "layout": {
-   "measured_from": "Cell Press LaTeX template, version 1.10 (May 2025), with Molecular Plant's author-year references (molecular_plant.bst: Cell Press's numbered.bst, unnumbered and in alphabetical order); prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display re-measured on 2026-11-16",
+   "measured_from": "Cell Press LaTeX template, version 1.10 (May 2025), with Molecular Plant's author-year references (molecular_plant.bst: Cell Press's numbered.bst, unnumbered and in alphabetical order); prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display, page, styles re-measured on 2026-11-18",
    "page": {
     "width_mm": 210.0,
     "height_mm": 297.0,
     "margins_mm": {
      "top": 18.3,
-     "bottom": 26.2,
+     "bottom": 24.9,
      "left": 16.2,
      "right": 16.2
     }
@@ -409,8 +418,21 @@
       "left": 2.0,
       "right": 0.0
      },
-     "before_pt": 37.8,
+     "before_pt": 37.9,
      "run_in": true,
+     "run_in_punct": ",",
+     "run_in_gap_pt": 5.4,
+     "font": "Arial"
+    },
+    "correspondence": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 0.0,
+     "run_in": false,
      "font": "Arial"
     },
     "abstract": {
@@ -468,7 +490,7 @@
      "italic": false,
      "caps": false,
      "align": "left",
-     "before_pt": 20.4,
+     "before_pt": 19.8,
      "run_in": false,
      "after_pt": 9.4,
      "font": "Arial"
@@ -492,7 +514,7 @@
      "italic": false,
      "caps": false,
      "align": "center",
-     "before_pt": 10.9,
+     "before_pt": 9.2,
      "run_in": false,
      "font": "Arial"
     },
@@ -688,7 +710,7 @@
   },
   {
    "url": "https://www.cell.com/molecular-plant/authors",
-   "what": "Information for authors: Molecular Plant. The live page returns HTTP 403; its Wayback copy of 2025-05-28 (https://web.archive.org/web/20250528221721/https://www.cell.com/molecular-plant/authors) was read 2026-11-16. Section order: 'title, authors, affiliations, contact information, additional title page footnotes, running title, abstract, introduction, results, discussion, methods, funding, author contributions, acknowledgments, declaration of interests, references, figure legends, figures and tables, and supplemental information.'"
+   "what": "Information for authors: Molecular Plant. The live page returns HTTP 403; its Wayback copy of 2025-05-28 (https://web.archive.org/web/20250528221721/https://www.cell.com/molecular-plant/authors) was read 2026-11-16. Section order: (1) title; (2) authors; (3) affiliations; (4) contact information; (5) any other title-page footnotes; (6) running title; (7) abstract; (8) introduction; (9) results; (10) discussion; (11) methods; (12) funding; (13) author contributions; (14) acknowledgments; (15) declaration of interests; (16) references; (17) figure legends; (18) figures and tables; (19) supplemental information."
   },
   {
    "url": "https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals",

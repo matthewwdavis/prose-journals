@@ -2,7 +2,7 @@
  "format": 1,
  "id": "cell",
  "name": "Cell",
- "version": "1.0.0",
+ "version": "1.1.0",
  "kind": "journal",
  "publisher": "Cell Press",
  "issn": {
@@ -26,6 +26,14 @@
  "captions": {
   "label": "Figure",
   "bar": false
+ },
+ "manuscript_font": {
+  "status": "to confirm",
+  "font": null,
+  "size": null,
+  "url": "https://www.cell.com/cell/information-for-authors/revise-manuscript",
+  "read": "not readable 2026-11-18 (HTTP 403); the browser reading of 2026-11-16 noted no font or size for the manuscript",
+  "note": "Cell Press's supplemental-information guidelines ask for Arial 10 pt in the supplement only (https://www.cell.com/information-for-authors/supplemental-information)."
  },
  "figure_refs": {
   "main": [
@@ -364,7 +372,7 @@
    "references": null,
    "keywords": 10
   },
-  "counts": "'The total word count of an article must be under 7,000 (including main figure legends but excluding STAR Methods text, supplemental item legends, and references section), and there should be no more than seven figures and/or tables.' (https://www.cell.com/cell/information-for-authors/article-types, Research (read in a browser 2026-11-16))",
+  "counts": "Research articles: under 7,000 words in all, counting the main figure legends but not the STAR Methods, the supplemental item legends or the references; at most seven figures and tables together. (https://www.cell.com/cell/information-for-authors/article-types, Research (read in a browser 2026-11-16))",
   "notes": "Cell's revise-manuscript page (read in a browser 2026-11-16): title 'no more than 145 characters total, including spaces' (about 10–12 words, a guide, so no word limit is set); Summary 'a single paragraph of no more than 150 words'; 'you may include up to 10 keywords' (optional). The excerpts' 85-character title was wrong. Its components, in order: Title, Author list, Author affiliations and footnotes, Contact information, Summary, Keywords, Introduction, Results, Limitations of the study (in the Discussion), Discussion, Resource availability (lead contact, materials availability, data and code availability), Acknowledgments, Author contributions, Declaration of interests, Declaration of generative AI and AI-assisted technologies in the manuscript preparation process (only when such tools were used), Supplemental information titles and legends, Figure titles and legends, Tables, STAR Methods, Resource identification initiative, References. Earlier (2026-11-13): Cell Press's blog (Cell Mentor, 20 December 2017) gives Highlights of 'Each Highlight must be 85 characters or less, including spaces' and the In Brief (eTOC) paragraph as '50–80 words or fewer, depending on the journal'. 2026-11-16 (browser): the article-types page gives the 7,000 words and seven display items above; the final-submission page (https://www.cell.com/cell/information-for-authors/final-submission) gives up to four highlights of 85 characters each, an eTOC blurb of 50 words or fewer (two sentences), and says a graphical abstract is required for Cell.",
   "unverified": null,
   "count": {
@@ -397,13 +405,13 @@
  },
  "word": {
   "layout": {
-   "measured_from": "Cell Press LaTeX template, version 1.10 (May 2025): article class with natbib and Cell Press's numbered.bst (numbered superscript references); Cell Press has no class of its own; prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display re-measured on 2026-11-16",
+   "measured_from": "Cell Press LaTeX template, version 1.10 (May 2025): article class with natbib and Cell Press's numbered.bst (numbered superscript references); Cell Press has no class of its own; prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display, page, styles re-measured on 2026-11-18",
    "page": {
     "width_mm": 210.0,
     "height_mm": 297.0,
     "margins_mm": {
      "top": 18.3,
-     "bottom": 26.2,
+     "bottom": 24.9,
      "left": 16.2,
      "right": 16.2
     }
@@ -461,8 +469,21 @@
       "left": 2.0,
       "right": 0.0
      },
-     "before_pt": 37.8,
+     "before_pt": 37.9,
      "run_in": true,
+     "run_in_punct": ",",
+     "run_in_gap_pt": 5.4,
+     "font": "Arial"
+    },
+    "correspondence": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 0.0,
+     "run_in": false,
      "font": "Arial"
     },
     "abstract": {
@@ -520,7 +541,7 @@
      "italic": false,
      "caps": false,
      "align": "left",
-     "before_pt": 20.4,
+     "before_pt": 19.8,
      "run_in": false,
      "after_pt": 9.4,
      "font": "Arial"
@@ -544,7 +565,7 @@
      "italic": false,
      "caps": false,
      "align": "center",
-     "before_pt": 10.9,
+     "before_pt": 9.2,
      "run_in": false,
      "font": "Arial"
     },
