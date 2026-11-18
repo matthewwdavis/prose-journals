@@ -12,9 +12,11 @@ The library never holds a publisher's files (CONTRIBUTING.md). A job finds them,
    use (python tools/publisher.py --known-urls journals > FILE, before the pull request's files are
    taken), so a new address is downloaded only after a maintainer has merged it.
 
-The cache is never inside the library's folder, so nothing found is ever committed. A file whose
-checksum differs from the one the journal gives is still used (publishers revise their packages),
-and said so.
+The cache is never inside the library's folder, so nothing found is ever committed. A file is
+taken as the journal's when its checksum is any the journal gives: the current package's
+(latex.fetch.files), an earlier package's (latex.fetch.earlier) or one prose's corrections make
+(latex.fetch.corrections; prose makes them as it installs the files). A file whose checksum is none
+of those is still used (publishers revise their packages), and said so.
 """
 from __future__ import annotations
 
@@ -46,13 +48,18 @@ def _inside(path: str, folder: str) -> bool:
     return path == folder or path.startswith(os.path.join(folder, ""))
 
 
-def _checksums(journal: dict) -> dict[str, str | None]:
+def _checksums(journal: dict) -> dict[str, list[str]]:
+    """{name: [every checksum the journal takes for it]} (latex.files, and every copy latex.fetch takes)."""
     lx = journal.get("latex") or {}
-    out: dict[str, str | None] = {}
-    for n, h in ((lx.get("fetch") or {}).get("files") or {}).items():
-        out[n] = h
+    fetch = lx.get("fetch") or {}
+    out: dict[str, list[str]] = {}
+    if hasattr(common.journalfile, "fetch_checksums"):
+        out.update(common.journalfile.fetch_checksums(fetch))
+    else:   # (an older labapp copy: one checksum a file)
+        out.update({n: [h] for n, h in (fetch.get("files") or {}).items() if h})
     for n, h in (lx.get("files") or {}).items():
-        out[n] = h or out.get(n)
+        if h and h not in out.setdefault(n, []):
+            out[n].insert(0, h)
     return out
 
 
@@ -98,7 +105,7 @@ def gather(journal: dict, *, prose_root: str | None = None, folders: list[str] |
     for name in names:
         # (prefer a copy with the journal's checksum, then any copy of that name)
         hits = [(p, how) for d, how in places if os.path.isdir(d) for p in [os.path.join(d, name)] if os.path.isfile(p)]
-        good = [h for h in hits if wanted.get(name) and _sha(h[0]) == wanted[name]]
+        good = [h for h in hits if wanted.get(name) and _sha(h[0]) in wanted[name]]
         if good or hits:
             found[name] = (good or hits)[0][0]
     missing = [n for n in names if n not in found]
@@ -109,8 +116,8 @@ def gather(journal: dict, *, prose_root: str | None = None, folders: list[str] |
         found.update(got)
         missing = [n for n in names if n not in found]
     for name, path in found.items():
-        if wanted.get(name) and _sha(path) != wanted[name]:
-            notes.append(f"{name} differs from the copy the journal file names (the publisher may have revised it); used as it is")
+        if wanted.get(name) and _sha(path) not in wanted[name]:
+            notes.append(f"{name} differs from the copies the journal file names (the publisher may have revised it); used as it is")
     return found, missing, notes
 
 

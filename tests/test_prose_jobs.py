@@ -61,7 +61,24 @@ def test_publisher_files_from_a_folder_with_their_checksums(tmp_path):
     assert list(found) == ["sn-jnl.cls"] and missing == ["sn-nature.bst"] and notes == []
     j["latex"]["files"]["sn-jnl.cls"] = "0" * 64
     _, _, notes = publisher.gather(j, folders=[str(tmp_path / "mine")], cache=str(tmp_path / "cache"))
-    assert notes == ["sn-jnl.cls differs from the copy the journal file names (the publisher may have revised it); used as it is"]
+    assert notes == ["sn-jnl.cls differs from the copies the journal file names (the publisher may have revised it); used as it is"]
+
+
+def test_publisher_files_of_an_earlier_package_or_corrected_by_prose_are_the_journals(tmp_path):
+    """latex.fetch takes the publisher's earlier packages ("earlier") and the copies prose's own
+    corrections make ("corrections"), as Wiley's journals do since Wiley's package of 18 Nov 2026."""
+    sha = lambda b: hashlib.sha256(b).hexdigest()   # noqa: E731
+    (tmp_path / "mine").mkdir()
+    j = {"id": "x", "latex": {"fetch": {"store": "s", "files": {"a.cls": sha(b"new\n"), "a.bst": sha(b"new bst\n")},
+                                        "earlier": [{"date": "2026-11-13", "files": {"a.cls": sha(b"old\n")}}],
+                                        "corrections": [{"file": "a.bst", "from": sha(b"new bst\n"), "to": sha(b"fixed bst\n"),
+                                                         "edits": [[0, 1, ["fixed bst"]]], "why": "a reason"}]}}}
+    for cls, bst, said in ((b"old\n", b"fixed bst\n", []), (b"new\n", b"new bst\n", []), (b"other\n", b"new bst\n", ["a.cls"])):
+        (tmp_path / "mine" / "a.cls").write_bytes(cls)
+        (tmp_path / "mine" / "a.bst").write_bytes(bst)
+        found, missing, notes = publisher.gather(j, folders=[str(tmp_path / "mine")], cache=str(tmp_path / "cache"))
+        assert sorted(found) == ["a.bst", "a.cls"] and missing == []
+        assert [n.split(" ")[0] for n in notes] == said
 
 
 def test_nothing_is_downloaded_into_the_library(tmp_path):

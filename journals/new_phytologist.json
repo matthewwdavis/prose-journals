@@ -2,7 +2,7 @@
  "format": 1,
  "id": "new_phytologist",
  "name": "New Phytologist",
- "version": "1.1.0",
+ "version": "1.1.1",
  "kind": "journal",
  "publisher": "Wiley",
  "issn": {
@@ -373,24 +373,112 @@
    "what": "Wiley's LaTeX template (“Wiley's PDF design”, WileyDesign.zip)",
    "page": "https://authors.wiley.com/author-resources/Journal-Authors/Prepare/latex-template.html",
    "url": "https://authors.wiley.com/asset/WileyDesign.zip",
-   "size_mb": 7.5,
+   "size_mb": 8.5,
+   "date": "2026-11-18",
    "files": {
-    "USG.cls": "b9aa4b5d43c6c444f2876000952fa03439972c8e573d67212123647cbbfa4e08",
-    "wileyNJD-Chicago.bst": "f67a18cea10d2cea2638dad908bac342c7d718bf4dbfa9d08f1e702f61023e51"
+    "USG.cls": "06e6d2c41235149b9de475dd283a844f04c7e4aa272e9f109663054f7ecb07a9",
+    "wileyNJD-Chicago.bst": "cb16d5063cd779de0cd6e582ea64fa5dccfe5797621f5424176deba0863723f3"
    },
    "optional": {
     "WileyNJD-Harvard.bst": {
      "sha256": "011fa77306816e3779f356a328f73d3952aba3c0919e11bb815836ac15287968",
      "sets": "harvard",
-     "note": "Wiley's Harvard reference style isn't in its current package, so the references are set in Wiley's Chicago style (author and year too). If you have Wiley's earlier package (WileyNJDv5_Template.zip, 2025 or before), choose it and prose uses the Harvard style."
+     "note": "Wiley's Harvard reference style isn't in its current package, so the references are set in Wiley's Chicago style, author and year too (with prose's correction: SOURCE.md). If you have Wiley's earlier package (WileyNJDv5_Template.zip, 2025 or before), choose it and prose uses the Harvard style."
     }
-   }
+   },
+   "earlier": [
+    {
+     "date": "2026-11-13",
+     "note": "Wiley's package as prose was first made with it (Last-Modified 13 Nov 2026)",
+     "files": {
+      "USG.cls": "b9aa4b5d43c6c444f2876000952fa03439972c8e573d67212123647cbbfa4e08",
+      "wileyNJD-Chicago.bst": "f67a18cea10d2cea2638dad908bac342c7d718bf4dbfa9d08f1e702f61023e51"
+     }
+    }
+   ],
+   "corrections": [
+    {
+     "file": "wileyNJD-Chicago.bst",
+     "from": "cb16d5063cd779de0cd6e582ea64fa5dccfe5797621f5424176deba0863723f3",
+     "to": "82029b77ede77152943edab938b10ba3adb217cce11d8a174c1f8666f70cd8bc",
+     "why": "Wiley's Chicago style leaves the year out of every citation, so citations print as (Smith, Smith) instead of (Smith, 2020), and it lists the references in the order they're cited; prose adds the year and keeps the list in order of author and year",
+     "edits": [
+      [
+       1801,
+       1801,
+       [
+        "  year field.or.null purify$ #-1 #4 substring$ extra.label * 'sort.year :=   % prose: the year (with its a, b) \\citeauthoryear prints; Wiley's file never set it"
+       ]
+      ],
+      [
+       1811,
+       1812,
+       [
+        "% prose: the list stays in author and year order (Wiley's { sort.label 'sort.key$ := } put it in citation order, for its numbered styles)",
+        "{ skip$"
+       ]
+      ]
+     ]
+    },
+    {
+     "file": "wileyNJD-Chicago.bst",
+     "from": "f67a18cea10d2cea2638dad908bac342c7d718bf4dbfa9d08f1e702f61023e51",
+     "to": "5b6315d8dce681a22d1f454dd7a6266d24679a5a8f51c8c7074e362feb822a7b",
+     "why": "Wiley's Chicago style of 13 Nov 2026 leaves the year out of every citation, so citations print as (Smith, Smith) instead of (Smith, 2020), and its author-and-year code doesn't run (two names it uses aren't declared, one is defined twice); prose declares and renames them as Wiley's package of 18 Nov does, adds the year, and keeps the list in order of author and year",
+     "edits": [
+      [
+       176,
+       177,
+       [
+        "  { label.year extra.label sort.year sort.label label }   % prose: label, which the author-year code below sets"
+       ]
+      ],
+      [
+       1700,
+       1700,
+       [
+        "STRINGS { short.list }   % prose: declared, as the code below needs",
+        ""
+       ]
+      ],
+      [
+       1718,
+       1719,
+       [
+        "FUNCTION {calc.sort.label}   % prose: renamed; calc.label is defined above for \\bibitem's label"
+       ]
+      ],
+      [
+       1746,
+       1747,
+       [
+        "{ calc.sort.label"
+       ]
+      ],
+      [
+       1800,
+       1800,
+       [
+        "  year field.or.null purify$ #-1 #4 substring$ extra.label * 'sort.year :=   % prose: the year (with its a, b) \\citeauthoryear prints; Wiley's file never set it"
+       ]
+      ],
+      [
+       1810,
+       1811,
+       [
+        "% prose: the list stays in author and year order (Wiley's { sort.label 'sort.key$ := } put it in citation order, for its numbered styles)",
+        "{ skip$"
+       ]
+      ]
+     ]
+    }
+   ]
   },
   "source_notes": "SOURCE.md"
  },
  "word": {
   "layout": {
-   "measured_from": "Wiley's LaTeX authoring template (\"Wiley's PDF design\", USG.cls v6.0, the successor of the NJD template; package of 2026) with Wiley's Harvard reference style, for New Phytologist; prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display, styles re-measured on 2026-11-17",
+   "measured_from": "Wiley's LaTeX authoring template (\"Wiley's PDF design\", USG.cls v6.0, the successor of the NJD template; package of 2026) with Wiley's Harvard reference style, for New Phytologist; prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display re-measured on 2026-11-17; styles re-measured on 2026-11-18",
    "page": {
     "width_mm": 210.0,
     "height_mm": 276.0,
@@ -481,7 +569,7 @@
       "left": 3.4,
       "right": 0.0
      },
-     "before_pt": 18.5,
+     "before_pt": 17.0,
      "run_in": false,
      "text": "Summary",
      "font": "Times New Roman"
@@ -493,7 +581,7 @@
      "italic": false,
      "caps": true,
      "align": "left",
-     "before_pt": 29.3,
+     "before_pt": 26.2,
      "run_in": false,
      "after_pt": 8.0,
      "font": "Times New Roman"
@@ -553,7 +641,7 @@
      "caps": false,
      "align": "both",
      "hanging_mm": 3.7,
-     "before_pt": 5.6,
+     "before_pt": 0.0,
      "line_pt": 11.0,
      "run_in": false,
      "font": "Century Schoolbook"
@@ -696,7 +784,8 @@
     }
    },
    "hand": [
-    "styles.title.before_pt"
+    "styles.title.before_pt",
+    "styles.references.align"
    ],
    "running": {
     "odd": [

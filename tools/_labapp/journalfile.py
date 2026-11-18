@@ -215,6 +215,7 @@ def validate(journal, folder: str | None = None) -> tuple[list[str], list[str]]:
     lx = journal.get("latex") or {}
     if lx.get("template") == "publisher" and not (lx.get("class") or lx.get("fetch") or lx.get("files")):
         errors.append("latex: a publisher's template needs its class (\"class\") or the files to fetch (\"fetch\")")
+    errors += _fetch_problems(lx.get("fetch") or {})
     ref = journal.get("references") or {}
     if ref.get("csl_text") is not None and "<style" not in ref["csl_text"]:
         errors.append("references.csl_text isn't a reference style (CSL): it has no <style>")
@@ -228,6 +229,57 @@ def validate(journal, folder: str | None = None) -> tuple[list[str], list[str]]:
                 if want and _sha(p) != want:
                     warnings.append(f"latex.files: {rel} isn't the copy the file was made with (its checksum differs)")
     return errors, warnings
+
+
+def fetch_checksums(fetch: dict) -> dict[str, list[str]]:
+    """Every copy of the publisher's files a latex.fetch takes, by name: {name: [sha256, ...]}, the
+    current package's first ("files" and "optional"), then each earlier package's ("earlier"), then
+    the copies prose's own corrections make ("corrections" "to"). A journal file of format 1 without
+    "earlier" or "corrections" gives one checksum a file, as before."""
+    out: dict[str, list[str]] = {}
+
+    def add(name, sha) -> None:
+        if isinstance(name, str) and isinstance(sha, str) and sha not in out.setdefault(name, []):
+            out[name].append(sha)
+
+    for n, h in (fetch.get("files") or {}).items():
+        add(n, h)
+    for n, o in (fetch.get("optional") or {}).items():
+        add(n, (o or {}).get("sha256") if isinstance(o, dict) else None)
+    for e in fetch.get("earlier") or []:
+        for part in ("files", "optional"):
+            for n, h in ((e or {}).get(part) or {}).items():
+                add(n, h)
+    for c in fetch.get("corrections") or []:
+        add((c or {}).get("file"), (c or {}).get("to"))
+    return out
+
+
+def _fetch_problems(fetch: dict) -> list[str]:
+    """latex.fetch's earlier packages and corrections, checked against its files."""
+    out: list[str] = []
+    names = set(fetch.get("files") or {}) | set(fetch.get("optional") or {})
+    for i, e in enumerate(fetch.get("earlier") or [], 1):
+        for part in ("files", "optional"):
+            for n in ((e or {}).get(part) or {}):
+                if n not in names:
+                    out.append(f"latex.fetch.earlier[{i}].{part}: {n} isn't one of the files latex.fetch gets")
+    known = fetch_checksums({k: v for k, v in fetch.items() if k != "corrections"})
+    for i, c in enumerate(fetch.get("corrections") or [], 1):
+        where = f"latex.fetch.corrections[{i}]"
+        if c.get("file") not in names:
+            out.append(f"{where}: {c.get('file')} isn't one of the files latex.fetch gets")
+            continue
+        if c.get("from") not in known.get(c["file"], []):
+            out.append(f"{where}: \"from\" isn't the checksum of a copy of {c['file']} that latex.fetch takes (\"files\" or \"earlier\")")
+        if c.get("from") == c.get("to"):
+            out.append(f"{where}: \"from\" and \"to\" are the same, so it changes nothing")
+        for j, ed in enumerate(c.get("edits") or [], 1):
+            ok = (isinstance(ed, list) and len(ed) == 3 and all(isinstance(x, int) and not isinstance(x, bool) for x in ed[:2])
+                  and 0 <= ed[0] <= ed[1] and isinstance(ed[2], list) and all(isinstance(x, str) for x in ed[2]))
+            if not ok:
+                out.append(f"{where}.edits[{j}] isn't [first line, line after the last, [the lines put there]]")
+    return out
 
 
 def _named_files(journal: dict) -> list[tuple[str, str]]:

@@ -1,6 +1,6 @@
 {
  "format": 2,
- "generated": "2026-11-18T17:25:31Z",
+ "generated": "2026-11-18T17:36:52Z",
  "schema": 1,
  "journals": [
   {
@@ -264,9 +264,9 @@
    "group": "Wiley",
    "kind": "journal",
    "file": "journals/new_phytologist.json",
-   "version": "1.1.0",
-   "sha256": "50d2b08331e6a9dabecf646cbdd36daa91cb990905e1bf7910677568bc3c7371",
-   "size": 24039,
+   "version": "1.1.1",
+   "sha256": "b3574e6304fddd765a8ae54665c20a8b581e30770cf01bacc8760e7121740a89",
+   "size": 27160,
    "verified": "verified",
    "updated": "2026-11-18",
    "needs": [
@@ -397,9 +397,9 @@
    "group": "Wiley",
    "kind": "journal",
    "file": "journals/plant_journal.json",
-   "version": "1.1.0",
-   "sha256": "656156ef691548c70f83125e866243f7952d0c4cc7efefb84ed497a7367aa2f1",
-   "size": 26506,
+   "version": "1.1.1",
+   "sha256": "30717b1c34a6c73784e952ce430c7d6eceea870e845c5573f4ea36c0de69e4f0",
+   "size": 29627,
    "verified": "verified",
    "updated": "2026-11-18",
    "needs": [
