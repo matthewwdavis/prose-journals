@@ -1,0 +1,12 @@
+{
+ "note": "A copy of labapp. Don't edit it here: change labapp and run its tools/vendor.py.",
+ "version": "0.1.0",
+ "commit": "2a6d3fc",
+ "only": "journal",
+ "files": {
+  "__init__.py": "31a5f079dced0670595cd1e2d977994f631cca696ddcd2e3eca56fa2aaf8b09a",
+  "journal.schema.json": "3e9b68518a4b03ad5fd2c8375a2683262ba6b3156a6d12894517720f7f8b089d",
+  "journalfile.py": "0d4831b600fe59cc674a166d500c9e4c8ebfa72b60ab586fea1fecf82ec5883c",
+  "journallibrary.py": "5447414fde407a04ac7aa98085e1d9099d6ffa328e0759bfb3cd293be7f75036"
+ }
+}
