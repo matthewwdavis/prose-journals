@@ -1,0 +1,88 @@
+# The quick checks of a pull request (README: "Checks"): the journal file against the library's
+# rules (validate), and no other journal with the same id, name or ISSN (index).
+#
+# This runs for every pull request, including one from someone's own copy of the library (a fork,
+# which is how the apps' Share… sends a journal). It runs with no secrets and a read-only token, and
+# only the pull request's journals/ folder is taken from it, as data: the tools, the rules and
+# CODEOWNERS are the library's own. When it finishes, "Check a journal with prose"
+# (check-prose.yml) runs the checks that need prose and posts the comment and the result.
+#
+# Switched off until the library is published: it runs only when the repository variable
+# LIBRARY_CI is "on" (Settings ▸ Secrets and variables ▸ Actions ▸ Variables).
+name: Check a journal
+
+on:
+  pull_request:
+
+permissions: {}
+
+concurrency:
+  group: check-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: validate
+    if: vars.LIBRARY_CI == 'on'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Take the pull request's journal files (as data)
+        env:
+          PR: ${{ github.event.pull_request.number }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: .github/scripts/take_journals.sh "$PR" "$HEAD_SHA" "$BASE_REF"
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0   # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: Check the file (format, the library's rules, its version, its badge)
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+          AUTHOR: ${{ github.event.pull_request.user.login }}
+        run: |
+          python tools/check_journal.py --strict --base "origin/$BASE_REF" --author "$AUTHOR" \
+            --changed-files changed.txt --report reports/validate.md
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9   # v7.0.2
+        if: always()
+        with:
+          name: quick-report-validate
+          path: reports/
+          if-no-files-found: ignore
+
+  index:
+    name: index
+    if: vars.LIBRARY_CI == 'on'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Take the pull request's journal files (as data)
+        env:
+          PR: ${{ github.event.pull_request.number }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: .github/scripts/take_journals.sh "$PR" "$HEAD_SHA" "$BASE_REF"
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0   # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: Build the index; fail on two journals with the same id, name or ISSN
+        # (index.json itself is rebuilt after merging: publish.yml)
+        run: python tools/build_index.py --check --ignore-index --report reports/index.md
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9   # v7.0.2
+        if: always()
+        with:
+          name: quick-report-index
+          path: reports/
+          if-no-files-found: ignore

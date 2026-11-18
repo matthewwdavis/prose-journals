@@ -1,0 +1,17 @@
+# The check's conda environment when prose's own environment.yml isn't available (the workflows
+# use prose-src/environment.yml when prose was checked out). Same versions as prose's.
+name: prose
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pandoc=3.14
+  - tectonic=0.17
+  - pypdfium2=5.13
+  - pikepdf=10.16
+  - pillow=13.0
+  - nodejs=26
+  - pyyaml
+  - pip
+  - pip:
+      - typst==0.15.2

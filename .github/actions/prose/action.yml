@@ -1,0 +1,118 @@
+# Get a copy of prose's source and its conda environment (Python, pandoc, Tectonic, Typst), for the
+# jobs that run prose: latex, word-layout and preview (check-prose.yml), and the previews published
+# after a merge (publish.yml).
+#
+# prose's repository is private, so it's read with the repository secret PROSE_READ_TOKEN (a
+# fine-grained token that can only read prose's contents; README: "Checks"). Without the secret, or
+# when it can't read prose (expired, or for the wrong repository), the step says so plainly and
+# prose-src is "none": each tool then reports that it was skipped and why. The token is used by the
+# checkout alone and is never kept in the copy (persist-credentials: false).
+name: prose
+description: prose's source in prose-src/ and the conda environment "prose", for the jobs that run prose
+inputs:
+  token:
+    description: PROSE_READ_TOKEN (read-only access to prose's repository)
+    required: false
+    default: ""
+  repository:
+    description: prose's repository
+    required: false
+    default: matthewwdavis/prose
+  ref:
+    description: the branch, tag or commit of prose to use
+    required: false
+    default: main
+  cache:
+    description: "restore: use the Tectonic and publisher-file caches; save: also keep them (only runs on main); none"
+    required: false
+    default: restore
+outputs:
+  prose-src:
+    description: the folder holding prose's source, or "none"
+    value: ${{ steps.where.outputs.src }}
+  problem:
+    description: why prose isn't here (empty when it is)
+    value: ${{ steps.where.outputs.problem }}
+  cache-dir:
+    description: where the publishers' files are kept between runs (the tools' LIBRARY_CACHE)
+    value: ${{ runner.temp }}/publisher-cache
+runs:
+  using: composite
+  steps:
+    - name: Check that the token to read prose is set
+      id: token
+      shell: bash
+      env:
+        HAVE: ${{ inputs.token != '' }}
+        REPO: ${{ inputs.repository }}
+      run: |
+        if [ "$HAVE" != "true" ]; then
+          msg="The repository secret PROSE_READ_TOKEN isn't set, so prose (in $REPO, which is private) couldn't be read and the checks that run prose were skipped. A maintainer adds it: Settings > Secrets and variables > Actions > New repository secret, named PROSE_READ_TOKEN (README: Checks)."
+          echo "::error title=PROSE_READ_TOKEN is missing::$msg"
+          echo "problem=$msg" >> "$GITHUB_OUTPUT"
+        fi
+    - name: Get prose
+      id: checkout
+      if: inputs.token != ''
+      continue-on-error: true
+      uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+      with:
+        repository: ${{ inputs.repository }}
+        ref: ${{ inputs.ref }}
+        token: ${{ inputs.token }}
+        path: prose-src
+        persist-credentials: false
+    - name: Say where prose is
+      id: where
+      shell: bash
+      env:
+        OUTCOME: ${{ steps.checkout.outcome }}
+        MISSING: ${{ steps.token.outputs.problem }}
+        REPO: ${{ inputs.repository }}
+        REF: ${{ inputs.ref }}
+      run: |
+        if [ "$OUTCOME" = "success" ] && [ -f prose-src/prose/__init__.py ]; then
+          echo "src=$GITHUB_WORKSPACE/prose-src" >> "$GITHUB_OUTPUT"
+          echo "prose: $REPO at $REF ($(git -C prose-src rev-parse --short HEAD))"
+          exit 0
+        fi
+        echo "src=none" >> "$GITHUB_OUTPUT"
+        if [ -n "$MISSING" ]; then
+          echo "problem=$MISSING" >> "$GITHUB_OUTPUT"
+        else
+          msg="PROSE_READ_TOKEN is set but couldn't read $REPO at $REF: the token may have expired, or not be for that repository (it needs Contents: Read-only on $REPO). A maintainer makes a new one and replaces the secret."
+          echo "::error title=PROSE_READ_TOKEN can't read prose::$msg"
+          echo "problem=$msg" >> "$GITHUB_OUTPUT"
+        fi
+    - name: Choose the environment (prose's own environment.yml, else the library's copy)
+      shell: bash
+      run: |
+        if [ -f prose-src/environment.yml ]; then cp prose-src/environment.yml "$RUNNER_TEMP/environment.yml"
+        else cp .github/ci-environment.yml "$RUNNER_TEMP/environment.yml"; fi
+    - uses: conda-incubator/setup-miniconda@be893c923ea9cf1cf7cd510fbdde27c7e18cbdcb   # v4.1.0
+      with:
+        activate-environment: prose
+        environment-file: ${{ runner.temp }}/environment.yml
+        auto-activate-base: false
+        miniforge-version: latest
+        conda-remove-defaults: "true"
+    - name: Restore Tectonic's downloads and the publishers' files from earlier runs on main
+      if: inputs.cache == 'restore'
+      uses: actions/cache/restore@55cc8345863c7cc4c66a329aec7e433d2d1c52a9   # v6.1.0
+      with:
+        path: |
+          ~/.cache/Tectonic
+          ~/Library/Caches/Tectonic
+          ${{ runner.temp }}/publisher-cache
+        key: latex-${{ runner.os }}-${{ hashFiles('journals/**') }}
+        restore-keys: latex-${{ runner.os }}-
+    - name: Keep Tectonic's downloads and the publishers' files (never in the repository)
+      if: inputs.cache == 'save'
+      uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9   # v6.1.0
+      with:
+        path: |
+          ~/.cache/Tectonic
+          ~/Library/Caches/Tectonic
+          ${{ runner.temp }}/publisher-cache
+        key: latex-${{ runner.os }}-${{ hashFiles('journals/**') }}
+        restore-keys: latex-${{ runner.os }}-

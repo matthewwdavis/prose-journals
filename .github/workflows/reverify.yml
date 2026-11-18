@@ -1,0 +1,46 @@
+# Once a month: open (or update) an issue listing the journals whose limits were last checked over
+# 18 months ago, so a maintainer reads their guidelines again. Switched off until the library is
+# published, like check.yml: it runs only by hand or when the repository variable LIBRARY_CI is "on".
+name: Journals due to be checked again
+
+on:
+  schedule:
+    - cron: "17 8 1 * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  reverify:
+    name: reverify
+    if: github.event_name == 'workflow_dispatch' || vars.LIBRARY_CI == 'on'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0   # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: List them, and open or update the issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python tools/reverify.py --out due.md
+          count=$(head -n 1 due.md | awk '{print $1}')
+          if [ "$count" = "0" ]; then
+            echo "No journal is due."
+            exit 0
+          fi
+          gh label create reverify --repo "$GITHUB_REPOSITORY" --color BFD4F2 \
+            --description "Journals due to be checked against their guidelines again" --force
+          open=$(gh issue list --repo "$GITHUB_REPOSITORY" --label reverify --state open --json number --jq '.[0].number // empty')
+          if [ -n "$open" ]; then
+            gh issue edit "$open" --repo "$GITHUB_REPOSITORY" --body-file due.md
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "Journals due to be checked again" --label reverify --body-file due.md
+          fi

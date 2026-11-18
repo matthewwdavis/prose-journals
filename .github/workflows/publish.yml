@@ -1,0 +1,125 @@
+# After a journal is merged: rebuild index.json (a commit by the Actions bot; the apps read it) and
+# publish every journal's preview to the library's GitHub Pages site (previews/<id>/, with an index
+# page). Switched off until the library is published, like check.yml: it runs only by hand or when
+# the repository variable LIBRARY_CI is "on". Pages must be set to "GitHub Actions" (Settings ▸ Pages).
+#
+# Everything here comes from main, after a maintainer has merged it, so prose's token (to make the
+# previews) and the caches it keeps for the checks are safe here.
+name: Publish
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "journals/**"
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  index:
+    name: index
+    if: github.event_name == 'workflow_dispatch' || vars.LIBRARY_CI == 'on'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true   # (this job pushes index.json)
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0   # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: Rebuild index.json and commit it when it changed
+        run: |
+          set -euo pipefail
+          python tools/build_index.py
+          if git diff --quiet -- index.json; then
+            echo "index.json is up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.json
+          git commit -m "Rebuild index.json"
+          # (main may have moved on while this ran: rebuild on top of it)
+          for _ in 1 2 3; do
+            if git push origin HEAD:main; then exit 0; fi
+            git fetch origin main
+            git reset --hard origin/main
+            python tools/build_index.py
+            git diff --quiet -- index.json && { echo "index.json is up to date"; exit 0; }
+            git add index.json
+            git commit -m "Rebuild index.json"
+          done
+          echo "::error::index.json couldn't be pushed to main (is the Actions bot allowed past main's rules? see the library's publishing notes)"
+          exit 1
+
+  site:
+    name: previews
+    needs: index
+    if: github.event_name == 'workflow_dispatch' || vars.LIBRARY_CI == 'on'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    defaults:
+      run:
+        shell: bash -el {0}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7.0.1
+        with:
+          ref: main
+          persist-credentials: false
+      - name: Get prose and its environment
+        id: prose
+        uses: ./.github/actions/prose
+        with:
+          token: ${{ secrets.PROSE_READ_TOKEN }}
+          repository: ${{ vars.PROSE_REPO || 'matthewwdavis/prose' }}
+          ref: ${{ vars.PROSE_REF || 'main' }}
+          cache: save
+      - name: Render every journal's preview
+        env:
+          PROSE_SRC: ${{ steps.prose.outputs.prose-src }}
+          PROBLEM: ${{ steps.prose.outputs.problem }}
+          LIBRARY_CACHE: ${{ steps.prose.outputs.cache-dir }}
+        run: |
+          set -euo pipefail
+          if [ "$PROSE_SRC" = "none" ]; then
+            echo "::error::$PROBLEM"
+            exit 1
+          fi
+          mkdir -p site/previews reports
+          for f in journals/*.json; do
+            python tools/render_preview.py "$f" --out site/previews --report "reports/$(basename "$f" .json).md"
+          done
+          python tools/build_site.py site
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9   # v7.0.2
+        if: always()
+        with:
+          name: preview-reports
+          path: reports/
+          if-no-files-found: ignore
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9   # v5.0.0
+        with:
+          path: site
+
+  deploy:
+    name: deploy
+    needs: site
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346   # v5.0.1
