@@ -1,0 +1,989 @@
+{
+ "format": 1,
+ "id": "plant_journal",
+ "name": "The Plant Journal",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "Wiley",
+ "issn": {
+  "print": "0960-7412",
+  "online": "1365-313X"
+ },
+ "aliases": [
+  "Plant J"
+ ],
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "a4"
+ },
+ "captions": {
+  "label": "Figure",
+  "bar": false
+ },
+ "figure_refs": {
+  "main": [
+   "Figure",
+   "Figures"
+  ],
+  "panels": {
+   "case": "lower",
+   "style": {
+    "one": "closed",
+    "many": "closed",
+    "list": ",",
+    "range": "–"
+   }
+  },
+  "supp": {
+   "one": [
+    "Figure ",
+    ""
+   ],
+   "many": [
+    "Figures ",
+    ""
+   ],
+   "s": true
+  },
+  "evidence": [
+   "(Figures 5b,c)"
+  ]
+ },
+ "legends": {
+  "sep": ".",
+  "title": {
+   "bold": false,
+   "line": true
+  },
+  "panels": {
+   "open": "(",
+   "close": ")",
+   "bold": null,
+   "newline": true
+  },
+  "scale": 0.8,
+  "table": {
+   "sep": "",
+   "title": {
+    "bold": false
+   }
+  },
+  "evidence": [
+   "Figure 1. Title. / (a) …",
+   "(measured: bold \"Figure 1.\", regular title on its own line, each panel then on a new line: PMC13748927 p. 3, PMC13736142 p. 3, PMC13749249 p. 5)",
+   "PMC13748927, PMC13736142",
+   "(table: bold \"Table 1\", regular title run in: PMC13722830 p. 9, PMC13732550 p. 3, PMC13735883 p. 6)"
+  ]
+ },
+ "supplement": {
+  "title": "Supporting Information",
+  "list": "brief",
+  "list_heading": "Supporting Information",
+  "files": "each",
+  "legends_file": true,
+  "fig": {
+   "one": [
+    "Figure ",
+    ""
+   ],
+   "many": [
+    "Figures ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Figure ",
+    ""
+   ]
+  },
+  "tbl": {
+   "one": [
+    "Table ",
+    ""
+   ],
+   "many": [
+    "Tables ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Table ",
+    ""
+   ]
+  },
+  "data": {
+   "one": [
+    "Data ",
+    ""
+   ],
+   "many": [
+    "Data ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Data ",
+    ""
+   ]
+  },
+  "note": {
+   "one": [
+    "Methods ",
+    ""
+   ],
+   "many": [
+    "Methods ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Methods ",
+    ""
+   ]
+  }
+ },
+ "house_style": {
+  "p": {
+   "italic": true,
+   "space": true,
+   "zero": true,
+   "letter": "P"
+  },
+  "unit_space": "nbsp",
+  "range": "–",
+  "thousands": {
+   "sep": " ",
+   "from": 5
+  },
+  "percent": {
+   "space": false
+  },
+  "celsius": {
+   "space": false
+  },
+  "latin": {
+   "italic": true
+  },
+  "units": {
+   "h": "h",
+   "s": "s",
+   "mL": "mL",
+   "uL": "μL",
+   "L": "L"
+  },
+  "small": "words"
+ },
+ "house_style_from": {
+  "p": "print",
+  "unit_space": "print",
+  "range": "print",
+  "thousands": "print",
+  "percent": "print",
+  "celsius": "print",
+  "latin": "print",
+  "units": "print",
+  "small": "stated"
+ },
+ "abbreviations": {
+  "legends": true
+ },
+ "table_notes": {
+  "marks": [
+   "†",
+   "‡",
+   "§",
+   "¶"
+  ]
+ },
+ "cover_letter": {
+  "type": "Original Research Article",
+  "reviewers": "letter",
+  "points": [
+   "the importance of the work, how it fits The Plant Journal's scope, and its main contribution to the field"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Summary",
+   "words": 250
+  },
+  "keywords": {
+   "max": 10
+  },
+  "front": [
+   {
+    "kind": "significance",
+    "name": "Significance Statement",
+    "required": true,
+    "limit": {
+     "words": 75
+    },
+    "hint": "Up to two sentences (75 words) on why the work matters."
+   }
+  ],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Introduction"
+   },
+   {
+    "kind": "results",
+    "name": "Results"
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   },
+   {
+    "kind": "methods",
+    "name": "Materials and methods"
+   }
+  ],
+  "back": [
+   {
+    "kind": "data_availability",
+    "name": "Data Statement",
+    "required": true,
+    "hint": "Where the data and materials are available, with the nucleotide and amino-acid accession numbers."
+   },
+   {
+    "kind": "competing_interests",
+    "name": "Conflict of Interest",
+    "hint": "Any competing interests, or that there are none."
+   },
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgements",
+    "hint": "The people and institutions to thank. All funding sources go here too."
+   },
+   {
+    "kind": "author_contributions",
+    "name": "Author Contributions"
+   },
+   {
+    "kind": "supplementary",
+    "name": "Supporting Information"
+   },
+   {
+    "kind": "references",
+    "name": "References"
+   }
+  ],
+  "evidence": [
+   "(its Author Guidelines, \"updated June 2026\", onlinelibrary.wiley.com/page/journal/1365313x/ homepage/forauthors.html, read in a browser 2026-11-16: up to 10 keywords on the title page;",
+   "Summary 250 words; Significance statement up to two sentences, 75 words; Materials and methods (with a Disclosure of AI Use where AI tools were used); a Data statement holding the accession numbers (no Accession numbers section); other statements as needed (conflict of interest, also given in the submission system); Acknowledgements with all funding; Author",
+   "Contributions encouraged; Supporting Information legends; References)"
+  ]
+ },
+ "submission": {
+  "first": {
+   "formats": [
+    "docx"
+   ],
+   "accepts": [
+    "docx"
+   ]
+  },
+  "revision": {
+   "accepts": [
+    "docx"
+   ],
+   "naming": "Figure_{n}",
+   "max_mb": 10
+  },
+  "from": "unconfirmed"
+ },
+ "statements": {
+  "ai": "methods"
+ },
+ "limits": {
+  "article_type": "Original Article",
+  "source": "https://onlinelibrary.wiley.com/page/journal/1365313x/homepage/forauthors.html",
+  "checked": "2026-11-16",
+  "limits": {
+   "title_chars": null,
+   "title_words": null,
+   "abstract_words": 250,
+   "summary_words": 75,
+   "main_text_words": 9000,
+   "methods_words": null,
+   "legend_words": null,
+   "display_items": 7,
+   "figures": null,
+   "tables": null,
+   "references": null,
+   "keywords": 10
+  },
+  "counts": "The word count includes the Summary, Introduction, Results, Discussion, Materials and methods, Acknowledgements, table titles and figure legends (Author Guidelines updated June 2026, read in a browser 2026-11-16).",
+  "notes": "The Plant Journal's Author Guidelines, 'updated June 2026' (read in a browser 2026-11-16). Typical length 7000–9000 words with 3–7 figures and/or tables (a typical range, not a hard cap: the upper ends are used here). Summary no more than 250 words; summary_words is the Significance statement, up to two sentences and no more than 75 words in total; up to 10 keywords, in order of importance, on the title page. Text-file order: title page, Summary, Significance statement, Introduction, Results, Discussion, Materials and methods (with a 'Disclosure of AI Use' section where AI tools were used), Data statement (with the nucleotide and amino-acid accession numbers; no separate Accession numbers section), other statements as needed (e.g. conflict of interest, also given in the submission system), Acknowledgements (all funding sources), short Supporting Information legends under 'Supporting Information', References (Harvard). An Author Contributions section is encouraged. Figure panels in lower-case letters; numbers under 10 spelt out except with units, ages or in lists with other numbers; tables without vertical rules, footnote symbols †, ‡, §, ¶ with *, **, *** kept for P values; British or US spelling, consistent within the article. Earlier (2026-11-13) only the Society for Experimental Biology's page could be read: 'No formatting requirements for initial submission of papers'.",
+  "unverified": null,
+  "count": {
+   "abstract": true,
+   "methods": true,
+   "legends": true
+  },
+  "summary_name": "Significance statement"
+ },
+ "references": {
+  "csl": "the-plant-journal",
+  "file": "plant_journal.csl",
+  "overrides": {
+   "bibliography": {
+    "et-al-min": "7",
+    "et-al-use-first": "6"
+   },
+   "evidence": "Up to six in full (16 with six), seven or more the first six and 'et al.' (110): PMC13722830, PMC13732550, PMC13735883, PMC13748927, PMC13749249 (2026). The style showed three of ten or more."
+  }
+ },
+ "latex": {
+  "template": "publisher",
+  "class": "USG",
+  "wrapper": "journal.latex",
+  "files": {
+   "NJDnatbib.sty": "9e0864b9f0536111ead3c7766ef8921ac58dfc9c7d3c6afcf3e23f6cdf53671a",
+   "lettersp.sty": "3db37a74418493a74cb4d50a90c72b9402a3d29f3625fc82a5a3f114fd4c9145"
+  },
+  "publisher": "Wiley",
+  "note": "Wiley's LaTeX authoring template (\"Wiley's PDF design\", USG.cls v6.0, the successor of the NJD template; package of 2026) with Wiley's Harvard reference style, for The Plant Journal",
+  "fetch": {
+   "store": "wiley",
+   "publisher": "Wiley",
+   "what": "Wiley's LaTeX template (“Wiley's PDF design”, WileyDesign.zip)",
+   "page": "https://authors.wiley.com/author-resources/Journal-Authors/Prepare/latex-template.html",
+   "url": "https://authors.wiley.com/asset/WileyDesign.zip",
+   "size_mb": 7.5,
+   "files": {
+    "USG.cls": "b9aa4b5d43c6c444f2876000952fa03439972c8e573d67212123647cbbfa4e08",
+    "wileyNJD-Chicago.bst": "f67a18cea10d2cea2638dad908bac342c7d718bf4dbfa9d08f1e702f61023e51"
+   },
+   "optional": {
+    "WileyNJD-Harvard.bst": {
+     "sha256": "011fa77306816e3779f356a328f73d3952aba3c0919e11bb815836ac15287968",
+     "sets": "harvard",
+     "note": "Wiley's Harvard reference style isn't in its current package, so the references are set in Wiley's Chicago style (author and year too). If you have Wiley's earlier package (WileyNJDv5_Template.zip, 2025 or before), choose it and prose uses the Harvard style."
+    }
+   }
+  },
+  "source_notes": "SOURCE.md"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "Wiley's LaTeX authoring template (\"Wiley's PDF design\", USG.cls v6.0, the successor of the NJD template; package of 2026) with Wiley's Harvard reference style, for The Plant Journal; prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display, styles re-measured on 2026-11-17",
+   "page": {
+    "width_mm": 210.0,
+    "height_mm": 276.0,
+    "margins_mm": {
+     "top": 13.0,
+     "bottom": 17.2,
+     "left": 16.2,
+     "right": 16.0
+    }
+   },
+   "columns": {
+    "count": 1,
+    "gap_mm": 0.0
+   },
+   "mirror_margins": false,
+   "body": {
+    "pdf_font": "STIXTwoText",
+    "size": 10.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 12.5,
+    "justify": true,
+    "indent_mm": 0.0,
+    "first_indent_mm": 0.0,
+    "space_after_pt": 0.0,
+    "font": "Century Schoolbook"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "STIXTwoText-Bold",
+     "size": 19.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 24.0,
+     "line_pt": 21.9,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "author": {
+     "pdf_font": "STIXTwoText",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 8.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "affiliation": {
+     "pdf_font": "STIXTwoText",
+     "size": 8.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 6.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "abstract": {
+     "pdf_font": "STIXTwoText",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "indent_mm": {
+      "left": 3.1,
+      "right": 3.5
+     },
+     "before_pt": 1.0,
+     "line_pt": 13.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "abstract_title": {
+     "pdf_font": "STIXTwoText-Bold",
+     "size": 11.0,
+     "bold": true,
+     "italic": false,
+     "caps": true,
+     "align": "left",
+     "indent_mm": {
+      "left": 3.4,
+      "right": 0.0
+     },
+     "before_pt": 18.5,
+     "run_in": false,
+     "text": "Summary",
+     "font": "Times New Roman"
+    },
+    "h1": {
+     "pdf_font": "STIXTwoText-Bold",
+     "size": 11.0,
+     "bold": true,
+     "italic": false,
+     "caps": true,
+     "align": "left",
+     "before_pt": 29.3,
+     "run_in": false,
+     "after_pt": 8.0,
+     "font": "Times New Roman"
+    },
+    "h2": {
+     "pdf_font": "STIXTwoText-Bold",
+     "size": 11.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 22.8,
+     "run_in": false,
+     "after_pt": 8.0,
+     "font": "Times New Roman"
+    },
+    "h3": {
+     "pdf_font": "STIXTwoText-Bold",
+     "size": 10.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 20.0,
+     "run_in": false,
+     "after_pt": 8.0,
+     "font": "Times New Roman"
+    },
+    "caption": {
+     "pdf_font": "STIXTwoText",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 2.9,
+     "line_pt": 10.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_caption": {
+     "pdf_font": "STIXTwoText",
+     "size": 8.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 11.5,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "references": {
+     "pdf_font": "STIXTwoText",
+     "size": 9.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "hanging_mm": 3.7,
+     "before_pt": 5.6,
+     "line_pt": 11.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_note": {
+     "pdf_font": "STIXTwoText",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 11.3,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    }
+   },
+   "line_numbers": false,
+   "page_number": null,
+   "running_head": false,
+   "fonts": {
+    "STIXTwoMath": "Times New Roman",
+    "STIXTwoText": "Century Schoolbook",
+    "_chosen_by_width": [
+     "STIXTwoText"
+    ],
+    "STIXTwoText-Bold": "Times New Roman",
+    "STIXTwoText-BoldItalic": "Times New Roman",
+    "STIXTwoText-Italic": "Times New Roman"
+   },
+   "submission": {
+    "columns": {
+     "count": 1,
+     "gap_mm": 0.0
+    },
+    "line_numbers": true,
+    "line_pt": 20.8,
+    "running": {
+     "odd": [
+      {
+       "where": "footer",
+       "baseline_mm": 3.8,
+       "size": 7.0,
+       "parts": [
+        {
+         "align": "right",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "{page} of {pages}",
+           "pdf_font": "STIXTwoText",
+           "size": 7.0,
+           "bold": false,
+           "italic": false,
+           "font": "Century Schoolbook"
+          }
+         ]
+        }
+       ],
+       "rule_above": {
+        "pt": 0.5,
+        "color": "000000",
+        "gap_pt": 30.1,
+        "from_mm": -0.4,
+        "to_mm": 0.2
+       }
+      }
+     ],
+     "even": [
+      {
+       "where": "footer",
+       "baseline_mm": 3.8,
+       "size": 7.0,
+       "parts": [
+        {
+         "align": "left",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "{page} of {pages}",
+           "pdf_font": "STIXTwoText",
+           "size": 7.0,
+           "bold": false,
+           "italic": false,
+           "font": "Century Schoolbook"
+          }
+         ]
+        },
+        {
+         "align": "right",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "The Plant Journal",
+           "pdf_font": "STIXTwoText-Italic",
+           "size": 7.0,
+           "bold": false,
+           "italic": true,
+           "font": "Times New Roman"
+          },
+          {
+           "text": ", {year}",
+           "pdf_font": "STIXTwoText",
+           "size": 7.0,
+           "bold": false,
+           "italic": false,
+           "font": "Century Schoolbook"
+          }
+         ]
+        }
+       ],
+       "rule_above": {
+        "pt": 0.5,
+        "color": "000000",
+        "gap_pt": 30.1,
+        "from_mm": -0.4,
+        "to_mm": 0.2
+       }
+      }
+     ],
+     "first": []
+    },
+    "table": {
+     "row_pt": 20.8,
+     "gaps_pt": {
+      "caption": 13.9,
+      "top": 17.8,
+      "header": 8.2,
+      "mid": 17.6,
+      "bottom": 8.4
+     }
+    },
+    "run_in": [],
+    "display": {
+     "above_pt": 10.0,
+     "below_pt": 10.0,
+     "above_short_pt": 0.0,
+     "below_short_pt": 5.0,
+     "printed_above_pt": 20.9,
+     "printed_below_pt": 8.4
+    }
+   },
+   "hand": [
+    "styles.title.before_pt"
+   ],
+   "running": {
+    "odd": [
+     {
+      "where": "footer",
+      "baseline_mm": 3.8,
+      "size": 7.0,
+      "parts": [
+       {
+        "align": "right",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "{page} of {pages}",
+          "pdf_font": "STIXTwoText",
+          "size": 7.0,
+          "bold": false,
+          "italic": false,
+          "font": "Century Schoolbook"
+         }
+        ]
+       }
+      ],
+      "rule_above": {
+       "pt": 0.5,
+       "color": "000000",
+       "gap_pt": 30.1,
+       "from_mm": -0.4,
+       "to_mm": 0.2
+      }
+     }
+    ],
+    "even": [
+     {
+      "where": "footer",
+      "baseline_mm": 3.8,
+      "size": 7.0,
+      "parts": [
+       {
+        "align": "left",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "{page} of {pages}",
+          "pdf_font": "STIXTwoText",
+          "size": 7.0,
+          "bold": false,
+          "italic": false,
+          "font": "Century Schoolbook"
+         }
+        ]
+       },
+       {
+        "align": "right",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "The Plant Journal",
+          "pdf_font": "STIXTwoText-Italic",
+          "size": 7.0,
+          "bold": false,
+          "italic": true,
+          "font": "Times New Roman"
+         },
+         {
+          "text": ", {year}",
+          "pdf_font": "STIXTwoText",
+          "size": 7.0,
+          "bold": false,
+          "italic": false,
+          "font": "Century Schoolbook"
+         }
+        ]
+       }
+      ],
+      "rule_above": {
+       "pt": 0.5,
+       "color": "000000",
+       "gap_pt": 30.1,
+       "from_mm": -0.4,
+       "to_mm": 0.2
+      }
+     }
+    ],
+    "first": []
+   },
+   "table": {
+    "pdf_font": "STIXTwoText",
+    "size": 10.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.8,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.5,
+      "color": "000000"
+     },
+     "bottom": {
+      "pt": 0.8,
+      "color": "000000"
+     }
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 12.5,
+    "gaps_pt": {
+     "caption": 13.9,
+     "top": 11.9,
+     "header": 5.7,
+     "mid": 11.8,
+     "bottom": 5.9
+    },
+    "align": "center",
+    "outer_pt": 1.1,
+    "col_gap_pt": 12.6,
+    "font": "Century Schoolbook"
+   },
+   "display": {
+    "above_pt": 10.0,
+    "below_pt": 10.0,
+    "above_short_pt": 0.0,
+    "below_short_pt": 5.0,
+    "printed_above_pt": 12.6,
+    "printed_below_pt": 5.1
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 226.0,
+  "types": [
+   {
+    "name": "Single column",
+    "width_mm": 80.0
+   },
+   {
+    "name": "Double column",
+    "width_mm": 168.0
+   }
+  ],
+  "note": "8 cm column; 16.8 cm full width (the guidelines keep it for composite photographs, but published figures of every kind use it); 226 mm text depth.",
+  "source": "The Plant Journal author guidelines (an archived 2022 copy; the current Wiley page couldn't be read automatically): 8 cm, and 16.8 cm for full-page figures; the depth measured from published articles (PMC13725933, PMC13732550 and PMC13720327, 2026), whose columns match: 79.9 and 168.6 mm",
+  "labels": {
+   "font": "Helvetica",
+   "size": 8.0,
+   "bold": false,
+   "case": "lower",
+   "form": "(a)",
+   "source": "The Plant Journal author guidelines (2022 copy): lowercase letters, lettering in 8 pt Helvetica; brackets and regular weight as Wiley letters every label in its published figures (15 articles, 2026, where they print at about 9 pt)",
+   "measured": true
+  },
+  "text": {
+   "min_pt": 8.0,
+   "max_pt": null,
+   "fonts": [
+    "Helvetica"
+   ],
+   "fonts_only": false,
+   "about": true,
+   "source": "The Plant Journal author guidelines (2022 copy): lettering in 8 pt Helvetica if possible, so Check notes rather than warns"
+  },
+  "lines": {
+   "min_pt": null,
+   "max_pt": null,
+   "about": false,
+   "source": "Neither The Plant Journal's guidelines nor Wiley's figure guidelines give line widths, so Check uses mosaic's 0.25 pt"
+  },
+  "pictures": {
+   "photo": 300.0,
+   "combination": 600.0,
+   "line_art": 600.0,
+   "vector": [],
+   "source": "Wiley's figure guidelines (The Plant Journal's page links to them): images 300 dpi, line art 600 dpi, and figures with both follow line art"
+  },
+  "export": {
+   "formats": [
+    "pdf",
+    "eps",
+    "tiff",
+    "png",
+    "jpeg",
+    "pptx"
+   ],
+   "colour": "either",
+   "max_mb": 10.0,
+   "firm": false,
+   "max_dpi": null,
+   "embed_fonts": false,
+   "no_alpha": false,
+   "source": "Wiley's figure guidelines: PDF or EPS for line art, TIFF or PNG for images, any standard file type after acceptance (SVG isn't among those listed), under 10 MB each preferred; no colour mode stated"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://onlinelibrary.wiley.com/page/journal/1365313x/homepage/forauthors.html",
+   "what": "The Plant Journal Author Guidelines ('Author Guidelines updated June 2026'). Read: read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://www.sebiology.org/journals/the-plant-journal.html",
+   "what": "SEB journal page. Read: only 'No formatting requirements for initial submission of papers'."
+  },
+  {
+   "url": "https://authors.wiley.com/ethics-guidelines/index.html",
+   "what": "Wiley best-practice publishing ethics guidelines (publisher). Read."
+  },
+  {
+   "url": "https://web.archive.org/web/20221025115824/https://onlinelibrary.wiley.com/page/journal/1365313x/homepage/forauthors.html",
+   "what": "The author guidelines: the Internet Archive's copy of 2022-10-25 (the newest it has), read 2026-11-16. Old. Its text-file order: '(i) Summary, not exceeding 250 words; (ii) Significance statement of up to two sentences of no more than 75 words total; (iii) Introduction; (iv) Results; (v) Discussion; (vi) Experimental procedures; (vii) Accession numbers; (viii) Acknowledgements; (ix) Short legends for Supporting Information; (x) References; (xi) Tables; (xii) Figure legends'. 'Please provide up to 10 keywords'. A mandatory 'Data Statement section'. No author-contributions section. The conflict of interest statement is given in the submission process."
+  }
+ ],
+ "evidence": {
+  "status": "browser (Author Guidelines 'updated June 2026', read 2026-11-16)",
+  "abstract": {
+   "structured": false,
+   "headings": [],
+   "words": 250,
+   "note": "browser: Summary, no more than 250 words."
+  },
+  "front": [
+   {
+    "kind": "significance",
+    "name": "Significance Statement",
+    "required": true,
+    "words": 75,
+    "items": 2,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "browser: 'up to two sentences and no more than 75 words in total'. items = sentences."
+   },
+   {
+    "kind": "keywords",
+    "name": "Keywords",
+    "required": null,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": 10,
+    "note": "browser: up to 10 keywords, in order of importance, on the title page."
+   }
+  ],
+  "statements": {
+   "_all": "browser: title page, Summary, Significance statement, Introduction, Results, Discussion, Materials and methods, Data statement, additional statements as needed (e.g. conflict of interest), Acknowledgements, short Supporting Information legends, References.",
+   "author_contributions": {
+    "required": false,
+    "heading": "Author Contributions",
+    "where": null,
+    "form": null,
+    "credit": null,
+    "quote": null,
+    "note": "browser: encouraged (optional)."
+   },
+   "funding": {
+    "required": null,
+    "heading": null,
+    "where": "in Acknowledgements"
+   },
+   "competing_interests": {
+    "required": false,
+    "heading": "Conflict of Interest",
+    "where": "among the additional statements after the Data statement; also given in the submission system",
+    "note": "browser: as needed, so prose no longer adds it empty."
+   },
+   "data_availability": {
+    "required": true,
+    "heading": "Data Statement",
+    "where": "after Materials and methods",
+    "note": "browser: holds the nucleotide and amino-acid accession numbers; there is no separate Accession numbers section (prose dropped it). prose's heading is now 'Data Statement' (was 'Data Availability Statement')."
+   },
+   "code_availability": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "ethics": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "acknowledgements": {
+    "required": null,
+    "heading": "Acknowledgements",
+    "where": "after the additional statements",
+    "note": "browser: list all funding sources here."
+   },
+   "ai_use": {
+    "required": true,
+    "where": "a 'Disclosure of AI Use' section in Materials and methods",
+    "quote": "Authors must also disclose their use of AI Technologies when submitting a manuscript to a Wiley journal.",
+    "note": "browser: required when AI tools were used. prose puts the AI statement at the end of Materials and methods (STATEMENTS ai: methods)."
+   }
+  },
+  "differs_from_prose": [],
+  "unconfirmed": [],
+  "other": {
+   "house": "browser: figure panels in lower-case letters; numbers under 10 spelt out except with units, ages or in lists with other numbers; tables without vertical rules, footnotes †, ‡, §, ¶ (*, **, *** for P values); British or US spelling, consistent. prose's FIGURE_REFS, HOUSE_STYLE and TABLE_NOTES already match.",
+   "length": "browser: typically 7000–9000 words with 3–7 figures and/or tables; the count includes the summary, introduction, results, discussion, methods, acknowledgements, table titles and figure legends."
+  }
+ }
+}

@@ -1,0 +1,982 @@
+{
+ "format": 1,
+ "id": "plos_genetics",
+ "name": "PLOS Genetics",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "PLOS",
+ "issn": {
+  "print": "1553-7390",
+  "online": "1553-7404"
+ },
+ "aliases": [
+  "PLoS Genetics",
+  "PLoS Genet"
+ ],
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "letter"
+ },
+ "captions": {
+  "label": "Fig",
+  "bar": false
+ },
+ "figure_refs": {
+  "main": [
+   "Fig",
+   "Figs"
+  ],
+  "list": "and",
+  "panels": {
+   "case": "upper",
+   "style": {
+    "repeat": true,
+    "list": "and",
+    "range": "–"
+   }
+  },
+  "supp": {
+   "one": [
+    "",
+    " Fig"
+   ],
+   "many": [
+    "",
+    " Figs"
+   ],
+   "s": true
+  },
+  "evidence": [
+   "S4C, S4E and S4G Fig; Figs 5A, 5B, S5C and S5D (no serial comma: pgen.1011912, pgen.1011729)",
+   "Fig 1A–1C"
+  ]
+ },
+ "legends": {
+  "sep": ".",
+  "title": {
+   "bold": true,
+   "line": false
+  },
+  "panels": {
+   "open": "(",
+   "close": ")",
+   "bold": null
+  },
+  "scale": 1.0,
+  "table": {
+   "sep": ".",
+   "title": {
+    "bold": true
+   }
+  },
+  "evidence": [
+   "Fig 1. Title. (A) …",
+   "PMC13754146",
+   "(table: \"Table 1.\" and title bold: PMC13739215 p. 5, PMC13739231 p. 8, PMC13742947 p. 9)"
+  ]
+ },
+ "supplement": {
+  "title": "Supporting information",
+  "list": "legends",
+  "list_heading": "Supporting information",
+  "files": "each",
+  "file_names": {
+   "fig": "S{n}_Fig",
+   "tbl": "S{n}_Table",
+   "note": "S{n}_Text",
+   "data": "S{n}_Data"
+  },
+  "fig": {
+   "one": [
+    "",
+    " Fig"
+   ],
+   "many": [
+    "",
+    " Figs"
+   ],
+   "s": true,
+   "legend": [
+    "",
+    " Fig"
+   ]
+  },
+  "tbl": {
+   "one": [
+    "",
+    " Table"
+   ],
+   "many": [
+    "",
+    " Tables"
+   ],
+   "s": true,
+   "legend": [
+    "",
+    " Table"
+   ]
+  },
+  "data": {
+   "one": [
+    "",
+    " Data"
+   ],
+   "many": [
+    "",
+    " Data"
+   ],
+   "s": true,
+   "legend": [
+    "",
+    " Data"
+   ]
+  },
+  "note": {
+   "one": [
+    "",
+    " Text"
+   ],
+   "many": [
+    "",
+    " Texts"
+   ],
+   "s": true,
+   "legend": [
+    "",
+    " Text"
+   ]
+  }
+ },
+ "house_style": {
+  "p": {
+   "italic": true,
+   "space": true,
+   "zero": true,
+   "letter": "p"
+  },
+  "etal": {
+   "italic": false
+  },
+  "unit_space": "nbsp",
+  "range": "–",
+  "thousands": {
+   "sep": ",",
+   "from": 4
+  },
+  "percent": {
+   "space": false
+  },
+  "units": {
+   "h": "h",
+   "s": "s",
+   "mL": "mL",
+   "uL": "μL",
+   "L": "L"
+  }
+ },
+ "house_style_from": {
+  "p": "print",
+  "etal": "print",
+  "unit_space": "print",
+  "range": "print",
+  "thousands": "print",
+  "percent": "print",
+  "units": "print"
+ },
+ "abbreviations": {
+  "min": 3
+ },
+ "cover_letter": {
+  "type": "Research Article",
+  "reviewers": "form",
+  "points": [
+   "Why is this manuscript suitable for publication in PLOS Genetics?",
+   "Why will your study inspire other members of your field, and how will it drive research forward?"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Abstract",
+   "words": 300
+  },
+  "running_title": {
+   "chars": 70
+  },
+  "front": [
+   {
+    "kind": "author_summary",
+    "name": "Author summary",
+    "required": true,
+    "limit": {
+     "words": 200,
+     "min": 150
+    },
+    "hint": "150–200 words in the first person, for a general reader."
+   }
+  ],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Introduction"
+   },
+   {
+    "kind": "results",
+    "name": "Results"
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   },
+   {
+    "kind": "methods",
+    "name": "Materials and Methods"
+   }
+  ],
+  "back": [
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgments"
+   },
+   {
+    "kind": "references",
+    "name": "References"
+   },
+   {
+    "kind": "supplementary",
+    "name": "Supporting information"
+   }
+  ],
+  "omit": [
+   "funding",
+   "competing_interests",
+   "data_availability",
+   "author_contributions"
+  ],
+  "evidence": [
+   "(funding, competing interests, data availability and author contributions go in its submission form: kept, left out of the manuscript)",
+   "(150 to 200 words)"
+  ]
+ },
+ "submission": {
+  "first": {
+   "accepts": [
+    "pdf",
+    "docx"
+   ]
+  },
+  "revision": {
+   "accepts": [
+    "docx",
+    "pdf"
+   ],
+   "figure_format": "tif",
+   "dpi": 600,
+   "naming": "Fig{n}",
+   "max_mb": 10,
+   "also": [
+    "the response to the reviewers"
+   ]
+  },
+  "evidence": [
+   "Figures TIFF or EPS only, 300–600 dpi, under 10 MB, named Fig1.tif (journals.plos.org/plosgenetics/s/figures)"
+  ]
+ },
+ "statements": {
+  "contributions": "credit_list",
+  "ai": "acknowledgements",
+  "evidence": [
+   "read: CRediT required, in the submission form"
+  ]
+ },
+ "limits": {
+  "article_type": "Research Article",
+  "source": "https://journals.plos.org/plosgenetics/s/submission-guidelines",
+  "checked": "2026-11-13",
+  "limits": {
+   "title_chars": 200,
+   "title_words": null,
+   "abstract_words": 300,
+   "summary_words": 200,
+   "main_text_words": null,
+   "methods_words": null,
+   "legend_words": null,
+   "display_items": null,
+   "figures": null,
+   "tables": null,
+   "references": null,
+   "keywords": null
+  },
+  "counts": "No word limit: 'Manuscripts can be any length.' 'There are no restrictions on word count, number of figures, or amount of supporting information.'",
+  "notes": "Full title at most 200 characters, and short title at most 70 characters. Titles are in sentence case. Abstract: 'it must not exceed 300 words.' summary_words is the Author Summary, required for research articles: 'a 150-200 word non-technical summary of the work', so it also has a 150-word minimum. There are no limits on figures, tables, legends, Methods or references ('Any and all available works can be cited in the reference list'), and keywords are not requested. Results: 'There is no specific word limit for this section.' Materials and Methods may come before the Results. The page encourages concise presentation.",
+  "count": {
+   "abstract": false,
+   "methods": true,
+   "legends": false
+  },
+  "summary_name": "Author summary"
+ },
+ "references": {
+  "csl": "plos-genetics",
+  "file": "plos_genetics.csl"
+ },
+ "latex": {
+  "template": "standard",
+  "wrapper": "journal.latex",
+  "files": {
+   "plos2025.bst": "8470ef5e547189a61d8eef2cfd7a65fbb84b77b881ccb42ed6815da86a04c490"
+  },
+  "publisher": "Public Library of Science (PLOS)",
+  "note": "PLOS LaTeX template v3.8, April 2026 (the article class with PLOS's preamble, and the plos2025 Vancouver reference style). As PLOS asks, figures are left out of the PDF and only their captions stay in the text; the figure files are in figures/ for upload.",
+  "source_notes": "SOURCE.md"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "PLOS LaTeX template v3.8, April 2026 (the article class with PLOS's preamble, and the plos2025 Vancouver reference style). As PLOS asks, figures are left out of the PDF and only their captions stay in the text; the figure files are in figures/ for upload.; prose's sample manuscript compiled by Tectonic, 2026-11-15 (tools/measure_journal_layout.py); running, table, table_note, run_in, display re-measured on 2026-11-16",
+   "page": {
+    "width_mm": 215.9,
+    "height_mm": 279.4,
+    "margins_mm": {
+     "top": 22.6,
+     "bottom": 32.8,
+     "left": 25.4,
+     "right": 25.5
+    }
+   },
+   "columns": {
+    "count": 1,
+    "gap_mm": 0.0
+   },
+   "mirror_margins": false,
+   "body": {
+    "pdf_font": "LMRoman10-Regular",
+    "size": 10.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 12.0,
+    "justify": false,
+    "indent_mm": 0.0,
+    "first_indent_mm": 0.0,
+    "space_after_pt": 0.0,
+    "font": "Century Schoolbook"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 14.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 44.6,
+      "right": 0.0
+     },
+     "before_pt": 29.5,
+     "line_pt": 13.8,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "author": {
+     "pdf_font": "LMRoman10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 44.4,
+      "right": 0.0
+     },
+     "before_pt": 11.9,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "affiliation": {
+     "pdf_font": "LMRoman10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 47.6,
+      "right": 0.0
+     },
+     "before_pt": 3.0,
+     "run_in": true,
+     "font": "Century Schoolbook"
+    },
+    "abstract": {
+     "pdf_font": "LMRoman10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "indent_mm": {
+      "left": 44.3,
+      "right": 0.0
+     },
+     "before_pt": 9.8,
+     "line_pt": 12.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "abstract_title": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 14.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 44.6,
+      "right": 0.0
+     },
+     "before_pt": 15.6,
+     "run_in": false,
+     "text": "Abstract",
+     "font": "Century Schoolbook"
+    },
+    "h1": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 14.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 14.5,
+     "run_in": false,
+     "after_pt": 0.0,
+     "font": "Century Schoolbook"
+    },
+    "h2": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 12.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 10.8,
+     "run_in": false,
+     "after_pt": 0.0,
+     "font": "Century Schoolbook"
+    },
+    "h3": {
+     "pdf_font": "LMRoman10-Bold",
+     "size": 10.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 8.0,
+     "run_in": false,
+     "after_pt": 0.0,
+     "font": "Century Schoolbook"
+    },
+    "caption": {
+     "pdf_font": "LMRoman10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 6.0,
+     "line_pt": 12.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_caption": {
+     "pdf_font": "LMRoman10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "hanging_mm": 54.2,
+     "before_pt": 6.0,
+     "line_pt": 0.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "references": {
+     "pdf_font": "LMRoman10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 3.7,
+      "right": 0.0
+     },
+     "hanging_mm": 4.3,
+     "before_pt": 9.8,
+     "line_pt": 12.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_note": {
+     "pdf_font": "LMRoman8-Regular",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 9.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    }
+   },
+   "line_numbers": true,
+   "page_number": null,
+   "running_head": false,
+   "fonts": {
+    "CMMI10": "Times New Roman",
+    "CMMI7": "Times New Roman",
+    "CMR10": "Times New Roman",
+    "CMR7": "Times New Roman",
+    "LMRoman10-Bold": "Century Schoolbook",
+    "_chosen_by_width": [
+     "LMRoman10-Bold",
+     "LMRoman10-Regular",
+     "LMRoman12-Bold",
+     "LMRoman7-Regular"
+    ],
+    "LMRoman10-Regular": "Century Schoolbook",
+    "LMRoman12-Bold": "Century Schoolbook",
+    "LMRoman7-Regular": "Century Schoolbook",
+    "LMSans8-Regular": "Arial",
+    "LMRoman6-Regular": "Century Schoolbook",
+    "LMRoman8-Regular": "Century Schoolbook"
+   },
+   "submission": {
+    "columns": {
+     "count": 1,
+     "gap_mm": 0.0
+    },
+    "line_numbers": true,
+    "line_pt": 19.9,
+    "running": {
+     "odd": [
+      {
+       "where": "footer",
+       "baseline_mm": 14.5,
+       "size": 10.0,
+       "parts": [
+        {
+         "align": "right",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "{page}/{pages}",
+           "pdf_font": "LMRoman10-Regular",
+           "size": 10.0,
+           "bold": false,
+           "italic": false,
+           "font": "Century Schoolbook"
+          }
+         ]
+        }
+       ],
+       "rule_above": {
+        "pt": 1.99,
+        "color": "000000",
+        "gap_pt": 18.7,
+        "from_mm": -57.9,
+        "to_mm": 0.8
+       }
+      }
+     ],
+     "first": [
+      {
+       "where": "footer",
+       "baseline_mm": 16.5,
+       "size": 10.0,
+       "parts": [
+        {
+         "align": "left",
+         "offset_mm": -12.6,
+         "runs": [
+          {
+           "text": "{date}",
+           "pdf_font": "LMRoman10-Regular",
+           "size": 10.0,
+           "bold": false,
+           "italic": false,
+           "font": "Century Schoolbook"
+          }
+         ]
+        },
+        {
+         "align": "right",
+         "offset_mm": 12.7,
+         "runs": [
+          {
+           "text": "{page}/{pages}",
+           "pdf_font": "LMRoman10-Regular",
+           "size": 10.0,
+           "bold": false,
+           "italic": false,
+           "font": "Century Schoolbook"
+          }
+         ]
+        }
+       ],
+       "rule_above": {
+        "pt": 1.99,
+        "color": "000000",
+        "gap_pt": 18.6,
+        "from_mm": -13.4,
+        "to_mm": 13.5
+       }
+      }
+     ]
+    },
+    "table": {
+     "row_pt": 19.9,
+     "gaps_pt": {
+      "caption": 6.4,
+      "top": 17.1,
+      "header": 7.9,
+      "mid": 17.0,
+      "bottom": 8.1
+     }
+    },
+    "run_in": [],
+    "display": {
+     "above_pt": 10.0,
+     "below_pt": 10.0,
+     "above_short_pt": 0.0,
+     "below_short_pt": 6.0,
+     "printed_above_pt": 20.0,
+     "printed_below_pt": 10.0
+    }
+   },
+   "hand": [
+    "styles.affiliation.before_pt",
+    "styles.h1.before_pt",
+    "styles.h2.before_pt",
+    "styles.h3.before_pt",
+    "styles.caption.before_pt",
+    "styles.table_caption.before_pt"
+   ],
+   "running": {
+    "odd": [
+     {
+      "where": "footer",
+      "baseline_mm": 14.5,
+      "size": 10.0,
+      "parts": [
+       {
+        "align": "right",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "{page}/{pages}",
+          "pdf_font": "LMRoman10-Regular",
+          "size": 10.0,
+          "bold": false,
+          "italic": false,
+          "font": "Century Schoolbook"
+         }
+        ]
+       }
+      ],
+      "rule_above": {
+       "pt": 1.99,
+       "color": "000000",
+       "gap_pt": 18.7,
+       "from_mm": -57.9,
+       "to_mm": 0.8
+      }
+     }
+    ],
+    "first": [
+     {
+      "where": "footer",
+      "baseline_mm": 16.5,
+      "size": 10.0,
+      "parts": [
+       {
+        "align": "left",
+        "offset_mm": -12.6,
+        "runs": [
+         {
+          "text": "{date}",
+          "pdf_font": "LMRoman10-Regular",
+          "size": 10.0,
+          "bold": false,
+          "italic": false,
+          "font": "Century Schoolbook"
+         }
+        ]
+       },
+       {
+        "align": "right",
+        "offset_mm": 12.6,
+        "runs": [
+         {
+          "text": "{page}/{pages}",
+          "pdf_font": "LMRoman10-Regular",
+          "size": 10.0,
+          "bold": false,
+          "italic": false,
+          "font": "Century Schoolbook"
+         }
+        ]
+       }
+      ],
+      "rule_above": {
+       "pt": 1.99,
+       "color": "000000",
+       "gap_pt": 18.6,
+       "from_mm": -13.4,
+       "to_mm": 13.5
+      }
+     }
+    ]
+   },
+   "table": {
+    "pdf_font": "LMRoman10-Regular",
+    "size": 10.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.8,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.5,
+      "color": "000000"
+     },
+     "bottom": {
+      "pt": 0.8,
+      "color": "000000"
+     }
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 12.0,
+    "gaps_pt": {
+     "caption": 5.0,
+     "top": 11.6,
+     "header": 5.6,
+     "mid": 11.4,
+     "bottom": 5.7
+    },
+    "align": "center",
+    "outer_pt": 1.1,
+    "col_gap_pt": 12.6,
+    "font": "Century Schoolbook"
+   },
+   "display": {
+    "above_pt": 10.0,
+    "below_pt": 10.0,
+    "above_short_pt": 0.0,
+    "below_short_pt": 6.0,
+    "printed_above_pt": 11.9,
+    "printed_below_pt": 3.9
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 222.3,
+  "types": [
+   {
+    "name": "Minimum width",
+    "width_mm": 66.8
+   },
+   {
+    "name": "Text column",
+    "width_mm": 132.0
+   },
+   {
+    "name": "Full width",
+    "width_mm": 190.5
+   }
+  ],
+  "note": "6.68 to 19.05 cm wide (13.2 cm lines up with the text column); at most 22.23 cm tall.",
+  "source": "PLOS figure guidelines (journals.plos.org)",
+  "labels": {
+   "font": "Arial",
+   "size": 12.0,
+   "bold": false,
+   "case": "upper",
+   "form": "a",
+   "source": "PLOS figure guidelines: lettered panels, (A) or (a); the look measured from a published figure (PMC12758814, 2025): 12 pt regular capitals",
+   "measured": true
+  },
+  "text": {
+   "min_pt": 8.0,
+   "max_pt": 12.0,
+   "fonts": [
+    "Arial",
+    "Times",
+    "Times New Roman",
+    "Symbol"
+   ],
+   "fonts_only": true,
+   "about": false,
+   "source": "PLOS figure guidelines: Arial, Times or Symbol only, 8–12 pt"
+  },
+  "lines": {
+   "min_pt": null,
+   "max_pt": null,
+   "about": false,
+   "source": "PLOS figure guidelines set no line widths"
+  },
+  "pictures": {
+   "photo": 300.0,
+   "combination": 300.0,
+   "line_art": 300.0,
+   "vector": [],
+   "source": "PLOS figure guidelines: 300–600 dpi for every figure"
+  },
+  "export": {
+   "formats": [
+    "tiff",
+    "eps"
+   ],
+   "colour": "rgb",
+   "max_mb": 10.0,
+   "firm": true,
+   "max_dpi": 600.0,
+   "embed_fonts": true,
+   "no_alpha": true,
+   "source": "PLOS figure guidelines: TIFF or EPS only; RGB or greyscale; 300–600 dpi; 10 MB or less; no alpha channels; fonts embedded"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://journals.plos.org/plosgenetics/s/submission-guidelines",
+   "what": "Submission guidelines. Read."
+  },
+  {
+   "url": "https://journals.plos.org/plosgenetics/s/authorship",
+   "what": "Authorship (CRediT). Read."
+  },
+  {
+   "url": "https://journals.plos.org/plosgenetics/s/ethical-publishing-practice",
+   "what": "Ethical publishing practice (AI tools). Read."
+  }
+ ],
+ "evidence": {
+  "status": "fully read",
+  "abstract": {
+   "structured": false,
+   "headings": [],
+   "words": 300,
+   "note": "'The Abstract should be succinct; it must not exceed 300 words.' Conceptually three parts, but 'do not apply these distinct headings to the Abstract within the article file.' 'Do not include any citations.' 'Avoid specialist abbreviations.'"
+  },
+  "front": [
+   {
+    "kind": "author_summary",
+    "name": "Author summary",
+    "required": true,
+    "words": 200,
+    "items": null,
+    "chars": null,
+    "min": 150,
+    "max": 200,
+    "note": "'We ask that all authors of research articles include a 150-200 word non-technical summary'; immediately after the abstract; first person; avoid acronyms. min/max here are words. Re-read 2026-11-16: prose's limit is 150 to 200 words and its hint says so."
+   },
+   {
+    "kind": "running_title",
+    "name": "Short title",
+    "required": true,
+    "words": null,
+    "items": null,
+    "chars": 70,
+    "min": null,
+    "max": null,
+    "note": "'Include a full title and a short title for the manuscript.'"
+   },
+   {
+    "kind": "graphical_abstract",
+    "name": "Striking image",
+    "required": false,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "No graphical abstract. An optional 'Striking Image' with a separate caption file is uploaded in the submission system."
+   },
+   {
+    "kind": "keywords",
+    "name": null,
+    "required": null,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "Not asked for on the page."
+   }
+  ],
+  "statements": {
+   "author_contributions": {
+    "required": true,
+    "heading": "Author contributions",
+    "where": "submission form only",
+    "form": "form",
+    "credit": "required",
+    "quote": "PLOS has adopted the CRediT Taxonomy to describe each author's individual contributions to the work.",
+    "note": "'The contributions of all authors must be described.' 'The submitting author is responsible for providing the contributions of all authors at submission.' 'Contributions will be published with the final article.'"
+   },
+   "funding": {
+    "required": true,
+    "heading": "Financial Disclosure",
+    "where": "submission form only",
+    "quote": "Do not include funding sources in the Acknowledgments or anywhere else in the manuscript file.",
+    "note": "If unfunded: 'The author(s) received no specific funding for this work.'"
+   },
+   "competing_interests": {
+    "required": true,
+    "heading": "Competing interests",
+    "where": "submission form only (the corresponding author declares on behalf of all authors)"
+   },
+   "data_availability": {
+    "required": true,
+    "heading": "Data Availability Statement",
+    "where": "submission form only (Additional Information section); accession numbers also where the data set is mentioned in the text"
+   },
+   "code_availability": {
+    "required": null,
+    "heading": null,
+    "where": null,
+    "note": "No general statement; software-focused papers must link to the deposited open-source software from within the paper."
+   },
+   "ethics": {
+    "required": null,
+    "heading": "Ethics statement",
+    "where": "in Materials and Methods (human, animal and field research)"
+   },
+   "acknowledgements": {
+    "required": null,
+    "heading": "Acknowledgments",
+    "where": "in the manuscript file; no funding sources, no editors or PLOS staff"
+   },
+   "ai_use": {
+    "required": true,
+    "where": "a dedicated section of the Methods, or the Acknowledgments, or the relevant figure legend(s)",
+    "quote": "disclosures should be in the body of the article, either in a dedicated section of the Methods, in the Acknowledgement section, or in the relevant figure legend(s)",
+    "note": "Disclose the tool names, how they were used, and how the outputs were checked."
+   }
+  },
+  "differs_from_prose": [],
+  "unconfirmed": []
+ }
+}

@@ -1,0 +1,413 @@
+{
+ "format": 2,
+ "generated": "2026-11-18T03:53:01Z",
+ "schema": 1,
+ "journals": [
+  {
+   "id": "cell",
+   "name": "Cell",
+   "aliases": [],
+   "issn": [
+    "0092-8674",
+    "1097-4172"
+   ],
+   "publisher": "Cell Press",
+   "group": "Cell Press",
+   "kind": "journal",
+   "file": "journals/cell.json",
+   "version": "1.0.0",
+   "sha256": "477fe3514b8169605b5c3c7ab3ee6ffbe32a7e67efe161c1394d0a08033d91d6",
+   "size": 24119,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [],
+   "summary": "figures 85, 114 and 174 mm, up to 200 mm deep; US Letter; reference style cell",
+   "changes": []
+  },
+  {
+   "id": "g3",
+   "name": "G3",
+   "aliases": [
+    "G3: Genes|Genomes|Genetics",
+    "G3 (Bethesda)",
+    "Genes Genomes Genetics"
+   ],
+   "issn": [
+    "2160-1836"
+   ],
+   "publisher": "Genetics Society of America",
+   "group": "Genetics Society of America",
+   "kind": "journal",
+   "file": "journals/g3.json",
+   "version": "1.0.0",
+   "sha256": "9c689d247e30c3cbd9fbd32c0de4fd5023bc5273c8ee2869c3f7f1af63ffe26c",
+   "size": 23479,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "oup-abbrvnat.bst",
+    "oup-authoring-template.cls"
+   ],
+   "summary": "figures 85.5 and 177.5 mm, up to 243 mm deep; US Letter; reference style genetics; LaTeX in the publisher's class oup-authoring-template",
+   "changes": []
+  },
+  {
+   "id": "genetics",
+   "name": "Genetics",
+   "aliases": [],
+   "issn": [
+    "0016-6731",
+    "1943-2631"
+   ],
+   "publisher": "Genetics Society of America",
+   "group": "Genetics Society of America",
+   "kind": "journal",
+   "file": "journals/genetics.json",
+   "version": "1.0.0",
+   "sha256": "dee51e877842230b0456f4124171d4235dda408c47e4f877bdafb04acfe9e4de",
+   "size": 25037,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "oup-abbrvnat.bst",
+    "oup-authoring-template.cls"
+   ],
+   "summary": "figures 85.5 and 177.5 mm, up to 243 mm deep; US Letter; reference style genetics; LaTeX in the publisher's class oup-authoring-template",
+   "changes": []
+  },
+  {
+   "id": "genome_biology",
+   "name": "Genome Biology",
+   "aliases": [
+    "Genome Biol"
+   ],
+   "issn": [
+    "1465-6906",
+    "1474-760X"
+   ],
+   "publisher": "BMC (Springer Nature)",
+   "group": "BMC (Springer Nature)",
+   "kind": "journal",
+   "file": "journals/genome_biology.json",
+   "version": "1.0.0",
+   "sha256": "8782495c355042370de15872fa127665ceacf6b562b3827fb11765ff4b058dd1",
+   "size": 18669,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "sn-jnl.cls",
+    "sn-vancouver-num.bst"
+   ],
+   "summary": "figures 85 and 170 mm, up to 225 mm deep; A4; reference style genome-biology; LaTeX in the publisher's class sn-jnl",
+   "changes": []
+  },
+  {
+   "id": "genome_research",
+   "name": "Genome Research",
+   "aliases": [
+    "Genome Res"
+   ],
+   "issn": [
+    "1088-9051",
+    "1549-5469"
+   ],
+   "publisher": "Cold Spring Harbor Laboratory Press",
+   "group": "Cold Spring Harbor Laboratory Press",
+   "kind": "journal",
+   "file": "journals/genome_research.json",
+   "version": "1.0.0",
+   "sha256": "2698990a14b38ce43206bd06c175468bc6b7a4b3d9a6dfed36e566864d3147dc",
+   "size": 18709,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [],
+   "summary": "figures 84.5 and 175 mm, up to 238 mm deep; US Letter; reference style genome-research",
+   "changes": []
+  },
+  {
+   "id": "heredity",
+   "name": "Heredity",
+   "aliases": [],
+   "issn": [
+    "0018-067X",
+    "1365-2540"
+   ],
+   "publisher": "Springer Nature",
+   "group": "Springer Nature",
+   "kind": "journal",
+   "file": "journals/heredity.json",
+   "version": "1.0.0",
+   "sha256": "582595eff41dd5ecc4c29994201a3725ce88c9502acd399d91810618443bde2f",
+   "size": 22705,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "sn-basic-heredity.bst",
+    "sn-jnl.cls"
+   ],
+   "summary": "figures 87.5 and 181 mm, up to 238 mm deep; A4; reference style heredity; LaTeX in the publisher's class sn-jnl",
+   "changes": []
+  },
+  {
+   "id": "horticulture_research",
+   "name": "Horticulture Research",
+   "aliases": [
+    "Hortic Res"
+   ],
+   "issn": [
+    "2662-6810",
+    "2052-7276"
+   ],
+   "publisher": "Oxford University Press",
+   "group": "Oxford University Press",
+   "kind": "journal",
+   "file": "journals/horticulture_research.json",
+   "version": "1.0.0",
+   "sha256": "70196bfca3c60d57232b7dae2b5285d4612a9511d177a6fb731e431acf21ce21",
+   "size": 23815,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "oup-authoring-template.cls",
+    "oup-plain-unsorted.bst"
+   ],
+   "summary": "figures 85.5 and 178 mm, up to 241 mm deep; A4; reference style horticulture-research; LaTeX in the publisher's class oup-authoring-template",
+   "changes": []
+  },
+  {
+   "id": "mbe",
+   "name": "Molecular Biology and Evolution",
+   "aliases": [
+    "MBE",
+    "Mol Biol Evol"
+   ],
+   "issn": [
+    "0737-4038",
+    "1537-1719"
+   ],
+   "publisher": "Oxford University Press",
+   "group": "Oxford University Press",
+   "kind": "journal",
+   "file": "journals/mbe.json",
+   "version": "1.0.0",
+   "sha256": "e432868465bacbf236cb28769965b0d7e7917112263b207955106d73cf1dae11",
+   "size": 23922,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "oup-abbrvnat.bst",
+    "oup-authoring-template.cls"
+   ],
+   "summary": "figures 86 and 178 mm, up to 236 mm deep; A4; reference style molecular-biology-and-evolution; LaTeX in the publisher's class oup-authoring-template",
+   "changes": []
+  },
+  {
+   "id": "molecular_plant",
+   "name": "Molecular Plant",
+   "aliases": [
+    "Mol Plant"
+   ],
+   "issn": [
+    "1674-2052",
+    "1752-9867"
+   ],
+   "publisher": "Cell Press",
+   "group": "Cell Press",
+   "kind": "journal",
+   "file": "journals/molecular_plant.json",
+   "version": "1.0.0",
+   "sha256": "68a4239c5acff0febfcf718a34675a54bfe45b434288994ea5000d04460f8823",
+   "size": 20829,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [],
+   "summary": "figures 85, 114 and 174 mm, up to 200 mm deep; US Letter; reference style molecular-plant",
+   "changes": []
+  },
+  {
+   "id": "nature",
+   "name": "Nature",
+   "aliases": [
+    "Nature (London)"
+   ],
+   "issn": [
+    "0028-0836",
+    "1476-4687"
+   ],
+   "publisher": "Springer Nature",
+   "group": "Springer Nature",
+   "kind": "journal",
+   "file": "journals/nature.json",
+   "version": "1.0.0",
+   "sha256": "41d32e8f4e9d8fd7e210560a10bb760675b7915f616fb239abc0841b80f0ad06",
+   "size": 21329,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "sn-jnl.cls",
+    "sn-nature.bst"
+   ],
+   "summary": "figures 90 and 180 mm, up to 170 mm deep; A4; reference style nature; LaTeX in the publisher's class sn-jnl",
+   "changes": []
+  },
+  {
+   "id": "new_phytologist",
+   "name": "New Phytologist",
+   "aliases": [
+    "New Phytol"
+   ],
+   "issn": [
+    "0028-646X",
+    "1469-8137"
+   ],
+   "publisher": "Wiley",
+   "group": "Wiley",
+   "kind": "journal",
+   "file": "journals/new_phytologist.json",
+   "version": "1.0.0",
+   "sha256": "221ae3b233cbe085e91ce9c53bfc497ea8c8913daf4d67ea6b828647787e334f",
+   "size": 23431,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "NJDnatbib.sty",
+    "lettersp.sty"
+   ],
+   "summary": "figures 80 and 170 mm, up to 226 mm deep; A4; reference style new-phytologist; LaTeX in the publisher's class USG",
+   "changes": []
+  },
+  {
+   "id": "plant_cell",
+   "name": "Plant Cell",
+   "aliases": [
+    "The Plant Cell"
+   ],
+   "issn": [
+    "1040-4651",
+    "1532-298X"
+   ],
+   "publisher": "Oxford University Press",
+   "group": "Oxford University Press",
+   "kind": "journal",
+   "file": "journals/plant_cell.json",
+   "version": "1.0.0",
+   "sha256": "ce59cb5a0d226552b7adad92a74358ebac0f908f77e1bd660f469f24a45a25d7",
+   "size": 24177,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "oup-abbrvnat.bst",
+    "oup-authoring-template.cls"
+   ],
+   "summary": "figures 82.5 and 165 mm, up to 200 mm deep; US Letter; reference style the-plant-cell; LaTeX in the publisher's class oup-authoring-template",
+   "changes": []
+  },
+  {
+   "id": "plos_genetics",
+   "name": "PLOS Genetics",
+   "aliases": [
+    "PLoS Genetics",
+    "PLoS Genet"
+   ],
+   "issn": [
+    "1553-7390",
+    "1553-7404"
+   ],
+   "publisher": "PLOS",
+   "group": "PLOS",
+   "kind": "journal",
+   "file": "journals/plos_genetics.json",
+   "version": "1.0.0",
+   "sha256": "1f8d73545652fec179225674ef93396195a8528a8b1e061af4e8fc43eeaa96cc",
+   "size": 22500,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "plos2025.bst"
+   ],
+   "summary": "figures 66.8, 132 and 190.5 mm, up to 222.3 mm deep; US Letter; reference style plos-genetics",
+   "changes": []
+  },
+  {
+   "id": "pnas",
+   "name": "PNAS",
+   "aliases": [
+    "Proceedings of the National Academy of Sciences",
+    "Proc Natl Acad Sci USA"
+   ],
+   "issn": [
+    "0027-8424",
+    "1091-6490"
+   ],
+   "publisher": "National Academy of Sciences",
+   "group": "National Academy of Sciences",
+   "kind": "journal",
+   "file": "journals/pnas.json",
+   "version": "1.0.0",
+   "sha256": "b471fddff6d93ed0dc880f3a74e12a713e51e27d6dbe51726ea4e8b871c836d8",
+   "size": 27426,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "jabbrv-ltwa-all.ldf",
+    "jabbrv-ltwa-en.ldf",
+    "jabbrv.sty",
+    "pnas-new.bst",
+    "pnas-new.cls",
+    "pnasresearcharticle.sty"
+   ],
+   "summary": "figures 87, 114 and 178 mm, up to 225 mm deep; US Letter; reference style pnas; LaTeX in the publisher's class pnas-new",
+   "changes": []
+  },
+  {
+   "id": "science",
+   "name": "Science",
+   "aliases": [],
+   "issn": [
+    "0036-8075",
+    "1095-9203"
+   ],
+   "publisher": "AAAS (Science)",
+   "group": "AAAS (Science)",
+   "kind": "journal",
+   "file": "journals/science.json",
+   "version": "1.0.0",
+   "sha256": "958caee68e709192d0b2820524e7b05b3ab7550d873949053a9b5875042b59d8",
+   "size": 19794,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "scicite.sty",
+    "sciencemag.bst"
+   ],
+   "summary": "figures 57, 121 and 184 mm, up to 199 mm deep; US Letter; reference style science",
+   "changes": []
+  },
+  {
+   "id": "plant_journal",
+   "name": "The Plant Journal",
+   "aliases": [
+    "Plant J"
+   ],
+   "issn": [
+    "0960-7412",
+    "1365-313X"
+   ],
+   "publisher": "Wiley",
+   "group": "Wiley",
+   "kind": "journal",
+   "file": "journals/plant_journal.json",
+   "version": "1.0.0",
+   "sha256": "764ffd5fda84e4df040e4ece402549b74bc56ea7c63a61855f78e50e82157279",
+   "size": 26086,
+   "verified": "verified",
+   "updated": "2026-11-17",
+   "needs": [
+    "NJDnatbib.sty",
+    "lettersp.sty"
+   ],
+   "summary": "figures 80 and 168 mm, up to 226 mm deep; A4; reference style the-plant-journal; LaTeX in the publisher's class USG",
+   "changes": []
+  }
+ ]
+}

@@ -1,0 +1,784 @@
+{
+ "format": 1,
+ "id": "genome_research",
+ "name": "Genome Research",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "Cold Spring Harbor Laboratory Press",
+ "issn": {
+  "print": "1088-9051",
+  "online": "1549-5469"
+ },
+ "aliases": [
+  "Genome Res"
+ ],
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "letter"
+ },
+ "captions": {
+  "label": "Figure",
+  "bar": false
+ },
+ "figure_refs": {
+  "main": [
+   "Fig.",
+   "Figs."
+  ],
+  "outside": [
+   "Figure",
+   "Figures"
+  ],
+  "list": "commas",
+  "panels": {
+   "case": "upper",
+   "style": {
+    "one": "closed",
+    "many": "closed",
+    "list": ",",
+    "range": "–",
+    "outside": {
+     "many": "comma",
+     "list": "and"
+    }
+   }
+  },
+  "supp": {
+   "one": [
+    "Supplemental Fig. ",
+    ""
+   ],
+   "many": [
+    "Supplemental Figs. ",
+    ""
+   ],
+   "s": true,
+   "outside": {
+    "one": [
+     "Supplemental Figure ",
+     ""
+    ],
+    "many": [
+     "Supplemental Figures ",
+     ""
+    ]
+   }
+  },
+  "evidence": [
+   "(Figs. 3, 4)",
+   "(Fig. 2C,D); Figure 2, A and B"
+  ]
+ },
+ "legends": {
+  "sep": ".",
+  "title": {
+   "bold": false,
+   "line": false
+  },
+  "panels": {
+   "open": "(",
+   "close": ")",
+   "bold": null,
+   "italic": true
+  },
+  "scale": 0.94,
+  "table": {
+   "sep": ".",
+   "title": {
+    "bold": true
+   }
+  },
+  "evidence": [
+   "Figure 1. Title. (A) …",
+   "(measured: bold \"Figure 1.\", regular title run in: PMC13739013 p. 3, PMC13739011 p. 2, PMC13739016 p. 3)",
+   "PMC13739013",
+   "(table: \"Table 1.\" and title bold: PMC13534237 p. 2, PMC13534239 p. 8, PMC13534253 p. 5)"
+  ]
+ },
+ "supplement": {
+  "title": "Supplemental Material",
+  "contents": "includes",
+  "cover_title": "Supplemental Material for",
+  "fig": {
+   "one": [
+    "Supplemental Fig. ",
+    ""
+   ],
+   "many": [
+    "Supplemental Figs. ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Supplemental Figure ",
+    ""
+   ]
+  },
+  "tbl": {
+   "one": [
+    "Supplemental Table ",
+    ""
+   ],
+   "many": [
+    "Supplemental Tables ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Supplemental Table ",
+    ""
+   ]
+  },
+  "data": {
+   "one": [
+    "Supplemental Data ",
+    ""
+   ],
+   "many": [
+    "Supplemental Data ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Supplemental Data ",
+    ""
+   ]
+  },
+  "note": null
+ },
+ "house_style": {
+  "p": {
+   "italic": true,
+   "space": true,
+   "zero": true,
+   "letter": "P"
+  },
+  "etal": {
+   "italic": false
+  },
+  "unit_space": "nbsp",
+  "range": "–",
+  "small": "words",
+  "thousands": {
+   "sep": ",",
+   "from": 5
+  },
+  "percent": {
+   "space": false
+  },
+  "celsius": {
+   "space": false
+  },
+  "latin": {
+   "italic": false
+  },
+  "units": {
+   "h": "h",
+   "uL": "µL"
+  }
+ },
+ "house_style_from": {
+  "p": "print",
+  "etal": "print",
+  "unit_space": "print",
+  "range": "print",
+  "small": "print",
+  "thousands": "print",
+  "percent": "print",
+  "celsius": "print",
+  "latin": "print",
+  "units": "print"
+ },
+ "abbreviations": {},
+ "cover_letter": {
+  "type": "Research",
+  "reviewers": "form",
+  "points": [
+   "the main points of the work, and why it suits Genome Research",
+   "the status of personal communications or other permissions",
+   "where the data are deposited",
+   "that gene and protein names follow each species' approved nomenclature"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Abstract",
+   "words": 250
+  },
+  "running_title": {
+   "chars": 50
+  },
+  "front": [],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Introduction"
+   },
+   {
+    "kind": "results",
+    "name": "Results"
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   },
+   {
+    "kind": "methods",
+    "name": "Methods"
+   },
+   {
+    "kind": "code_availability",
+    "name": "Software availability"
+   }
+  ],
+  "back": [
+   {
+    "kind": "data_availability",
+    "name": "Data access",
+    "required": true,
+    "hint": "The accession numbers of the data, and where they are."
+   },
+   {
+    "kind": "competing_interests",
+    "name": "Competing interest statement",
+    "required": true,
+    "hint": "Any competing interests, or that there are none."
+   },
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgments",
+    "hint": "The people and institutions to thank. Funding and the authors' contributions go at its end."
+   },
+   {
+    "kind": "references",
+    "name": "References"
+   }
+  ],
+  "evidence": [
+   "(author contributions at the end of the acknowledgments; a Software availability section at the end of Methods \"as appropriate\": genome.cshlp.org's Manuscript preparation, Wayback copy of 2025-11-04, read 2026-11-16)"
+  ]
+ },
+ "submission": {
+  "first": {
+   "accepts": [
+    "pdf",
+    "docx",
+    "latex"
+   ]
+  },
+  "revision": {
+   "formats": [
+    "pdf",
+    "docx"
+   ],
+   "naming": "{surname}_Fig{n}"
+  },
+  "from": "unconfirmed",
+  "evidence": [
+   "First version: one file with the figures in; the second: a PDF and its source files; Smith_Fig1"
+  ]
+ },
+ "statements": {
+  "ai": "methods",
+  "evidence": [
+   "browser 2026-11-16 (ifora_Artificial: \"fully documented in the Methods section\")"
+  ]
+ },
+ "limits": {
+  "article_type": "Research",
+  "source": "https://genome.cshlp.org/site/misc/ifora_mspreparation.xhtml",
+  "checked": "2026-11-16",
+  "limits": {
+   "title_chars": null,
+   "title_words": null,
+   "abstract_words": 250,
+   "summary_words": null,
+   "main_text_words": null,
+   "methods_words": null,
+   "legend_words": null,
+   "display_items": null,
+   "figures": null,
+   "tables": null,
+   "references": null,
+   "keywords": null
+  },
+  "counts": null,
+  "notes": "2026-11-16: the Internet Archive's copy (2025-11-04) of the official manuscript-preparation page (https://genome.cshlp.org/site/misc/ifora_mspreparation.xhtml) was read: 'ABSTRACT (the abstract cannot exceed 250 words)'; 'a running title (50 characters or less, including spaces)'; 'Paper length in the journal is between two and 12 journal pages' (a 28-32-page double-spaced manuscript of about 50,000 characters with four to six figures and one or two tables makes 12 pages). No word, figure or reference limit is given. Read again on the live page in a browser 2026-11-16 (the same text).",
+  "unverified": null,
+  "count": {
+   "abstract": false,
+   "methods": true,
+   "legends": false
+  }
+ },
+ "references": {
+  "csl": "genome-research",
+  "file": "genome_research.csl"
+ },
+ "latex": {
+  "template": "standard",
+  "wrapper": "journal.latex",
+  "files": {},
+  "publisher": "Cold Spring Harbor Laboratory Press",
+  "citations": "csl",
+  "provisional": true,
+  "note": "Provisional: a plain manuscript in Genome Research's house style (US Letter, 12 pt Times, unnumbered headings, \"Figure 1.\" captions) with the references written out in Cold Spring Harbor Laboratory Press's style. Made without the journal's guidelines, which couldn't be read: check them before relying on it.",
+  "source_notes": "SOURCE.md"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "Provisional: a plain manuscript in Genome Research's house style (US Letter, 12 pt Times, unnumbered headings, \"Figure 1.\" captions) with the references written out in Cold Spring Harbor Laboratory Press's style. Made without the journal's guidelines, which couldn't be read: check them before relying on it.; prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display re-measured on 2026-11-16; captions re-measured 2026-11-16 at 0.94 of the text (11.5 pt, as its typeset articles' 7.5/8 pt)",
+   "page": {
+    "width_mm": 215.9,
+    "height_mm": 279.4,
+    "margins_mm": {
+     "top": 26.7,
+     "bottom": 24.5,
+     "left": 25.4,
+     "right": 25.2
+    }
+   },
+   "columns": {
+    "count": 1,
+    "gap_mm": 0.0
+   },
+   "mirror_margins": false,
+   "body": {
+    "pdf_font": "TeXGyreTermesX-Regular",
+    "size": 12.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 14.4,
+    "justify": true,
+    "indent_mm": 6.2,
+    "first_indent_mm": 0.1,
+    "space_after_pt": 0.0,
+    "font": "Times New Roman"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 20.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 37.4,
+     "line_pt": 24.9,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "author": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 14.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 18.5,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "affiliation": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 14.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 7.3,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "correspondence": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 4.9,
+      "right": 0.0
+     },
+     "before_pt": 6.0,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "abstract": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "indent_mm": {
+      "left": 10.6,
+      "right": 10.8
+     },
+     "before_pt": 7.2,
+     "line_pt": 13.5,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "abstract_title": {
+     "pdf_font": "TeXGyreTermesX-Bold",
+     "size": 11.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 11.0,
+     "run_in": false,
+     "text": "Abstract",
+     "font": "Times New Roman"
+    },
+    "h1": {
+     "pdf_font": "TeXGyreTermesX-Bold",
+     "size": 17.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 20.0,
+     "run_in": false,
+     "after_pt": 12.4,
+     "font": "Times New Roman"
+    },
+    "h2": {
+     "pdf_font": "TeXGyreTermesX-Bold",
+     "size": 14.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 17.7,
+     "run_in": false,
+     "after_pt": 8.1,
+     "font": "Times New Roman"
+    },
+    "h3": {
+     "pdf_font": "TeXGyreTermesX-Bold",
+     "size": 12.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 17.5,
+     "run_in": false,
+     "after_pt": 8.1,
+     "font": "Times New Roman"
+    },
+    "caption": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 11.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 5.3,
+     "line_pt": 13.7,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "table_caption": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 11.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 10.4,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "references": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "hanging_mm": 6.4,
+     "before_pt": 14.5,
+     "line_pt": 14.4,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "table_note": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 11.8,
+     "run_in": false,
+     "font": "Times New Roman"
+    }
+   },
+   "line_numbers": false,
+   "page_number": "footer-center",
+   "running_head": false,
+   "fonts": {
+    "NewTXMI": "Times New Roman",
+    "TeXGyreTermesX-Bold": "Times New Roman",
+    "TeXGyreTermesX-Italic": "Times New Roman",
+    "TeXGyreTermesX-Regular": "Times New Roman",
+    "txmiaX": "Times New Roman",
+    "txsys": "Times New Roman"
+   },
+   "submission": {
+    "columns": {
+     "count": 1,
+     "gap_mm": 0.0
+    },
+    "line_numbers": true,
+    "line_pt": 23.9,
+    "running": null,
+    "table": {
+     "row_pt": 23.9,
+     "gaps_pt": {
+      "caption": 14.6,
+      "top": 20.6,
+      "header": 9.5,
+      "mid": 20.4,
+      "bottom": 9.7
+     }
+    },
+    "run_in": [],
+    "display": {
+     "above_pt": 12.0,
+     "below_pt": 12.0,
+     "above_short_pt": 0.0,
+     "below_short_pt": 6.5,
+     "printed_above_pt": 23.9,
+     "printed_below_pt": 10.7
+    }
+   },
+   "hand": [
+    "styles.abstract_title.before_pt"
+   ],
+   "running": null,
+   "table": {
+    "pdf_font": "TeXGyreTermesX-Regular",
+    "size": 12.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.96,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.6,
+      "color": "000000"
+     },
+     "bottom": {
+      "pt": 0.96,
+      "color": "000000"
+     }
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 14.4,
+    "gaps_pt": {
+     "caption": 14.6,
+     "top": 13.9,
+     "header": 6.7,
+     "mid": 13.8,
+     "bottom": 6.9
+    },
+    "align": "center",
+    "outer_pt": 1.1,
+    "col_gap_pt": 12.6,
+    "font": "Times New Roman"
+   },
+   "display": {
+    "above_pt": 12.0,
+    "below_pt": 12.0,
+    "above_short_pt": 0.0,
+    "below_short_pt": 6.5,
+    "printed_above_pt": 14.5,
+    "printed_below_pt": 5.6
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 238.0,
+  "types": [
+   {
+    "name": "Single column",
+    "width_mm": 84.5
+   },
+   {
+    "name": "Double column",
+    "width_mm": 175.0
+   }
+  ],
+  "note": "84.5 mm column, 175 mm full text width, 238 mm text depth.",
+  "source": "measured from a published article (PMC12667386, 2025); the journal publishes no figure sizes",
+  "labels": {
+   "font": "Helvetica",
+   "size": 12.0,
+   "bold": true,
+   "case": "upper",
+   "form": "a",
+   "source": "Genome Research's digital art guidelines (final figures): capital A, B, C, 12 pt bold, Helvetica or Arial",
+   "measured": false
+  },
+  "text": {
+   "min_pt": 8.0,
+   "max_pt": 10.0,
+   "fonts": [
+    "Helvetica",
+    "Arial"
+   ],
+   "fonts_only": false,
+   "about": false,
+   "source": "Genome Research's guidelines: 8–10 pt, Helvetica or Arial"
+  },
+  "lines": {
+   "min_pt": 0.25,
+   "max_pt": null,
+   "about": false,
+   "source": "Genome Research's digital art guidelines: rules 0.25 pt or heavier"
+  },
+  "pictures": {
+   "photo": 300.0,
+   "combination": 600.0,
+   "line_art": 1000.0,
+   "vector": [],
+   "source": "Genome Research's digital art guidelines: halftones 300 dpi, combination halftones 600–900 dpi, line art 1000–1200 dpi, at publication size"
+  },
+  "export": {
+   "formats": [
+    "tiff",
+    "eps",
+    "pdf",
+    "jpeg"
+   ],
+   "colour": "rgb",
+   "max_mb": null,
+   "firm": true,
+   "max_dpi": null,
+   "embed_fonts": true,
+   "no_alpha": false,
+   "source": "Genome Research's digital art guidelines: TIFF, EPS, PDF, JPEG or AI only; original RGB colour; fonts embedded"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://genome.cshlp.org/ifora_Artificial",
+   "what": "AI and LLM policy (Methods). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://genome.cshlp.org/site/misc/ifora_mspreparation.xhtml",
+   "what": "The live manuscript-preparation page (the same text as the Archive copy). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://genome.cshlp.org/site/misc/ifora_mspreparation.xhtml",
+   "what": "Manuscript preparation. The live page redirects to a sign-in service (idp.sams-sigma.com); its Wayback copy of 2025-11-04 (https://web.archive.org/web/20251104115536/https://genome.cshlp.org/site/misc/ifora_mspreparation.xhtml) was read 2026-11-16."
+  },
+  {
+   "url": "https://genome.cshlp.org/site/misc/ifora_Artificial.xhtml",
+   "what": "Genome Research - Artificial Intelligence. NOT read (same site). Search excerpt only."
+  }
+ ],
+ "evidence": {
+  "status": "browser (the live manuscript-preparation and AI pages, 2026-11-16)",
+  "abstract": {
+   "structured": null,
+   "headings": [],
+   "words": 250,
+   "note": "wayback: 'ABSTRACT (the abstract cannot exceed 250 words)'."
+  },
+  "front": [
+   {
+    "kind": "running_title",
+    "name": "Running title",
+    "required": true,
+    "words": null,
+    "items": null,
+    "chars": 50,
+    "min": null,
+    "max": null,
+    "note": "wayback: 'a running title (50 characters or less, including spaces)', on the title page."
+   },
+   {
+    "kind": "keywords",
+    "name": null,
+    "required": null,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "No excerpt mentioned keywords."
+   }
+  ],
+  "statements": {
+   "author_contributions": {
+    "required": null,
+    "heading": "Author contributions",
+    "where": "end of Acknowledgments",
+    "form": null,
+    "credit": null,
+    "quote": "Author Contributions should appear at the end of ACKNOWLEDGMENTS."
+   },
+   "funding": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "competing_interests": {
+    "required": null,
+    "heading": "Competing interest statement",
+    "where": "after Data access, before Acknowledgments"
+   },
+   "data_availability": {
+    "required": true,
+    "heading": "Data access",
+    "where": "after Methods, before Competing interest statement; accession numbers for all newly generated data",
+    "note": "wayback: the Data access section is 'located after Methods and before Acknowledgments' (with the Competing interest statement between them in the section order) and the page gives boilerplate wording for it."
+   },
+   "code_availability": {
+    "required": null,
+    "heading": "Software availability",
+    "where": "at the end of Methods, as appropriate",
+    "quote": "METHODS (including a Software availability section at the end, as appropriate)",
+    "note": "wayback copy of 2025-11-04, read 2026-11-16."
+   },
+   "ethics": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "acknowledgements": {
+    "required": null,
+    "heading": "Acknowledgments",
+    "where": "after Competing interest statement, before References"
+   },
+   "ai_use": {
+    "required": true,
+    "where": "Methods",
+    "quote": "The use of AI tools or LLMs to generate article content should instead be fully documented in the Methods section of the manuscript.",
+    "note": "browser 2026-11-16"
+   }
+  },
+  "differs_from_prose": [],
+  "unconfirmed": [
+   "funding location (prose: end of Acknowledgments): the page read does not say"
+  ]
+ }
+}

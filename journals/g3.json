@@ -1,0 +1,913 @@
+{
+ "format": 1,
+ "id": "g3",
+ "name": "G3",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "Genetics Society of America",
+ "issn": {
+  "online": "2160-1836"
+ },
+ "aliases": [
+  "G3: Genes|Genomes|Genetics",
+  "G3 (Bethesda)",
+  "Genes Genomes Genetics"
+ ],
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "letter"
+ },
+ "captions": {
+  "label": "Figure",
+  "bar": false
+ },
+ "figure_refs": {
+  "main": [
+   "Figure",
+   "Figures"
+  ],
+  "panels": {
+   "case": "lower",
+   "style": null
+  },
+  "supp": {
+   "one": [
+    "Figure ",
+    ""
+   ],
+   "many": [
+    "Figures ",
+    ""
+   ],
+   "s": true
+  },
+  "evidence": [
+   "(GSA's \"See Figure S1\", as Genetics; 2026-11-14)"
+  ]
+ },
+ "legends": {
+  "sep": ".",
+  "title": {
+   "bold": false,
+   "line": false
+  },
+  "panels": {
+   "open": "",
+   "close": ")",
+   "bold": null
+  },
+  "scale": 0.8,
+  "table": {
+   "sep": ".",
+   "title": {
+    "bold": false
+   }
+  },
+  "evidence": [
+   "PMC13732485: a) … (b and c) …",
+   "(table: bold \"Table 1.\", regular title: PMC13732446 p. 8, PMC13732448 p. 7, PMC13732485 p. 5)"
+  ]
+ },
+ "supplement": {
+  "title": "Supplemental Material",
+  "files": "each",
+  "list": "files",
+  "list_where": "data_availability",
+  "fig": {
+   "one": [
+    "Figure ",
+    ""
+   ],
+   "many": [
+    "Figures ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Figure ",
+    ""
+   ]
+  },
+  "tbl": {
+   "one": [
+    "Table ",
+    ""
+   ],
+   "many": [
+    "Tables ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Table ",
+    ""
+   ]
+  },
+  "data": {
+   "one": [
+    "File ",
+    ""
+   ],
+   "many": [
+    "Files ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "File ",
+    ""
+   ]
+  },
+  "note": null
+ },
+ "house_style": {
+  "p": {
+   "italic": true,
+   "space": true,
+   "zero": true,
+   "letter": "P"
+  },
+  "etal": {
+   "italic": false
+  },
+  "unit_space": "nbsp",
+  "range": "–",
+  "small": "numerals",
+  "thousands": {
+   "sep": ",",
+   "from": 4
+  },
+  "percent": {
+   "space": false
+  },
+  "celsius": {
+   "space": true
+  },
+  "latin": {
+   "italic": false
+  },
+  "units": {
+   "h": "h",
+   "s": "s",
+   "uL": "µL"
+  }
+ },
+ "house_style_from": {
+  "p": "print",
+  "etal": "print",
+  "unit_space": "print",
+  "range": "print",
+  "small": "stated",
+  "thousands": "stated",
+  "percent": "stated",
+  "celsius": "print",
+  "latin": "print",
+  "units": "print"
+ },
+ "abbreviations": {
+  "abstract": "none"
+ },
+ "table_notes": {
+  "italic": true
+ },
+ "cover_letter": {
+  "type": "Investigation",
+  "reviewers": "excluded",
+  "points": [
+   "related preprints and manuscripts",
+   "any use of AI"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Abstract",
+   "words": 250
+  },
+  "keywords": {
+   "min": 1
+  },
+  "running_title": {
+   "chars": 50
+  },
+  "front": [
+   {
+    "kind": "graphical_abstract",
+    "name": "Graphical abstract"
+   },
+   {
+    "kind": "plain_summary",
+    "name": "Article summary",
+    "required": true,
+    "limit": {
+     "words": 100
+    },
+    "hint": "About 100 words in plain language, active voice and the third person: why the work was done, what was found, and what it means."
+   }
+  ],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Introduction"
+   },
+   {
+    "kind": "methods",
+    "name": "Materials and methods"
+   },
+   {
+    "kind": "results",
+    "name": "Results"
+   },
+   {
+    "kind": "results_discussion",
+    "name": "Results and discussion"
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   }
+  ],
+  "back": [
+   {
+    "kind": "data_availability",
+    "name": "Data availability",
+    "required": true,
+    "hint": "Where the data are available: repositories and accession numbers."
+   },
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgments"
+   },
+   {
+    "kind": "funding",
+    "name": "Funding",
+    "required": true,
+    "hint": "The grants and funders that supported the work."
+   },
+   {
+    "kind": "competing_interests",
+    "name": "Conflicts of interest",
+    "required": true,
+    "hint": "That you have no conflicts of interest, or the relevant information."
+   },
+   {
+    "kind": "references",
+    "name": "Literature cited"
+   }
+  ],
+  "evidence": [
+   "(GSA's official G3 template on Overleaf, read 2026-11-16. The template's end sections: Data availability, Acknowledgments, Funding, Conflicts of interest; no author-contributions section.",
+   "G3's author guidelines, academic.oup.com/g3journal/pages/author-guidelines, now with a",
+   "\"Preparing your manuscript\" section, read in a browser 2026-11-16: a running title of 50 characters or less; keywords (no number); abstract 250 words; an optional graphical abstract;",
+   "\"Please provide a 100 word summary\" (Article summary), as GENETICS)"
+  ]
+ },
+ "submission": {
+  "first": {
+   "accepts": [
+    "pdf",
+    "docx",
+    "latex"
+   ]
+  },
+  "revision": {
+   "tables": "end"
+  },
+  "alt_text": true,
+  "from": "unconfirmed"
+ },
+ "statements": {
+  "ai": "methods",
+  "evidence": [
+   "browser 2026-11-16: the same paragraph under \"Materials and methods\""
+  ]
+ },
+ "limits": {
+  "article_type": "Investigations",
+  "source": "https://academic.oup.com/g3journal/pages/author-guidelines",
+  "checked": "2026-11-16",
+  "limits": {
+   "title_chars": null,
+   "title_words": null,
+   "abstract_words": 250,
+   "summary_words": 100,
+   "main_text_words": null,
+   "methods_words": null,
+   "legend_words": null,
+   "display_items": null,
+   "figures": null,
+   "tables": null,
+   "references": null,
+   "keywords": null
+  },
+  "counts": "No limit: G3 'publishes original research regardless of length as Investigations and Reports'.",
+  "notes": "Read directly, but the page's 'Preparing your manuscript' section comes after a long table of open-access institutions, past the point where the fetch tool truncates the page. Only the scope, policy and charges parts were read; see 'unverified' for the rest. 'The inclusion of a data availability statement is a requirement for papers published in the Journal', and authors must 'publicly release all data and software code underlying any published paper as a condition of publication'. The submission site (https://g3.msubmit.net/cgi-bin/main.plex?form_type=display_auth_instructions) says 'Initial manuscripts may be in any format' but 'must include line and page numbers for review', uploaded 'as a single PDF (<15MB) or as separate files'. Files are reformatted to G3 style at revision. 2026-11-16 (browser): the page now has a 'Preparing your manuscript' section: abstract 'limited to 250 words for Investigations'; 'Please provide a 100 word summary' (Article summary); a running title of 50 characters or less; keywords (no number).",
+  "unverified": null,
+  "count": {
+   "abstract": false,
+   "methods": true,
+   "legends": false
+  },
+  "summary_name": "Article summary"
+ },
+ "references": {
+  "csl": "genetics",
+  "file": "g3.csl",
+  "overrides": {
+   "bibliography": {
+    "et-al-min": "6",
+    "et-al-use-first": "1"
+   },
+   "evidence": "As GENETICS (the same GSA style): five in full (20), six or more first and 'et al' (88): PMC13732446, PMC13732448, PMC13732485 (2026)."
+  }
+ },
+ "latex": {
+  "template": "publisher",
+  "class": "oup-authoring-template",
+  "wrapper": "journal.latex",
+  "files": {
+   "oup-authoring-template.cls": "d821dccff84d040d68c4c3d0edb97a866f0778d51b5ab265a83d589b7ea7096a",
+   "oup-abbrvnat.bst": "8004033e134786884125d7312a65f042d453c18f5970a54ecc193042904e00f9"
+  },
+  "publisher": "Genetics Society of America (Oxford University Press)",
+  "note": "OUP's general LaTeX template (oup-authoring-template v1.5, July 2026) with OUP's options for G3: Genes|Genomes|Genetics: contemporary design, large page, unnumbered sections, author-date citations (oup-abbrvnat)",
+  "source_notes": "SOURCE.md"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "OUP's general LaTeX template (oup-authoring-template v1.5, July 2026) with OUP's options for G3: Genes|Genomes|Genetics: contemporary design, large page, unnumbered sections, author-date citations (oup-abbrvnat); prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display, styles re-measured on 2026-11-17",
+   "page": {
+    "width_mm": 210.0,
+    "height_mm": 276.0,
+    "margins_mm": {
+     "top": 20.0,
+     "bottom": 18.1,
+     "left": 12.7,
+     "right": 12.4
+    }
+   },
+   "columns": {
+    "count": 1,
+    "gap_mm": 0.0
+   },
+   "mirror_margins": false,
+   "body": {
+    "pdf_font": "LMRoman8-Regular",
+    "size": 8.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 11.5,
+    "justify": true,
+    "indent_mm": 2.9,
+    "first_indent_mm": 0.0,
+    "space_after_pt": 0.0,
+    "font": "Century Schoolbook"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 20.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 27.1,
+     "line_pt": 24.0,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "author": {
+     "pdf_font": "LMSans12-Regular",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 9.6,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "affiliation": {
+     "pdf_font": "LMSans8-Regular",
+     "size": 7.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 17.5,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "correspondence": {
+     "pdf_font": "LMSans8-Regular",
+     "size": 7.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 9.6,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "abstract": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 8.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 4.4,
+     "line_pt": 11.0,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "abstract_title": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 12.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 24.1,
+     "run_in": false,
+     "text": "Abstract",
+     "font": "Arial"
+    },
+    "h1": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 10.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 16.3,
+     "run_in": false,
+     "after_pt": 6.0,
+     "font": "Arial"
+    },
+    "h2": {
+     "pdf_font": "LMSans10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 9.0,
+     "run_in": false,
+     "after_pt": 6.0,
+     "font": "Arial"
+    },
+    "h3": {
+     "pdf_font": "LMSans10-Oblique",
+     "size": 9.5,
+     "bold": false,
+     "italic": true,
+     "caps": false,
+     "align": "center",
+     "before_pt": 6.9,
+     "run_in": false,
+     "after_pt": 3.0,
+     "font": "Arial"
+    },
+    "caption": {
+     "pdf_font": "LMSans8-Regular",
+     "size": 7.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 12.9,
+     "line_pt": 9.5,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "table_caption": {
+     "pdf_font": "LMSans8-Regular",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 15.4,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "references": {
+     "pdf_font": "LMRoman8-Regular",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "hanging_mm": 4.2,
+     "before_pt": 1.4,
+     "line_pt": 11.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_note": {
+     "pdf_font": "LMRoman7-Regular",
+     "size": 6.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 14.6,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    }
+   },
+   "line_numbers": false,
+   "page_number": "header-left",
+   "running_head": true,
+   "fonts": {
+    "CMMI5": "Times New Roman",
+    "CMMI8": "Times New Roman",
+    "CMR5": "Times New Roman",
+    "CMR8": "Times New Roman",
+    "CMSY5": "Times New Roman",
+    "CMSY8": "Times New Roman",
+    "LMRoman8-Italic": "Century Schoolbook",
+    "_chosen_by_width": [
+     "LMRoman5-Regular",
+     "LMRoman7-Regular",
+     "LMRoman8-Italic",
+     "LMRoman8-Regular"
+    ],
+    "LMRoman8-Regular": "Century Schoolbook",
+    "LMSans10-Bold": "Arial",
+    "LMSans10-Oblique": "Arial",
+    "LMSans10-Regular": "Arial",
+    "LMSans12-Regular": "Arial",
+    "LMSans8-Oblique": "Arial",
+    "LMSans8-Regular": "Arial",
+    "LMSans9-Regular": "Arial",
+    "LMRoman5-Regular": "Century Schoolbook",
+    "LMRoman7-Regular": "Century Schoolbook"
+   },
+   "submission": {
+    "columns": {
+     "count": 1,
+     "gap_mm": 0.0
+    },
+    "line_numbers": true,
+    "line_pt": 19.2,
+    "running": {
+     "odd": [
+      {
+       "where": "header",
+       "baseline_mm": 12.7,
+       "size": 8.0,
+       "parts": [
+        {
+         "align": "right",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "G3: Genes|Genomes|Genetics, {year} | ",
+           "pdf_font": "LMSans8-Regular",
+           "size": 8.0,
+           "bold": false,
+           "italic": false,
+           "font": "Arial"
+          },
+          {
+           "text": "{page}",
+           "pdf_font": "LMSans9-Regular",
+           "size": 9.0,
+           "bold": false,
+           "italic": false,
+           "font": "Arial"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "even": [
+      {
+       "where": "header",
+       "baseline_mm": 12.7,
+       "size": 8.0,
+       "parts": [
+        {
+         "align": "left",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "{page} | ",
+           "pdf_font": "LMSans9-Regular",
+           "size": 9.0,
+           "bold": false,
+           "italic": false,
+           "font": "Arial"
+          },
+          {
+           "text": "G3: Genes|Genomes|Genetics, {year}",
+           "pdf_font": "LMSans8-Regular",
+           "size": 8.0,
+           "bold": false,
+           "italic": false,
+           "font": "Arial"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "first": []
+    },
+    "table": {
+     "row_pt": 19.2,
+     "gaps_pt": {
+      "caption": 16.7,
+      "top": 16.0,
+      "header": 7.3,
+      "mid": 15.9,
+      "bottom": 7.5
+     }
+    },
+    "run_in": [],
+    "display": {
+     "above_pt": 11.5,
+     "below_pt": 11.5,
+     "above_short_pt": 0.0,
+     "below_short_pt": 11.5,
+     "printed_above_pt": 19.1,
+     "printed_below_pt": 19.1
+    }
+   },
+   "running": {
+    "odd": [
+     {
+      "where": "header",
+      "baseline_mm": 12.7,
+      "size": 8.0,
+      "parts": [
+       {
+        "align": "right",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "G3: Genes|Genomes|Genetics, {year} | ",
+          "pdf_font": "LMSans8-Regular",
+          "size": 8.0,
+          "bold": false,
+          "italic": false,
+          "font": "Arial"
+         },
+         {
+          "text": "{page}",
+          "pdf_font": "LMSans9-Regular",
+          "size": 9.0,
+          "bold": false,
+          "italic": false,
+          "font": "Arial"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "even": [
+     {
+      "where": "header",
+      "baseline_mm": 12.7,
+      "size": 8.0,
+      "parts": [
+       {
+        "align": "left",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "{page} | ",
+          "pdf_font": "LMSans9-Regular",
+          "size": 9.0,
+          "bold": false,
+          "italic": false,
+          "font": "Arial"
+         },
+         {
+          "text": "G3: Genes|Genomes|Genetics, {year}",
+          "pdf_font": "LMSans8-Regular",
+          "size": 8.0,
+          "bold": false,
+          "italic": false,
+          "font": "Arial"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "first": []
+   },
+   "table": {
+    "pdf_font": "LMRoman8-Regular",
+    "size": 8.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.64,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.4,
+      "color": "000000"
+     },
+     "bottom": {
+      "pt": 0.64,
+      "color": "000000"
+     }
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 11.5,
+    "gaps_pt": {
+     "caption": 16.7,
+     "top": 10.6,
+     "header": 5.0,
+     "mid": 10.5,
+     "bottom": 5.1
+    },
+    "align": "center",
+    "outer_pt": 1.0,
+    "col_gap_pt": 8.6,
+    "font": "Century Schoolbook"
+   },
+   "display": {
+    "above_pt": 11.5,
+    "below_pt": 11.5,
+    "above_short_pt": 0.0,
+    "below_short_pt": 11.5,
+    "printed_above_pt": 12.6,
+    "printed_below_pt": 12.5
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 243.0,
+  "types": [
+   {
+    "name": "Single column",
+    "width_mm": 85.5
+   },
+   {
+    "name": "Double column",
+    "width_mm": 177.5
+   }
+  ],
+  "note": "85.5 mm column, 177.5 mm full text width, 243 mm text depth (same layout as Genetics).",
+  "source": "measured from a published article (PMC12836119; depth from the Genetics article PMC12405997, 2025); the journal publishes no figure sizes",
+  "labels": {
+   "font": "Helvetica",
+   "size": 10.0,
+   "bold": true,
+   "case": "lower",
+   "form": "a",
+   "source": "G3 author guidelines: lowercase a, b, c at the top left; size and weight measured from a published figure (PMC12836119, 2025): 10 pt Helvetica Bold",
+   "measured": true
+  },
+  "text": {
+   "min_pt": null,
+   "max_pt": null,
+   "fonts": [],
+   "fonts_only": false,
+   "about": false,
+   "source": "G3's guidelines set no sizes or fonts for figure text"
+  },
+  "lines": {
+   "min_pt": 0.25,
+   "max_pt": 1.0,
+   "about": false,
+   "source": "OUP's guidance for preparing artwork (the journal's page refers authors to OUP's for the rest): line thickness 0.25–1 pt"
+  },
+  "pictures": {
+   "photo": 350.0,
+   "combination": 600.0,
+   "line_art": 600.0,
+   "vector": [],
+   "source": "G3's guidelines: printed pictures at least 350 dpi, line art at least 600 dpi (1200 for complex or fine line art); OUP's guidance for preparing artwork: combination half-tones 600–900 dpi"
+  },
+  "export": {
+   "formats": [
+    "tiff",
+    "pdf",
+    "eps",
+    "svg",
+    "png"
+   ],
+   "colour": "rgb_preferred",
+   "max_mb": null,
+   "firm": true,
+   "max_dpi": null,
+   "embed_fonts": true,
+   "no_alpha": false,
+   "source": "G3's guidelines: TIFF and other raster files, PDF for vector figures, not Word, AI or JPEG; OUP's guidance for preparing artwork: EPS, SVG and PNG too, RGB recommended, fonts embedded"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://academic.oup.com/g3journal/pages/author-guidelines",
+   "what": "Author guidelines, now with a 'Preparing your manuscript' section (running title, keywords, abstract, graphical abstract, Article summary, LLM use in Materials and methods, data availability, Study funding, conflict of interest, alt text, tables, supplementary names). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://academic.oup.com/g3journal/pages/author-guidelines",
+   "what": "G3 author guidelines. Read in full (54,132 characters): policies only; its 'Preparing your manuscript' link is an in-page anchor with no section behind it."
+  },
+  {
+   "url": "https://g3.msubmit.net/cgi-bin/main.plex?form_type=display_auth_instructions",
+   "what": "Submission site instructions. Read: file format only."
+  },
+  {
+   "url": "https://www.overleaf.com/latex/templates/template-for-preparing-your-submission-to-g3-genes-genomes-genetics-using-overleaf/vffkrpmjrcgf",
+   "what": "GSA's official G3 template on Overleaf ('Genetics Society of America (GSA) - Official Templates'; last updated about seven months before 2026-11-16). Read 2026-11-16: abstract 'a single paragraph of less than 250 words', with the organism's full name and no citations or abbreviations; a \\keywords line (no number); sections Introduction, Materials and methods, Results and discussion; then Data availability, Acknowledgments, Funding ('Funding, including Funder Names and Grant numbers should be included here'), Conflicts of interest ('Please either state that you have no conflicts of interest, or list relevant information here'). No author-contributions section."
+  }
+ ],
+ "evidence": {
+  "status": "browser (the author guidelines' manuscript section, 2026-11-16) and GSA's official G3 template",
+  "abstract": {
+   "structured": false,
+   "headings": [],
+   "words": 250,
+   "note": "GSA's official G3 template: 'be a single paragraph of less than 250 words'."
+  },
+  "front": [
+   {
+    "kind": "keywords",
+    "name": "Keywords",
+    "required": null,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "The template has a \\keywords line with three examples; neither it nor the page gives a number or says they are required, so prose doesn't check them."
+   }
+  ],
+  "statements": {
+   "author_contributions": {
+    "required": null,
+    "heading": null,
+    "where": null,
+    "form": null,
+    "credit": "not mentioned",
+    "quote": null,
+    "note": "Not in the template or on the page; prose no longer lists one for G3 (2026-11-16)."
+   },
+   "funding": {
+    "required": null,
+    "heading": "Funding",
+    "where": "after Acknowledgments (template)",
+    "note": "Template: 'Funding, including Funder Names and Grant numbers should be included here.' The page only says, for community resources, to put award numbers in the acknowledgements."
+   },
+   "competing_interests": {
+    "required": null,
+    "heading": "Conflicts of interest",
+    "where": "after Funding, before the references (template)",
+    "quote": "Please either state that you have no conflicts of interest, or list relevant information here."
+   },
+   "data_availability": {
+    "required": true,
+    "heading": "Data availability",
+    "where": "after Results and discussion, before Acknowledgments (template)",
+    "quote": "The inclusion of a data availability statement is a requirement for papers published in the Journal."
+   },
+   "code_availability": {
+    "required": null,
+    "heading": null,
+    "where": "covered by the data policy: 'publicly release all data and software code underlying any published paper'"
+   },
+   "ethics": {
+    "required": null,
+    "heading": null,
+    "where": "in Methods (human participants and animals)"
+   },
+   "acknowledgements": {
+    "required": null,
+    "heading": "Acknowledgments",
+    "where": "after Data availability (template)"
+   },
+   "ai_use": {
+    "required": true,
+    "where": "Materials and methods (and the cover letter)",
+    "quote": "If you have used a Large Language Models (LLMs), such as ChatGPT, please provide full technical specifications of the LLM used",
+    "note": "browser 2026-11-16"
+   }
+  },
+  "differs_from_prose": [
+   "Conflict of interest: the author guidelines say 'You may need to include a \"conflict of interest\" section'; GSA's official G3 template asks every paper to 'either state that you have no conflicts of interest, or list relevant information'. Decided (Matthew, 2026-11-16): always included, required (the template)."
+  ],
+  "unconfirmed": []
+ }
+}

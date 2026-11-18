@@ -1,0 +1,806 @@
+{
+ "format": 1,
+ "id": "genome_biology",
+ "name": "Genome Biology",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "BMC (Springer Nature)",
+ "issn": {
+  "print": "1465-6906",
+  "online": "1474-760X"
+ },
+ "aliases": [
+  "Genome Biol"
+ ],
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "a4"
+ },
+ "captions": {
+  "label": "Fig.",
+  "bar": false
+ },
+ "figure_refs": {
+  "main": [
+   "Fig.",
+   "Figs."
+  ],
+  "list": "and",
+  "supp": null,
+  "panels": {
+   "case": "upper",
+   "style": null
+  },
+  "evidence": [
+   "\"Additional file 1: Fig. S3\" print mixed: mosaic's capital labels"
+  ]
+ },
+ "legends": {
+  "sep": "",
+  "title": {
+   "bold": false,
+   "line": false
+  },
+  "panels": {
+   "open": "",
+   "close": "",
+   "bold": "letter"
+  },
+  "scale": 0.8,
+  "table": {
+   "sep": "",
+   "title": {
+    "bold": false
+   }
+  },
+  "evidence": [
+   "Fig. 1 Title. a …",
+   "PMC13700247, PMC13670615",
+   "(table: bold \"Table 1\", regular title: PMC13733080 p. 13, 20, 22)"
+  ]
+ },
+ "supplement": {
+  "title": "Additional file 1",
+  "list": "files",
+  "list_heading": "Additional files",
+  "data_after_file": true,
+  "fig": {
+   "one": [
+    "Additional file 1: Fig. ",
+    ""
+   ],
+   "many": [
+    "Additional file 1: Figs. ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Figure ",
+    ""
+   ]
+  },
+  "tbl": {
+   "one": [
+    "Additional file 1: Table ",
+    ""
+   ],
+   "many": [
+    "Additional file 1: Tables ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Table ",
+    ""
+   ]
+  },
+  "data": {
+   "one": [
+    "Additional file ",
+    ""
+   ],
+   "many": [
+    "Additional files ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Additional file ",
+    ""
+   ]
+  },
+  "note": null
+ },
+ "house_style": {
+  "etal": {
+   "italic": false
+  },
+  "unit_space": "nbsp",
+  "range": "–",
+  "small": "words",
+  "thousands": {
+   "sep": ",",
+   "from": 4
+  },
+  "percent": {
+   "space": false
+  },
+  "celsius": {
+   "space": true
+  },
+  "latin": {
+   "italic": false
+  },
+  "units": {
+   "h": "h",
+   "s": "s",
+   "L": "L"
+  }
+ },
+ "house_style_from": {
+  "etal": "print",
+  "unit_space": "print",
+  "range": "print",
+  "small": "print",
+  "thousands": "print",
+  "percent": "print",
+  "celsius": "print",
+  "latin": "print",
+  "units": "print"
+ },
+ "abbreviations": {},
+ "cover_letter": {
+  "type": "Research",
+  "reviewers": "letter",
+  "points": [
+   "why it should be published in Genome Biology",
+   "any issues relating to the journal's policies, and any competing interests",
+   "that all authors approved it, and it isn't published or under consideration elsewhere"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Abstract",
+   "words": 250,
+   "headings": [
+    "Background",
+    "Results",
+    "Conclusions"
+   ]
+  },
+  "keywords": {
+   "min": 3,
+   "max": 10
+  },
+  "front": [],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Background",
+    "required": true
+   },
+   {
+    "kind": "results",
+    "name": "Results"
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   },
+   {
+    "kind": "conclusions",
+    "name": "Conclusions",
+    "required": true,
+    "hint": "The conclusions, briefly."
+   },
+   {
+    "kind": "methods",
+    "name": "Methods",
+    "required": true
+   },
+   {
+    "kind": "abbreviations",
+    "name": "Abbreviations"
+   }
+  ],
+  "back": [
+   {
+    "kind": "declarations",
+    "name": "Declarations",
+    "required": true
+   },
+   {
+    "kind": "ethics",
+    "name": "Ethics approval and consent to participate",
+    "required": true,
+    "hint": "The ethics approval and consent, or Not applicable."
+   },
+   {
+    "kind": "consent",
+    "name": "Consent for publication",
+    "required": true,
+    "hint": "Consent for publication, or Not applicable."
+   },
+   {
+    "kind": "data_availability",
+    "name": "Availability of data and materials",
+    "required": true,
+    "hint": "Where the data are available: repositories and accession numbers."
+   },
+   {
+    "kind": "competing_interests",
+    "name": "Competing interests",
+    "required": true,
+    "hint": "Any competing interests, or that there are none."
+   },
+   {
+    "kind": "funding",
+    "name": "Funding",
+    "required": true,
+    "hint": "The grants and funders that supported the work."
+   },
+   {
+    "kind": "author_contributions",
+    "name": "Authors' contributions",
+    "required": true,
+    "hint": "Who did what (for example CRediT roles, by initials)."
+   },
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgements",
+    "required": true,
+    "hint": "The people and institutions to thank."
+   },
+   {
+    "kind": "authors_information",
+    "name": "Authors' information"
+   },
+   {
+    "kind": "references",
+    "name": "References"
+   }
+  ],
+  "evidence": [
+   "(a structured abstract: its headings start the abstract's paragraphs; frontmatter.js)"
+  ]
+ },
+ "submission": {
+  "first": {
+   "formats": [
+    "docx"
+   ],
+   "accepts": [
+    "docx",
+    "latex",
+    "pdf"
+   ],
+   "figures": "separate",
+   "figure_format": "pdf",
+   "dpi": 600,
+   "naming": "Fig{n}",
+   "max_mb": 10
+  },
+  "revision": {
+   "accepts": [
+    "docx",
+    "latex"
+   ],
+   "marked_up": false,
+   "max_mb": 10
+  },
+  "evidence": [
+   "Figures as files at every stage (a PDF where vector); no tracked-changes copy uploaded"
+  ]
+ },
+ "statements": {
+  "ai": "methods",
+  "evidence": [
+   "browser 2026-11-16 (Research guidelines, title page)"
+  ]
+ },
+ "limits": {
+  "article_type": "Research",
+  "source": "https://link.springer.com/journal/13059/submission-guidelines/research",
+  "checked": "2026-11-16",
+  "limits": {
+   "title_chars": null,
+   "title_words": null,
+   "abstract_words": 250,
+   "summary_words": null,
+   "main_text_words": null,
+   "methods_words": null,
+   "legend_words": 300,
+   "display_items": null,
+   "figures": null,
+   "tables": null,
+   "references": null,
+   "keywords": 10
+  },
+  "counts": null,
+  "notes": "Read in a browser 2026-11-16: 'The Abstract should not exceed 250 words', with Background, Results and Conclusions; 'Three to ten keywords'; the general guidelines (https://link.springer.com/journal/13059/submission-guidelines): 'Figure titles (max 15 words) and legends (max 300 words)'. No main-text, figure or reference limit.",
+  "unverified": null,
+  "count": {
+   "abstract": false,
+   "methods": true,
+   "legends": false
+  }
+ },
+ "references": {
+  "csl": "genome-biology",
+  "file": "genome_biology.csl"
+ },
+ "latex": {
+  "template": "publisher",
+  "class": "sn-jnl",
+  "wrapper": "journal.latex",
+  "files": {
+   "sn-jnl.cls": "36d0c3273a59d48dc6a9c7b080dfa1ec50dc10229d8751568d1f2e490ffa5ecc",
+   "sn-vancouver-num.bst": "7fa6df12ec8e8945c86958a50fb703d181522745adcf72bf95a86f3633540e8a"
+  },
+  "publisher": "BMC (Springer Nature)",
+  "note": "Springer Nature LaTeX template, December 2024 (v3.1), which Genome Biology's submission guidelines recommend: sn-jnl with the Vancouver numbered reference style (sn-vancouver-num)",
+  "source_notes": "SOURCE.md"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "Springer Nature LaTeX template, December 2024 (v3.1), which Genome Biology's submission guidelines recommend: sn-jnl with the Vancouver numbered reference style (sn-vancouver-num); prose's sample manuscript compiled by Tectonic, 2026-11-15 (tools/measure_journal_layout.py); running, table, table_note, run_in, display, styles re-measured on 2026-11-17",
+   "page": {
+    "width_mm": 210.0,
+    "height_mm": 297.0,
+    "margins_mm": {
+     "top": 27.0,
+     "bottom": 76.8,
+     "left": 35.3,
+     "right": 43.8
+    }
+   },
+   "columns": {
+    "count": 1,
+    "gap_mm": 0.0
+   },
+   "mirror_margins": true,
+   "body": {
+    "pdf_font": "LMRoman10-Regular",
+    "size": 10.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 12.0,
+    "justify": true,
+    "indent_mm": 5.3,
+    "first_indent_mm": 0.1,
+    "space_after_pt": 0.0,
+    "font": "Century Schoolbook"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "LMRoman17-Regular",
+     "size": 17.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 55.6,
+     "line_pt": 22.5,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "author": {
+     "pdf_font": "LMRoman12-Regular",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 20.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "affiliation": {
+     "pdf_font": "LMRoman12-Regular",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 3.3,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "abstract": {
+     "pdf_font": "LMRoman9-Regular",
+     "size": 9.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "indent_mm": {
+      "left": 8.6,
+      "right": 8.7
+     },
+     "before_pt": 3.2,
+     "line_pt": 11.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "abstract_title": {
+     "pdf_font": "LMRoman9-Bold",
+     "size": 9.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 24.1,
+     "run_in": false,
+     "text": "Abstract",
+     "font": "Century Schoolbook"
+    },
+    "h1": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 14.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 12.0,
+     "run_in": false,
+     "after_pt": 9.0,
+     "font": "Century Schoolbook"
+    },
+    "h2": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 12.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 12.4,
+     "run_in": false,
+     "after_pt": 6.0,
+     "font": "Century Schoolbook"
+    },
+    "h3": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 11.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 13.8,
+     "run_in": false,
+     "after_pt": 6.0,
+     "font": "Century Schoolbook"
+    },
+    "caption": {
+     "pdf_font": "LMRoman8-Regular",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 1.6,
+     "line_pt": 11.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_caption": {
+     "pdf_font": "LMRoman10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 11.9,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "references": {
+     "pdf_font": "LMRoman10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "hanging_mm": 5.2,
+     "before_pt": 9.0,
+     "line_pt": 12.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_note": {
+     "pdf_font": "LMRoman7-Regular",
+     "size": 7.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 5.3,
+      "right": 0.0
+     },
+     "before_pt": 12.6,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "correspondence": {
+     "pdf_font": "LMRoman12-Regular",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 28.2,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    }
+   },
+   "line_numbers": false,
+   "page_number": "footer-center",
+   "running_head": false,
+   "fonts": {
+    "CMMI10": "Times New Roman",
+    "CMMI7": "Times New Roman",
+    "CMR10": "Times New Roman",
+    "CMR7": "Times New Roman",
+    "LMRoman10-Bold": "Century Schoolbook",
+    "_chosen_by_width": [
+     "LMRoman10-Bold",
+     "LMRoman10-Regular",
+     "LMRoman12-Bold",
+     "LMRoman12-Regular",
+     "LMRoman17-Regular",
+     "LMRoman5-Regular",
+     "LMRoman7-Regular",
+     "LMRoman8-Bold",
+     "LMRoman8-Regular",
+     "LMRoman9-Bold",
+     "LMRoman9-Regular"
+    ],
+    "LMRoman10-Regular": "Century Schoolbook",
+    "LMRoman12-Bold": "Century Schoolbook",
+    "LMRoman12-Regular": "Century Schoolbook",
+    "LMRoman17-Regular": "Century Schoolbook",
+    "LMRoman8-Bold": "Century Schoolbook",
+    "LMRoman8-Regular": "Century Schoolbook",
+    "LMRoman9-Bold": "Century Schoolbook",
+    "LMRoman9-Regular": "Century Schoolbook",
+    "LMRoman5-Regular": "Century Schoolbook",
+    "LMRoman7-Regular": "Century Schoolbook"
+   },
+   "submission": {
+    "columns": {
+     "count": 1,
+     "gap_mm": 0.0
+    },
+    "line_numbers": true,
+    "line_pt": 20.0,
+    "running": null,
+    "table": {
+     "row_pt": 20.0,
+     "gaps_pt": {
+      "caption": 22.5,
+      "top": 17.2,
+      "header": 8.0,
+      "mid": 17.1,
+      "bottom": 8.1
+     }
+    },
+    "run_in": [],
+    "display": {
+     "above_pt": 12.0,
+     "below_pt": 12.0,
+     "above_short_pt": 0.0,
+     "below_short_pt": 3.0,
+     "printed_above_pt": 20.0,
+     "printed_below_pt": 5.0
+    }
+   },
+   "running": null,
+   "table": {
+    "pdf_font": "LMRoman10-Regular",
+    "size": 10.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.8,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.5,
+      "color": "000000"
+     },
+     "bottom": {
+      "pt": 0.8,
+      "color": "000000"
+     }
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 12.0,
+    "gaps_pt": {
+     "caption": 14.5,
+     "top": 11.6,
+     "header": 5.6,
+     "mid": 11.5,
+     "bottom": 5.7
+    },
+    "align": "center",
+    "outer_pt": 1.1,
+    "col_gap_pt": 12.6,
+    "font": "Century Schoolbook"
+   },
+   "display": {
+    "above_pt": 12.0,
+    "below_pt": 12.0,
+    "above_short_pt": 0.0,
+    "below_short_pt": 3.0,
+    "printed_above_pt": 13.6,
+    "printed_below_pt": 4.6
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 225.0,
+  "types": [
+   {
+    "name": "Half page",
+    "width_mm": 85.0
+   },
+   {
+    "name": "Full page",
+    "width_mm": 170.0
+   }
+  ],
+  "note": "85 or 170 mm wide; at most 225 mm tall including the legend.",
+  "source": "BMC (Genome Biology's publisher) figure guidelines",
+  "labels": {
+   "font": "Helvetica",
+   "size": 10.0,
+   "bold": true,
+   "case": "upper",
+   "form": "a",
+   "source": "Genome Biology's guidelines don't say; measured from a published figure (PMC12849586, 2025): 10 pt bold capitals",
+   "measured": true
+  },
+  "text": {
+   "min_pt": null,
+   "max_pt": null,
+   "fonts": [],
+   "fonts_only": false,
+   "about": false,
+   "source": "Genome Biology's guidelines ask only that text be legible at 85 or 170 mm wide"
+  },
+  "lines": {
+   "min_pt": 0.25,
+   "max_pt": null,
+   "about": false,
+   "source": "Genome Biology's guidelines: all lines wider than 0.25 pt at 85 or 170 mm wide"
+  },
+  "pictures": {
+   "photo": 300.0,
+   "combination": 300.0,
+   "line_art": 300.0,
+   "vector": [],
+   "source": "Genome Biology's guidelines: about 300 dpi at the final size"
+  },
+  "export": {
+   "formats": [
+    "pdf",
+    "eps",
+    "pptx",
+    "tiff",
+    "jpeg",
+    "png"
+   ],
+   "colour": "either",
+   "max_mb": 10.0,
+   "firm": true,
+   "max_dpi": null,
+   "embed_fonts": true,
+   "no_alpha": false,
+   "source": "Genome Biology's guidelines: EPS, PDF, PowerPoint, TIFF, JPEG or PNG (or Word, BMP, CDX); no colour mode stated; figures at most 10 MB; fonts embedded"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://link.springer.com/journal/13059/submission-guidelines",
+   "what": "General formatting guidelines (legends 300 words, titles 15 words, Additional files, 10 MB figures, double spacing, line numbers). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://link.springer.com/journal/13059/submission-guidelines/research",
+   "what": "Research article guidelines (sections, abstract, keywords, Declarations, AI, references). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://link.springer.com/journal/13059/submission-guidelines/research",
+   "what": "Research article guidelines. NOT read: genomebiology.biomedcentral.com redirects to link.springer.com, which redirects to idp.springer.com. Search excerpts only."
+  }
+ ],
+ "evidence": {
+  "status": "browser (the research and general guidelines on link.springer.com, 2026-11-16)",
+  "abstract": {
+   "structured": true,
+   "headings": [
+    "Background",
+    "Results",
+    "Conclusions"
+   ],
+   "words": 250,
+   "note": "browser: 'The Abstract should not exceed 250 words', with Background, Results, Conclusions."
+  },
+  "front": [
+   {
+    "kind": "keywords",
+    "name": "Keywords",
+    "required": true,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": 3,
+    "max": 10,
+    "note": "excerpt: 'Three to ten keywords representing the main content of the article.'"
+   }
+  ],
+  "statements": {
+   "_all": "excerpt: one 'Declarations' section with every subheading present; a subheading that does not apply keeps its heading with 'Not applicable' written under it.",
+   "author_contributions": {
+    "required": true,
+    "heading": "Authors' contributions",
+    "where": "under Declarations",
+    "form": "sentences by initials",
+    "credit": false,
+    "quote": null
+   },
+   "funding": {
+    "required": true,
+    "heading": "Funding",
+    "where": "under Declarations",
+    "note": "excerpt: all sources declared, and any role of the funder in design, analysis or the decision to publish."
+   },
+   "competing_interests": {
+    "required": true,
+    "heading": "Competing interests",
+    "where": "under Declarations",
+    "note": "excerpt: financial and non-financial."
+   },
+   "data_availability": {
+    "required": true,
+    "heading": "Availability of data and materials",
+    "where": "under Declarations"
+   },
+   "code_availability": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "ethics": {
+    "required": true,
+    "heading": "Ethics approval and consent to participate",
+    "where": "under Declarations; followed by 'Consent for publication'",
+    "note": "'Not applicable' where it does not apply."
+   },
+   "acknowledgements": {
+    "required": true,
+    "heading": "Acknowledgements",
+    "where": "under Declarations, after Authors' contributions; then the optional 'Authors' information'"
+   },
+   "ai_use": {
+    "required": true,
+    "where": "Methods",
+    "quote": "Use of an LLM should be properly documented in the Methods section (and if a Methods section is not available, in a suitable alternative part) of the manuscript",
+    "note": "browser 2026-11-16"
+   }
+  },
+  "differs_from_prose": [],
+  "unconfirmed": []
+ }
+}

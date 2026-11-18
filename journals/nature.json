@@ -1,0 +1,864 @@
+{
+ "format": 1,
+ "id": "nature",
+ "name": "Nature",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "Springer Nature",
+ "issn": {
+  "print": "0028-0836",
+  "online": "1476-4687"
+ },
+ "aliases": [
+  "Nature (London)"
+ ],
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "a4"
+ },
+ "captions": {
+  "label": "Fig.",
+  "bar": true
+ },
+ "figure_refs": {
+  "main": [
+   "Fig.",
+   "Figs."
+  ],
+  "start": [
+   "Figure",
+   "Figures"
+  ],
+  "list": "and",
+  "panels": {
+   "case": "lower",
+   "style": {
+    "one": "closed",
+    "many": "closed",
+    "list": ",",
+    "range": "–"
+   }
+  },
+  "supp": {
+   "one": [
+    "Supplementary Fig. ",
+    ""
+   ],
+   "many": [
+    "Supplementary Figs. ",
+    ""
+   ],
+   "s": false
+  },
+  "extended": {
+   "one": [
+    "Extended Data Fig. ",
+    ""
+   ],
+   "many": [
+    "Extended Data Figs. ",
+    ""
+   ],
+   "s": false
+  },
+  "evidence": [
+   "Fig. 1b,c"
+  ]
+ },
+ "legends": {
+  "sep": " |",
+  "title": {
+   "bold": true,
+   "line": false
+  },
+  "panels": {
+   "open": "",
+   "close": ",",
+   "bold": "letter"
+  },
+  "scale": 0.8,
+  "table": {
+   "sep": " |",
+   "title": {
+    "bold": true
+   }
+  },
+  "evidence": [
+   "Fig. 1 | Title. a, …",
+   "PMC13736641, PMC13736631",
+   "(table: Table 1 | Title, all semibold: PMC13686933 p. 4, PMC13686945 p. 6, PMC13736659 p. 3)"
+  ]
+ },
+ "supplement": {
+  "title": "Supplementary Information",
+  "refs": "continue",
+  "guide": true,
+  "fig": {
+   "one": [
+    "Supplementary Fig. ",
+    ""
+   ],
+   "many": [
+    "Supplementary Figs. ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Supplementary Figure ",
+    ""
+   ]
+  },
+  "tbl": {
+   "one": [
+    "Supplementary Table ",
+    ""
+   ],
+   "many": [
+    "Supplementary Tables ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Supplementary Table ",
+    ""
+   ]
+  },
+  "data": {
+   "one": [
+    "Supplementary Data ",
+    ""
+   ],
+   "many": [
+    "Supplementary Data ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Supplementary Data ",
+    ""
+   ]
+  },
+  "note": {
+   "one": [
+    "Supplementary Note ",
+    ""
+   ],
+   "many": [
+    "Supplementary Notes ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Supplementary Note ",
+    ""
+   ]
+  },
+  "extended": {
+   "one": [
+    "Extended Data Fig. ",
+    ""
+   ],
+   "many": [
+    "Extended Data Figs. ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Extended Data Fig. ",
+    ""
+   ]
+  },
+  "evidence": [
+   "(it holds no figures: Extended Data)"
+  ]
+ },
+ "house_style": {
+  "p": {
+   "italic": true,
+   "space": true,
+   "zero": true
+  },
+  "etal": {
+   "italic": false
+  },
+  "unit_space": "nbsp",
+  "range": "–",
+  "thousands": {
+   "sep": ",",
+   "from": 4
+  },
+  "percent": {
+   "space": false
+  },
+  "celsius": {
+   "space": true
+  },
+  "latin": {
+   "italic": false
+  },
+  "units": {
+   "h": "h",
+   "s": "s",
+   "mL": "ml",
+   "uL": "µl"
+  }
+ },
+ "house_style_from": {
+  "p": "print",
+  "etal": "print",
+  "unit_space": "stated",
+  "range": "print",
+  "thousands": "stated",
+  "percent": "print",
+  "celsius": "print",
+  "latin": "print",
+  "units": "print"
+ },
+ "abbreviations": {},
+ "cover_letter": {
+  "type": "Article",
+  "reviewers": "letter",
+  "points": [
+   "why the work matters, and why it suits Nature, without repeating the abstract",
+   "any related manuscripts with overlapping authors in press or under consideration elsewhere",
+   "anything the editors should know in confidence, such as competing interests"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Abstract",
+   "words": 200
+  },
+  "front": [],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Introduction",
+    "headed": false
+   },
+   {
+    "kind": "results",
+    "name": "Results",
+    "headed": false
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   }
+  ],
+  "back": [
+   {
+    "kind": "references",
+    "name": "References"
+   },
+   {
+    "kind": "tables",
+    "name": "Tables"
+   },
+   {
+    "kind": "figure_legends",
+    "name": "Figure legends"
+   },
+   {
+    "kind": "methods",
+    "name": "Methods",
+    "required": true
+   },
+   {
+    "kind": "data_availability",
+    "name": "Data availability",
+    "required": true,
+    "hint": "Where the data are available: repositories and accession numbers."
+   },
+   {
+    "kind": "code_availability",
+    "name": "Code availability"
+   },
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgements"
+   },
+   {
+    "kind": "funding",
+    "name": "Funding"
+   },
+   {
+    "kind": "author_contributions",
+    "name": "Author contributions",
+    "required": true,
+    "hint": "Who did what (for example CRediT roles, by initials)."
+   },
+   {
+    "kind": "competing_interests",
+    "name": "Competing interests",
+    "required": true,
+    "hint": "Any competing interests, or that there are none."
+   },
+   {
+    "kind": "additional_information",
+    "name": "Additional information",
+    "required": true,
+    "hint": "Who correspondence and requests for materials should be addressed to, and whether there is Supplementary Information."
+   },
+   {
+    "kind": "extended_data",
+    "name": "Extended Data figure legends"
+   }
+  ],
+  "evidence": [
+   "(no heading over the opening, nor \"Results\": descriptive subheadings; Methods after the legends, with its data and code availability statements; then the end notes)"
+  ]
+ },
+ "submission": {
+  "first": {
+   "accepts": [
+    "pdf",
+    "docx"
+   ]
+  },
+  "revision": {
+   "accepts": [
+    "docx",
+    "latex"
+   ],
+   "max_mb": 50,
+   "also": [
+    "Extended Data figures, each a JPEG (preferred), TIFF or EPS file, not PDF (Surname_EDfig1.jpg)",
+    "the Reporting Summary",
+    "source data: an Excel or CSV file for each figure"
+   ]
+  },
+  "anonymised": "optional",
+  "evidence": [
+   "Final figures: no TIFF, PNG or JPEG; Extended Data no PDF (research-figure-guide.nature.com)"
+  ]
+ },
+ "statements": {
+  "ai": "methods",
+  "evidence": [
+   "browser 2026-11-16 (initial-submission page)"
+  ]
+ },
+ "limits": {
+  "article_type": "Article",
+  "source": "https://www.nature.com/nature/for-authors/formatting-guide",
+  "checked": "2026-11-16",
+  "limits": {
+   "title_chars": 75,
+   "title_words": null,
+   "abstract_words": 200,
+   "summary_words": null,
+   "main_text_words": null,
+   "methods_words": 3000,
+   "legend_words": 250,
+   "display_items": 6,
+   "figures": null,
+   "tables": null,
+   "references": 50,
+   "keywords": null
+  },
+  "counts": null,
+  "notes": "Read in a browser 2026-11-16: the formatting guide and the initial-submission page (https://www.nature.com/nature/for-authors/initial-submission). Title: 'Titles must fit on two lines in print (75 characters including spaces)'. Summary paragraph 'ideally of no more than 200 words'. 'main text of 2,500 words and 4 modest display items ... for a typical 6 page article and 4300 words and 5-6 modest display items for a typical 8 page article; as a guideline up to 50 references'. Methods 'typically do not exceed 3,000 words'; 'Methods-only references do not count against your reference limit.' Legends: the initial-submission page says 'Figure legends of <250 words each', the formatting guide 'Legends should be fewer than 300 words each' (250 kept: the two pages differ). Up to ten Extended Data items. 'Word counts refer to the text of the paper. Title, author list, acknowledgements and references are not included'. Earlier (2026-11-13): the 2018 brief guide (https://www.nature.com/documents/nature_3a_initial_revised_submissions.pdf).",
+  "unverified": null,
+  "count": {
+   "abstract": true,
+   "methods": false,
+   "legends": false
+  }
+ },
+ "references": {
+  "csl": "nature",
+  "file": "nature.csl"
+ },
+ "latex": {
+  "template": "publisher",
+  "class": "sn-jnl",
+  "wrapper": "journal.latex",
+  "files": {
+   "sn-jnl.cls": "36d0c3273a59d48dc6a9c7b080dfa1ec50dc10229d8751568d1f2e490ffa5ecc",
+   "sn-nature.bst": "638d68f5b0e92ffb25d64d29c7334e1bac6bbf54574b602bc633af8d96e1fd9b"
+  },
+  "publisher": "Springer Nature",
+  "note": "Springer Nature LaTeX template, December 2024 (sn-jnl with the sn-nature reference style)"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "Springer Nature LaTeX template, December 2024 (sn-jnl with the sn-nature reference style); prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display, styles re-measured on 2026-11-17",
+   "page": {
+    "width_mm": 210.0,
+    "height_mm": 297.0,
+    "margins_mm": {
+     "top": 27.0,
+     "bottom": 76.8,
+     "left": 35.3,
+     "right": 43.8
+    }
+   },
+   "columns": {
+    "count": 1,
+    "gap_mm": 0.0
+   },
+   "mirror_margins": true,
+   "body": {
+    "pdf_font": "LMRoman10-Regular",
+    "size": 10.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 12.0,
+    "justify": true,
+    "indent_mm": 5.3,
+    "first_indent_mm": 0.1,
+    "space_after_pt": 0.0,
+    "font": "Century Schoolbook"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "LMRoman17-Regular",
+     "size": 17.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 55.6,
+     "line_pt": 22.5,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "author": {
+     "pdf_font": "LMRoman12-Regular",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 20.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "affiliation": {
+     "pdf_font": "LMRoman12-Regular",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 3.3,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "correspondence": {
+     "pdf_font": "LMRoman12-Regular",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 28.2,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "abstract": {
+     "pdf_font": "LMRoman9-Regular",
+     "size": 9.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "indent_mm": {
+      "left": 8.6,
+      "right": 8.7
+     },
+     "before_pt": 3.2,
+     "line_pt": 11.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "abstract_title": {
+     "pdf_font": "LMRoman9-Bold",
+     "size": 9.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 24.1,
+     "run_in": false,
+     "text": "Abstract",
+     "font": "Century Schoolbook"
+    },
+    "h1": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 14.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 12.0,
+     "run_in": false,
+     "after_pt": 9.0,
+     "font": "Century Schoolbook"
+    },
+    "h2": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 12.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 12.4,
+     "run_in": false,
+     "after_pt": 6.0,
+     "font": "Century Schoolbook"
+    },
+    "h3": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 11.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 11.5,
+     "run_in": false,
+     "after_pt": 6.0,
+     "font": "Century Schoolbook"
+    },
+    "caption": {
+     "pdf_font": "LMRoman8-Regular",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "before_pt": 1.6,
+     "line_pt": 10.4,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_caption": {
+     "pdf_font": "LMRoman10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 11.7,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "references": {
+     "pdf_font": "LMRoman10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "hanging_mm": 5.2,
+     "before_pt": 9.0,
+     "line_pt": 12.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_note": {
+     "pdf_font": "LMRoman7-Regular",
+     "size": 7.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 5.3,
+      "right": 0.0
+     },
+     "before_pt": 12.4,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    }
+   },
+   "line_numbers": false,
+   "page_number": "footer-center",
+   "running_head": false,
+   "fonts": {
+    "CMMI10": "Times New Roman",
+    "CMMI7": "Times New Roman",
+    "CMR10": "Times New Roman",
+    "CMR7": "Times New Roman",
+    "LMRoman10-Bold": "Century Schoolbook",
+    "_chosen_by_width": [
+     "LMRoman10-Bold",
+     "LMRoman10-Italic",
+     "LMRoman10-Regular",
+     "LMRoman12-Bold",
+     "LMRoman12-Regular",
+     "LMRoman17-Regular",
+     "LMRoman5-Regular",
+     "LMRoman7-Regular",
+     "LMRoman8-Bold",
+     "LMRoman8-Regular",
+     "LMRoman9-Bold",
+     "LMRoman9-Regular"
+    ],
+    "LMRoman10-Italic": "Century Schoolbook",
+    "LMRoman10-Regular": "Century Schoolbook",
+    "LMRoman12-Bold": "Century Schoolbook",
+    "LMRoman12-Regular": "Century Schoolbook",
+    "LMRoman17-Regular": "Century Schoolbook",
+    "LMRoman8-Bold": "Century Schoolbook",
+    "LMRoman8-Regular": "Century Schoolbook",
+    "LMRoman9-Bold": "Century Schoolbook",
+    "LMRoman9-Regular": "Century Schoolbook",
+    "LMRoman5-Regular": "Century Schoolbook",
+    "LMRoman7-Regular": "Century Schoolbook"
+   },
+   "submission": {
+    "columns": {
+     "count": 1,
+     "gap_mm": 0.0
+    },
+    "line_numbers": true,
+    "line_pt": 20.0,
+    "running": null,
+    "table": {
+     "row_pt": 20.0,
+     "gaps_pt": {
+      "caption": 22.9,
+      "top": 17.2,
+      "header": 8.0,
+      "mid": 17.1,
+      "bottom": 8.1
+     }
+    },
+    "run_in": [],
+    "display": {
+     "above_pt": 12.0,
+     "below_pt": 12.0,
+     "above_short_pt": 0.0,
+     "below_short_pt": 3.0,
+     "printed_above_pt": 20.0,
+     "printed_below_pt": 5.0
+    }
+   },
+   "running": null,
+   "table": {
+    "pdf_font": "LMRoman10-Regular",
+    "size": 10.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.8,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.5,
+      "color": "000000"
+     },
+     "bottom": {
+      "pt": 0.8,
+      "color": "000000"
+     }
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 12.0,
+    "gaps_pt": {
+     "caption": 14.9,
+     "top": 11.6,
+     "header": 5.6,
+     "mid": 11.5,
+     "bottom": 5.7
+    },
+    "align": "center",
+    "outer_pt": 1.1,
+    "col_gap_pt": 12.6,
+    "font": "Century Schoolbook"
+   },
+   "display": {
+    "above_pt": 12.0,
+    "below_pt": 12.0,
+    "above_short_pt": 0.0,
+    "below_short_pt": 3.0,
+    "printed_above_pt": 12.0,
+    "printed_below_pt": 2.6
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 170.0,
+  "types": [
+   {
+    "name": "Single column",
+    "width_mm": 90.0
+   },
+   {
+    "name": "Double column",
+    "width_mm": 180.0
+   }
+  ],
+  "note": "90 mm single column, 180 mm double column; full page depth 170 mm.",
+  "source": "Nature's figure guidelines (research-figure-guide.nature.com)",
+  "labels": {
+   "font": "Helvetica",
+   "size": 8.0,
+   "bold": true,
+   "case": "lower",
+   "form": "a",
+   "source": "Nature's final submission guidelines: 8 pt bold, upright, lowercase a, b, c",
+   "measured": false
+  },
+  "text": {
+   "min_pt": 5.0,
+   "max_pt": 7.0,
+   "fonts": [
+    "Helvetica",
+    "Arial",
+    "Symbol",
+    "Courier"
+   ],
+   "fonts_only": false,
+   "about": false,
+   "source": "Nature's final submission guidelines: text 5–7 pt, sans-serif, preferably Helvetica or Arial (Symbol for Greek, Courier for sequences)"
+  },
+  "lines": {
+   "min_pt": 0.25,
+   "max_pt": 1.0,
+   "about": false,
+   "source": "Nature's final submission guidelines: line weights 0.25–1 pt at final size"
+  },
+  "pictures": {
+   "photo": 300.0,
+   "combination": null,
+   "line_art": null,
+   "vector": [
+    "line_art",
+    "combination"
+   ],
+   "source": "Nature's final submission guidelines: photos at least 300 dpi at the largest size used; graphs, line art and text over photos as editable vector artwork"
+  },
+  "export": {
+   "formats": [
+    "pdf",
+    "eps",
+    "svg"
+   ],
+   "colour": "rgb_preferred",
+   "max_mb": 50.0,
+   "firm": false,
+   "max_dpi": null,
+   "embed_fonts": true,
+   "no_alpha": false,
+   "source": "Nature's figure guide: vector files (PDF or EPS preferred, SVG accepted), not JPEG, TIFF or PNG; RGB recommended, CMYK accepted; files under 50 MB where possible; fonts embedded"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://www.nature.com/nature/for-authors/initial-submission",
+   "what": "Initial submission (title, lengths, legends, AI, statements). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://www.nature.com/nature/for-authors/formatting-guide",
+   "what": "Formatting guide (order of parts, summary paragraph, lengths, references). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://www.nature.com/nature/for-authors/formatting-guide",
+   "what": "Formatting guide. NOT read: redirects to idp.nature.com, which returns error=cookies_not_supported. Search excerpts only."
+  },
+  {
+   "url": "https://www.nature.com/nature/for-authors/initial-submission",
+   "what": "Initial submission. NOT read (same redirect). Search excerpts only."
+  },
+  {
+   "url": "https://www.nature.com/documents/nature_3a_initial_revised_submissions.pdf",
+   "what": "Brief guide for submission to Nature (PDF dated 2018-02). Read, but old: used only where excerpts of the current pages agree."
+  },
+  {
+   "url": "https://www.springernature.com/gp/policies/editorial-policies/ai-manuscript-preparation",
+   "what": "Springer Nature AI use in manuscript preparation. Read; gives no manuscript location for the disclosure and does not name Nature."
+  }
+ ],
+ "evidence": {
+  "status": "browser (the formatting guide and the initial-submission page, 2026-11-16)",
+  "abstract": {
+   "structured": false,
+   "headings": [],
+   "words": 200,
+   "note": "browser: 'a fully referenced summary paragraph, ideally of no more than 200 words' (formatting guide)."
+  },
+  "front": [
+   {
+    "kind": "keywords",
+    "name": null,
+    "required": null,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "No keywords requirement appeared in any excerpt of Nature's own pages or in the 2018 PDF."
+   }
+  ],
+  "statements": {
+   "author_contributions": {
+    "required": true,
+    "heading": "Author contributions",
+    "where": "end notes, after the funding statement (formatting guide's order)",
+    "form": "sentence",
+    "credit": false,
+    "quote": "You must include a statement that specifies the individual contributions of each co-author.",
+    "note": "Quote read in the 2018 PDF (which gives an initials example, 'A.P.M. ...') and repeated in the excerpt of the current initial-submission page. Whether the current page mentions CRediT was not readable."
+   },
+   "funding": {
+    "required": null,
+    "heading": "Funding",
+    "where": "a separate funding statement after Acknowledgements",
+    "quote": "Any relevant funding information for primary research papers should be declared in a separate funding statement."
+   },
+   "competing_interests": {
+    "required": true,
+    "heading": "Competing interests",
+    "where": "end of the manuscript text, after Author contributions (excerpt of forms-and-declarations page: 'Please include a declaration of competing interests at the end of the text of your manuscript.')",
+    "quote": "Submission of a competing interests statement is required for all content of the journal."
+   },
+   "data_availability": {
+    "required": true,
+    "heading": "Data availability",
+    "where": "in Methods (2018 PDF: 'Please provide a Data Availability statement in the Methods section under \"Data Availability\"'; excerpt: statements at the end of the Methods)"
+   },
+   "code_availability": {
+    "required": null,
+    "heading": "Code availability",
+    "where": "in Methods",
+    "note": "Required only when custom code is central to the conclusions (2018 PDF and excerpt)."
+   },
+   "ethics": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "acknowledgements": {
+    "required": false,
+    "heading": "Acknowledgements",
+    "where": "end notes, before Author contributions",
+    "note": "2018 PDF: 'Acknowledgements (optional)'."
+   },
+   "ai_use": {
+    "required": true,
+    "where": "Methods (or a suitable alternative part if there is no Methods)",
+    "quote": "Use of an LLM should be properly documented in the Methods section (and if a Methods section is not available, in a suitable alternative part) of the manuscript.",
+    "note": "browser 2026-11-16"
+   }
+  },
+  "differs_from_prose": [
+   "Legend length: the initial-submission page says 'Figure legends of <250 words each', the formatting guide 'Legends should be fewer than 300 words each'. Decided (Matthew, 2026-11-16): prose keeps 250."
+  ],
+  "unconfirmed": []
+ }
+}

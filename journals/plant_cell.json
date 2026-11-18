@@ -1,0 +1,927 @@
+{
+ "format": 1,
+ "id": "plant_cell",
+ "name": "Plant Cell",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "Oxford University Press",
+ "issn": {
+  "print": "1040-4651",
+  "online": "1532-298X"
+ },
+ "aliases": [
+  "The Plant Cell"
+ ],
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "letter"
+ },
+ "captions": {
+  "label": "Figure",
+  "bar": false
+ },
+ "figure_refs": {
+  "main": [
+   "Figure",
+   "Figures"
+  ],
+  "panels": {
+   "case": "lower",
+   "style": {
+    "one": "closed",
+    "many": "closed",
+    "list": "and",
+    "range": "–"
+   }
+  },
+  "supp": {
+   "one": [
+    "Supplementary Figure ",
+    ""
+   ],
+   "many": [
+    "Supplementary Figures ",
+    ""
+   ],
+   "s": false
+  },
+  "evidence": [
+   "(print, since Jan 2026: Fig. 2)",
+   "Fig. 1b and c"
+  ]
+ },
+ "legends": {
+  "sep": "",
+  "title": {
+   "bold": false,
+   "line": false
+  },
+  "panels": {
+   "open": "",
+   "close": ")",
+   "bold": null
+  },
+  "scale": 0.8,
+  "evidence": [
+   "Figure 1 Title. a) …",
+   "(measured 2026-11-16: bold \"Figure 1\" with no full stop, regular title: PMC13291814 p. 3,",
+   "PMC13353863 p. 3, PMC13411792 p. 3, PMC13439946 p. 3, PMC13585480 p. 2. Its tables print both \"Table 1\" and \"Table 1.\": left as its figure legends, Matthew's decision 2026-11-16)",
+   "PMC13647274, PMC13674110"
+  ]
+ },
+ "supplement": {
+  "title": "Supplementary Data",
+  "list": "titles",
+  "list_where": "methods",
+  "list_heading": "Supplementary Data",
+  "large_tables": "xlsx",
+  "large_rows": 60,
+  "fig": {
+   "one": [
+    "Supplementary Figure ",
+    ""
+   ],
+   "many": [
+    "Supplementary Figures ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Supplementary Figure ",
+    ""
+   ]
+  },
+  "tbl": {
+   "one": [
+    "Supplementary Table ",
+    ""
+   ],
+   "many": [
+    "Supplementary Tables ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Supplementary Table ",
+    ""
+   ]
+  },
+  "data": {
+   "one": [
+    "Supplementary Data Set ",
+    ""
+   ],
+   "many": [
+    "Supplementary Data Sets ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Supplementary Data Set ",
+    ""
+   ]
+  },
+  "note": null,
+  "legend_link": "supports",
+  "evidence": [
+   "(tables over 1–2 pages as Excel Supplementary Data Sets)",
+   "The Plant Cell's general instructions: each supplementary figure's legend says \"Supports Figure 1\" (moved from editor/src/check.js, 2026-11-17)"
+  ]
+ },
+ "house_style": {
+  "p": {
+   "italic": true,
+   "space": true,
+   "zero": true,
+   "letter": "P"
+  },
+  "etal": {
+   "italic": false
+  },
+  "small": "numerals",
+  "thousands": {
+   "sep": ",",
+   "from": 4
+  },
+  "percent": {
+   "space": false
+  },
+  "celsius": {
+   "space": true
+  },
+  "units": {
+   "h": "h",
+   "s": "s",
+   "mL": "mL",
+   "uL": "µL",
+   "L": "L"
+  }
+ },
+ "house_style_from": {
+  "p": "print",
+  "etal": "print",
+  "small": "print",
+  "thousands": "print",
+  "percent": "print",
+  "celsius": "print",
+  "units": "print"
+ },
+ "abbreviations": {
+  "abstract": "none",
+  "legends": true
+ },
+ "cover_letter": {
+  "type": "Research Article",
+  "reviewers": "excluded",
+  "points": [
+   "the importance of the work and how its major findings fit the journal's scope",
+   "why it is exciting and how it advances the field",
+   "any closely related work in press or submitted elsewhere",
+   "that new gene symbols are not already in use, and whether each is registered",
+   "the supplementary data, and why each item is supplementary"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Abstract",
+   "words": 250
+  },
+  "front": [],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Introduction"
+   },
+   {
+    "kind": "methods",
+    "name": "Materials and methods"
+   },
+   {
+    "kind": "accession_numbers",
+    "name": "Accession Numbers",
+    "hint": "Sequence data from this article can be found in the EMBL/GenBank data libraries under accession number(s) …"
+   },
+   {
+    "kind": "results",
+    "name": "Results"
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   }
+  ],
+  "back": [
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgments"
+   },
+   {
+    "kind": "author_contributions",
+    "name": "Author contributions",
+    "required": true,
+    "hint": "Each author's CRediT roles (The Plant Cell uses CRediT), by initials."
+   },
+   {
+    "kind": "supplementary",
+    "name": "Supplementary Material"
+   },
+   {
+    "kind": "funding",
+    "name": "Funding",
+    "required": true,
+    "hint": "The grants and funders that supported the work."
+   },
+   {
+    "kind": "competing_interests",
+    "name": "Conflicts of interest",
+    "required": true,
+    "hint": "Any competing interests, or that there are none."
+   },
+   {
+    "kind": "data_availability",
+    "name": "Data availability statement",
+    "required": true,
+    "hint": "Where the data are available: repositories and accession numbers."
+   },
+   {
+    "kind": "references",
+    "name": "References"
+   },
+   {
+    "kind": "figure_legends",
+    "name": "Figure legends"
+   }
+  ],
+  "evidence": [
+   "(the current instructions' order: Methods before Results; \"The penultimate section [of",
+   "Methods] should be Accession Numbers\"; \"The Journal uses the contributor roles taxonomy",
+   "(CRediT)\": academic.oup.com/plcell/pages/general-instructions, read 2026-11-14)"
+  ]
+ },
+ "submission": {
+  "first": {
+   "formats": [
+    "docx"
+   ],
+   "accepts": [
+    "docx"
+   ]
+  },
+  "revision": {
+   "accepts": [
+    "docx"
+   ],
+   "figure_format": "tif",
+   "dpi": 600,
+   "also": [
+    "the Author Revisions Checklist (a fillable PDF)"
+   ]
+  },
+  "alt_text": true,
+  "evidence": [
+   "Word only; final figures TIFF, JPEG or EPS (academic.oup.com/plcell/pages/General-Instructions)",
+   "(\"we require you to provide alt text\": browser 2026-11-16)"
+  ]
+ },
+ "statements": {
+  "contributions": "credit_list",
+  "ai": "acknowledgements",
+  "evidence": [
+   "read: uses CRediT; authors should choose its roles"
+  ]
+ },
+ "limits": {
+  "article_type": "Research Article",
+  "source": "https://academic.oup.com/plcell/pages/general-instructions",
+  "checked": "2026-11-13",
+  "limits": {
+   "title_chars": 120,
+   "title_words": null,
+   "abstract_words": 250,
+   "summary_words": null,
+   "main_text_words": null,
+   "methods_words": null,
+   "legend_words": null,
+   "display_items": null,
+   "figures": null,
+   "tables": null,
+   "references": null,
+   "keywords": null
+  },
+  "counts": "No length limit is stated for regular research articles.",
+  "notes": "Both limits are approximate on the page: 'Title (~120 characters)', and text abstracts of '~250 words', in English, where 'Citations are not permitted.' No main-text, figure, legend, Methods, reference or keyword limit is stated for regular research or Large-Scale Biology articles; the page only says 'Be concise.' For comparison, 'Breakthrough Reports are limited to about 12 printed pages, 5 figures/tables'. Main tables 'should be a maximum of 1-2 pages long', and longer ones go in Excel Supplementary Data Sets. Supplementary figures and tables are combined 'into a single PDF (10 MB max)'. Required order: Title page, Abstract, Introduction, Materials and methods, Results, Discussion, Author contributions/Acknowledgment, Supplementary Material, Funding, Conflicts of interest, Data availability statement, References, Figure legends and Alt text for accessibility, Figures, Tables. 'All manuscripts must include' an unnumbered footnote naming 'The author(s) responsible for distribution of materials integral to the findings presented in this article'. Every figure needs alt text, placed under its legend and preceded by 'Alt text:'. The page asks authors for no other summary (no 'In a Nutshell' or one-sentence summary appeared).",
+  "count": {
+   "abstract": false,
+   "methods": true,
+   "legends": false
+  }
+ },
+ "references": {
+  "csl": "the-plant-cell",
+  "file": "plant_cell.csl",
+  "overrides": {
+   "bibliography": {
+    "et-al-min": "6",
+    "et-al-use-first": "1"
+   },
+   "evidence": "Up to five in full (84), six or more first and 'et al' (281): PMC13291814, PMC13353863, PMC13411792, PMC13439946, PMC13585480 (2026). The style listed ten."
+  }
+ },
+ "latex": {
+  "template": "publisher",
+  "class": "oup-authoring-template",
+  "wrapper": "journal.latex",
+  "files": {
+   "oup-authoring-template.cls": "d821dccff84d040d68c4c3d0edb97a866f0778d51b5ab265a83d589b7ea7096a",
+   "oup-abbrvnat.bst": "8004033e134786884125d7312a65f042d453c18f5970a54ecc193042904e00f9"
+  },
+  "publisher": "Oxford University Press",
+  "note": "OUP's general LaTeX template (oup-authoring-template v1.5, July 2026) with OUP's options for The Plant Cell: contemporary design, large page, unnumbered sections, author-date citations (oup-abbrvnat)",
+  "source_notes": "SOURCE.md"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "OUP's general LaTeX template (oup-authoring-template v1.5, July 2026) with OUP's options for The Plant Cell: contemporary design, large page, unnumbered sections, author-date citations (oup-abbrvnat); prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display, styles re-measured on 2026-11-17",
+   "page": {
+    "width_mm": 210.0,
+    "height_mm": 276.0,
+    "margins_mm": {
+     "top": 20.0,
+     "bottom": 18.1,
+     "left": 12.7,
+     "right": 12.4
+    }
+   },
+   "columns": {
+    "count": 1,
+    "gap_mm": 0.0
+   },
+   "mirror_margins": false,
+   "body": {
+    "pdf_font": "LMRoman8-Regular",
+    "size": 8.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 11.5,
+    "justify": true,
+    "indent_mm": 2.9,
+    "first_indent_mm": 0.0,
+    "space_after_pt": 0.0,
+    "font": "Century Schoolbook"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 20.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 26.6,
+     "line_pt": 24.0,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "author": {
+     "pdf_font": "LMSans12-Regular",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 9.6,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "affiliation": {
+     "pdf_font": "LMSans8-Regular",
+     "size": 7.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 17.5,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "correspondence": {
+     "pdf_font": "LMSans8-Regular",
+     "size": 7.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 9.6,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "abstract": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 8.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 4.4,
+     "line_pt": 11.0,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "abstract_title": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 12.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 24.1,
+     "run_in": false,
+     "text": "Abstract",
+     "font": "Arial"
+    },
+    "h1": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 10.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 16.3,
+     "run_in": false,
+     "after_pt": 6.0,
+     "font": "Arial"
+    },
+    "h2": {
+     "pdf_font": "LMSans10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 9.0,
+     "run_in": false,
+     "after_pt": 6.0,
+     "font": "Arial"
+    },
+    "h3": {
+     "pdf_font": "LMSans10-Oblique",
+     "size": 9.5,
+     "bold": false,
+     "italic": true,
+     "caps": false,
+     "align": "center",
+     "before_pt": 6.9,
+     "run_in": false,
+     "after_pt": 3.0,
+     "font": "Arial"
+    },
+    "caption": {
+     "pdf_font": "LMSans8-Regular",
+     "size": 7.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 12.9,
+     "line_pt": 9.5,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "table_caption": {
+     "pdf_font": "LMSans8-Regular",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 15.4,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "references": {
+     "pdf_font": "LMRoman8-Regular",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "hanging_mm": 4.2,
+     "before_pt": 1.4,
+     "line_pt": 11.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_note": {
+     "pdf_font": "LMRoman7-Regular",
+     "size": 6.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 14.6,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    }
+   },
+   "line_numbers": false,
+   "page_number": "header-left",
+   "running_head": true,
+   "fonts": {
+    "CMMI5": "Times New Roman",
+    "CMMI8": "Times New Roman",
+    "CMR5": "Times New Roman",
+    "CMR8": "Times New Roman",
+    "CMSY5": "Times New Roman",
+    "CMSY8": "Times New Roman",
+    "LMRoman8-Italic": "Century Schoolbook",
+    "_chosen_by_width": [
+     "LMRoman5-Regular",
+     "LMRoman7-Regular",
+     "LMRoman8-Italic",
+     "LMRoman8-Regular"
+    ],
+    "LMRoman8-Regular": "Century Schoolbook",
+    "LMSans10-Bold": "Arial",
+    "LMSans10-Oblique": "Arial",
+    "LMSans10-Regular": "Arial",
+    "LMSans12-Regular": "Arial",
+    "LMSans8-Oblique": "Arial",
+    "LMSans8-Regular": "Arial",
+    "LMSans9-Regular": "Arial",
+    "LMRoman5-Regular": "Century Schoolbook",
+    "LMRoman7-Regular": "Century Schoolbook"
+   },
+   "submission": {
+    "columns": {
+     "count": 1,
+     "gap_mm": 0.0
+    },
+    "line_numbers": true,
+    "line_pt": 19.2,
+    "running": {
+     "odd": [
+      {
+       "where": "header",
+       "baseline_mm": 12.7,
+       "size": 8.0,
+       "parts": [
+        {
+         "align": "right",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "The Plant Cell, {year} | ",
+           "pdf_font": "LMSans8-Regular",
+           "size": 8.0,
+           "bold": false,
+           "italic": false,
+           "font": "Arial"
+          },
+          {
+           "text": "{page}",
+           "pdf_font": "LMSans9-Regular",
+           "size": 9.0,
+           "bold": false,
+           "italic": false,
+           "font": "Arial"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "even": [
+      {
+       "where": "header",
+       "baseline_mm": 12.7,
+       "size": 8.0,
+       "parts": [
+        {
+         "align": "left",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "{page} | ",
+           "pdf_font": "LMSans9-Regular",
+           "size": 9.0,
+           "bold": false,
+           "italic": false,
+           "font": "Arial"
+          },
+          {
+           "text": "The Plant Cell, {year}",
+           "pdf_font": "LMSans8-Regular",
+           "size": 8.0,
+           "bold": false,
+           "italic": false,
+           "font": "Arial"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "first": []
+    },
+    "table": {
+     "row_pt": 19.2,
+     "gaps_pt": {
+      "caption": 16.7,
+      "top": 16.0,
+      "header": 7.3,
+      "mid": 15.9,
+      "bottom": 7.5
+     }
+    },
+    "run_in": [],
+    "display": {
+     "above_pt": 11.5,
+     "below_pt": 11.5,
+     "above_short_pt": 0.0,
+     "below_short_pt": 11.5,
+     "printed_above_pt": 19.1,
+     "printed_below_pt": 19.1
+    }
+   },
+   "running": {
+    "odd": [
+     {
+      "where": "header",
+      "baseline_mm": 12.7,
+      "size": 8.0,
+      "parts": [
+       {
+        "align": "right",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "The Plant Cell, {year} | ",
+          "pdf_font": "LMSans8-Regular",
+          "size": 8.0,
+          "bold": false,
+          "italic": false,
+          "font": "Arial"
+         },
+         {
+          "text": "{page}",
+          "pdf_font": "LMSans9-Regular",
+          "size": 9.0,
+          "bold": false,
+          "italic": false,
+          "font": "Arial"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "even": [
+     {
+      "where": "header",
+      "baseline_mm": 12.7,
+      "size": 8.0,
+      "parts": [
+       {
+        "align": "left",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "{page} | ",
+          "pdf_font": "LMSans9-Regular",
+          "size": 9.0,
+          "bold": false,
+          "italic": false,
+          "font": "Arial"
+         },
+         {
+          "text": "The Plant Cell, {year}",
+          "pdf_font": "LMSans8-Regular",
+          "size": 8.0,
+          "bold": false,
+          "italic": false,
+          "font": "Arial"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "first": []
+   },
+   "table": {
+    "pdf_font": "LMRoman8-Regular",
+    "size": 8.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.64,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.4,
+      "color": "000000"
+     },
+     "bottom": {
+      "pt": 0.64,
+      "color": "000000"
+     }
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 11.5,
+    "gaps_pt": {
+     "caption": 16.7,
+     "top": 10.6,
+     "header": 5.0,
+     "mid": 10.5,
+     "bottom": 5.1
+    },
+    "align": "center",
+    "outer_pt": 1.0,
+    "col_gap_pt": 8.6,
+    "font": "Century Schoolbook"
+   },
+   "display": {
+    "above_pt": 11.5,
+    "below_pt": 11.5,
+    "above_short_pt": 0.0,
+    "below_short_pt": 11.5,
+    "printed_above_pt": 12.6,
+    "printed_below_pt": 12.5
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 200.0,
+  "types": [
+   {
+    "name": "One column",
+    "width_mm": 82.5
+   },
+   {
+    "name": "Two columns",
+    "width_mm": 165.0
+   }
+  ],
+  "note": "3.25 in (8.25 cm) or 6.5 in (16.5 cm) wide; under 8 in (20 cm) tall to leave room for the legend.",
+  "source": "The Plant Cell author guidelines (academic.oup.com/plcell)",
+  "labels": {
+   "font": "Arial",
+   "size": 12.0,
+   "bold": true,
+   "case": "lower",
+   "form": "a",
+   "source": "The Plant Cell author guidelines: panel headers in a sans-serif font, 12 pt bold; lowercase as in its current figures (PMC13711675, 2026; its 2020 figure guide asks for capitals)",
+   "measured": true
+  },
+  "text": {
+   "min_pt": 6.0,
+   "max_pt": null,
+   "fonts": [
+    "Arial",
+    "Helvetica"
+   ],
+   "fonts_only": true,
+   "about": false,
+   "source": "The Plant Cell author guidelines: 8 pt recommended, no smaller than 6 pt; Arial or Helvetica, not Times New Roman or Calibri"
+  },
+  "lines": {
+   "min_pt": 0.25,
+   "max_pt": 1.0,
+   "about": false,
+   "source": "OUP's guidance for preparing artwork (The Plant Cell's pages give no line widths): line thickness 0.25–1 pt"
+  },
+  "pictures": {
+   "photo": 300.0,
+   "combination": 600.0,
+   "line_art": 1000.0,
+   "vector": [],
+   "source": "The Plant Cell author guidelines: at least 300 PPI; its detailed figure guidelines (2020): 600 ppi for line graphs mixed with photographs, 1,000 ppi for line graphs saved as TIFF"
+  },
+  "export": {
+   "formats": [
+    "tiff",
+    "jpeg",
+    "eps"
+   ],
+   "colour": "rgb",
+   "max_mb": null,
+   "firm": true,
+   "max_dpi": null,
+   "embed_fonts": true,
+   "no_alpha": false,
+   "source": "The Plant Cell author guidelines: tif, jpeg or eps (the page dropped PDF in 2026; its 2020 figure guidelines still prefer it); RGB, not CMYK; OUP's guidance for preparing artwork: fonts embedded"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://academic.oup.com/plcell/pages/author-guidelines",
+   "what": "Author guidelines (alt text required; reviewer exclusions in the cover letter). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://academic.oup.com/plcell/pages/general-instructions",
+   "what": "The Plant Cell author guidelines. Read."
+  }
+ ],
+ "evidence": {
+  "status": "fully read (first 100,000 of 124,710 characters, plus the tail); alt text and reviewers re-read in a browser 2026-11-16",
+  "abstract": {
+   "structured": false,
+   "headings": [],
+   "words": 250,
+   "note": "'~250 words' (approximate); 'Citations are not permitted.'; in English; no structure prescribed."
+  },
+  "front": [
+   {
+    "kind": "graphical_abstract",
+    "name": "Graphical Abstract",
+    "required": false,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "'the journal is suspending its requirement to submit GAs' for Research Articles, Breakthrough Reports and Large-Scale Biology Articles."
+   },
+   {
+    "kind": "keywords",
+    "name": null,
+    "required": null,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "Not mentioned; nor a short/running title or a one-sentence summary. Title: '~120 characters'."
+   }
+  ],
+  "statements": {
+   "author_contributions": {
+    "required": true,
+    "heading": "Author contributions",
+    "where": "after Acknowledgments",
+    "form": null,
+    "credit": "recommended",
+    "quote": "The Journal uses the contributor roles taxonomy (CRediT) ... Authors should choose from the contributor roles outlined on the CRediT website",
+    "note": "'Each article must include an Author Contributions section (after Acknowledgments)'. The same page still lists the older tasks (designed the research; performed research; contributed new analytic/computational tools; analyzed data; wrote the paper). No layout (list or sentence) is given; 'You may choose multiple contributor roles per author.' prose's placeholder now names CRediT as the journal's taxonomy (2026-11-16). An August 2025 Wayback copy of the page has only the older task list, so CRediT is the newer wording."
+   },
+   "funding": {
+    "required": true,
+    "heading": "Funding",
+    "where": "under a separate subheading following the acknowledgements (listed after Supplementary Material)",
+    "quote": "You must fully declare all funding information relevant to the study, including specific grant numbers"
+   },
+   "competing_interests": {
+    "required": true,
+    "heading": "Conflicts of interest",
+    "where": "after Funding; also disclosed at submission",
+    "quote": "The Journal requires all authors to disclose any potential conflict of interest at the point of submission."
+   },
+   "data_availability": {
+    "required": true,
+    "heading": "Data availability statement",
+    "where": "after Conflicts of interest, before References",
+    "note": "Also: 'The penultimate section [of Methods] should be Accession Numbers', with the wording 'Sequence data from this article can be found in the EMBL/GenBank data libraries under accession number(s)'. prose now lists 'Accession Numbers' straight after Materials and methods (2026-11-16); written as a subsection inside Methods it stays there."
+   },
+   "code_availability": {
+    "required": null,
+    "heading": null,
+    "where": null,
+    "note": "No heading; software cited in the reference list."
+   },
+   "ethics": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "acknowledgements": {
+    "required": null,
+    "heading": "Acknowledgments",
+    "where": "after Discussion (the section list reads 'Author contributions/Acknowledgment'); written permission needed to name individuals"
+   },
+   "ai_use": {
+    "required": true,
+    "where": "cover letter AND Methods or Acknowledgements",
+    "quote": "should be disclosed both in cover letters to editors and in the Methods or Acknowledgements section of manuscripts"
+   },
+   "other": {
+    "heading": "Materials distribution footnote",
+    "where": "unnumbered footnote on the title page",
+    "quote": "The author(s) responsible for distribution of materials integral to the findings presented in this article"
+   }
+  },
+  "differs_from_prose": [],
+  "unconfirmed": []
+ }
+}

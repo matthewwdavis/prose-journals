@@ -1,0 +1,970 @@
+{
+ "format": 1,
+ "id": "new_phytologist",
+ "name": "New Phytologist",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "Wiley",
+ "issn": {
+  "print": "0028-646X",
+  "online": "1469-8137"
+ },
+ "aliases": [
+  "New Phytol"
+ ],
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "a4"
+ },
+ "captions": {
+  "label": "Fig.",
+  "bar": false
+ },
+ "figure_refs": {
+  "main": [
+   "Fig.",
+   "Figs"
+  ],
+  "panels": {
+   "case": "lower",
+   "style": {
+    "one": "closed",
+    "many": "closed",
+    "list": ",",
+    "range": "–",
+    "outside": {
+     "one": "paren",
+     "many": "paren"
+    }
+   }
+  },
+  "supp": {
+   "one": [
+    "Fig. ",
+    ""
+   ],
+   "many": [
+    "Figs ",
+    ""
+   ],
+   "s": true,
+   "first": "Supporting Information "
+  },
+  "evidence": [
+   "\"Figs 2, 3\": no full stop on the plural",
+   "(Fig. 4b,c); Fig. 2(b)"
+  ]
+ },
+ "legends": {
+  "sep": "",
+  "title": {
+   "bold": false,
+   "line": false
+  },
+  "panels": {
+   "open": "(",
+   "close": ")",
+   "bold": null
+  },
+  "scale": 0.8,
+  "table": {
+   "sep": "",
+   "title": {
+    "bold": false
+   }
+  },
+  "evidence": [
+   "Fig. 1 Title. (a) …",
+   "PMC13738682, PMC13738675",
+   "(table: bold \"Table 1\", regular title: PMC13738668 p. 4, PMC13738675 p. 14, PMC13738676 p. 5)"
+  ]
+ },
+ "supplement": {
+  "title": "Supporting Information",
+  "list": "brief",
+  "list_heading": "Supporting Information",
+  "formats": [
+   "docx"
+  ],
+  "fig": {
+   "one": [
+    "Fig. ",
+    ""
+   ],
+   "many": [
+    "Figs ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Fig. ",
+    ""
+   ]
+  },
+  "tbl": {
+   "one": [
+    "Table ",
+    ""
+   ],
+   "many": [
+    "Tables ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Table ",
+    ""
+   ]
+  },
+  "data": {
+   "one": [
+    "Dataset ",
+    ""
+   ],
+   "many": [
+    "Datasets ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Dataset ",
+    ""
+   ]
+  },
+  "note": {
+   "one": [
+    "Notes ",
+    ""
+   ],
+   "many": [
+    "Notes ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Notes ",
+    ""
+   ]
+  }
+ },
+ "house_style": {
+  "p": {
+   "italic": true,
+   "space": true,
+   "zero": true,
+   "letter": "P"
+  },
+  "unit_space": "nbsp",
+  "range": "–",
+  "thousands": {
+   "sep": " ",
+   "from": 5
+  },
+  "percent": {
+   "space": false
+  },
+  "celsius": {
+   "space": false
+  },
+  "latin": {
+   "italic": true
+  },
+  "units": {
+   "h": "h",
+   "s": "s",
+   "mL": "ml",
+   "uL": "μl"
+  },
+  "small": "words"
+ },
+ "house_style_from": {
+  "p": "print",
+  "unit_space": "print",
+  "range": "print",
+  "thousands": "print",
+  "percent": "print",
+  "celsius": "print",
+  "latin": "print",
+  "units": "print",
+  "small": "stated"
+ },
+ "abbreviations": {
+  "abstract": "own",
+  "legends": true
+ },
+ "cover_letter": {
+  "type": "Full Paper",
+  "reviewers": "excluded",
+  "points": [
+   "What hypotheses or questions does the work address? (50 words at most)",
+   "How does it advance plant science? (50 words at most)",
+   "Why is it important and timely? (50 words at most)"
+  ],
+  "evidence": [
+   "(exclusions justified in the letter: browser 2026-11-16)"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Summary",
+   "words": 200
+  },
+  "keywords": {
+   "min": 5,
+   "max": 8
+  },
+  "front": [
+   {
+    "kind": "graphical_abstract",
+    "name": "Graphical abstract"
+   }
+  ],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Introduction"
+   },
+   {
+    "kind": "methods",
+    "name": "Materials and Methods"
+   },
+   {
+    "kind": "results",
+    "name": "Results"
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   }
+  ],
+  "back": [
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgements"
+   },
+   {
+    "kind": "competing_interests",
+    "name": "Competing interests",
+    "required": true,
+    "hint": "Any competing interests, or that there are none."
+   },
+   {
+    "kind": "author_contributions",
+    "name": "Author contributions",
+    "required": true,
+    "hint": "Who did what (for example CRediT roles, by initials)."
+   },
+   {
+    "kind": "data_availability",
+    "name": "Data availability",
+    "required": true,
+    "hint": "Where the data are available: repositories and accession numbers."
+   },
+   {
+    "kind": "references",
+    "name": "References"
+   },
+   {
+    "kind": "supplementary",
+    "name": "Supporting Information"
+   }
+  ],
+  "evidence": [
+   "(nph.onlinelibrary.wiley.com/hub/journal/14698137/about/author-guidelines, read in a browser 2026-11-16: these headings in this order; Summary of 200 words in four bullet points; five to eight keywords; an optional graphical abstract after the Summary)"
+  ]
+ },
+ "submission": {
+  "first": {
+   "formats": [
+    "pdf"
+   ],
+   "accepts": [
+    "pdf",
+    "docx"
+   ],
+   "figures": "embedded"
+  },
+  "revision": {
+   "accepts": [
+    "docx"
+   ],
+   "figure_format": "tif",
+   "naming": "Figure_{n}",
+   "max_mb": 10
+  },
+  "from": "unconfirmed",
+  "evidence": [
+   "First: \"a single PDF, with Tables, Figures and their legends embedded\" (or Word with EPS/TIFF figures:",
+   "its author guidelines, browser 2026-11-16); revised: a tracked-changes and a clean copy (Wiley: Figure_1.tif)"
+  ]
+ },
+ "statements": {
+  "ai": "acknowledgements",
+  "evidence": [
+   "browser 2026-11-16: \"in the Materials & Methods or Acknowledgements section\""
+  ]
+ },
+ "limits": {
+  "article_type": "Full Paper",
+  "source": "https://nph.onlinelibrary.wiley.com/hub/journal/14698137/about/author-guidelines",
+  "checked": "2026-11-16",
+  "limits": {
+   "title_chars": 130,
+   "title_words": null,
+   "abstract_words": 200,
+   "summary_words": null,
+   "main_text_words": 6500,
+   "methods_words": null,
+   "legend_words": null,
+   "display_items": 8,
+   "figures": null,
+   "tables": null,
+   "references": null,
+   "keywords": 8
+  },
+  "counts": "Word counts are given for the main sections (Introduction, Materials and Methods, Results, Discussion) on the first page. prose warns above 6,500 words (Matthew's decision, 2026-11-16, after the New Phytologist Foundation's '6500 words'); Full papers 'are usually in the region of 6,500–7,500 words with 6–8 display items and a 200-word bulleted summary' (author guidelines, read in a browser 2026-11-16).",
+  "notes": "Author guidelines (read in a browser 2026-11-16): title '~130 characters including spaces'; Summary 'must not exceed 200 words', four bullet points; 'Five to eight key words'; Full papers usually 6,500–7,500 words with 6–8 display items (display_items is the upper end); the Discussion no more than 30% of the total word count. The Foundation's call for papers (https://newphytologist.org/news/view/343, read 2026-11-13) says 'The word limit for research manuscripts is 6500 words', kept as main_text_words (Matthew's decision, 2026-11-16), with the usual 6,500–7,500 in the warning's note.",
+  "unverified": null,
+  "count": {
+   "abstract": false,
+   "methods": true,
+   "legends": false
+  },
+  "limit_notes": {
+   "main_text_words": "Its Full Papers are usually 6,500–7,500 words (author guidelines); prose warns above 6,500."
+  }
+ },
+ "references": {
+  "csl": "new-phytologist",
+  "file": "new_phytologist.csl"
+ },
+ "latex": {
+  "template": "publisher",
+  "class": "USG",
+  "wrapper": "journal.latex",
+  "files": {
+   "NJDnatbib.sty": "9e0864b9f0536111ead3c7766ef8921ac58dfc9c7d3c6afcf3e23f6cdf53671a",
+   "lettersp.sty": "3db37a74418493a74cb4d50a90c72b9402a3d29f3625fc82a5a3f114fd4c9145"
+  },
+  "publisher": "Wiley",
+  "note": "Wiley's LaTeX authoring template (\"Wiley's PDF design\", USG.cls v6.0, the successor of the NJD template; package of 2026) with Wiley's Harvard reference style, for New Phytologist",
+  "fetch": {
+   "store": "wiley",
+   "publisher": "Wiley",
+   "what": "Wiley's LaTeX template (“Wiley's PDF design”, WileyDesign.zip)",
+   "page": "https://authors.wiley.com/author-resources/Journal-Authors/Prepare/latex-template.html",
+   "url": "https://authors.wiley.com/asset/WileyDesign.zip",
+   "size_mb": 7.5,
+   "files": {
+    "USG.cls": "b9aa4b5d43c6c444f2876000952fa03439972c8e573d67212123647cbbfa4e08",
+    "wileyNJD-Chicago.bst": "f67a18cea10d2cea2638dad908bac342c7d718bf4dbfa9d08f1e702f61023e51"
+   },
+   "optional": {
+    "WileyNJD-Harvard.bst": {
+     "sha256": "011fa77306816e3779f356a328f73d3952aba3c0919e11bb815836ac15287968",
+     "sets": "harvard",
+     "note": "Wiley's Harvard reference style isn't in its current package, so the references are set in Wiley's Chicago style (author and year too). If you have Wiley's earlier package (WileyNJDv5_Template.zip, 2025 or before), choose it and prose uses the Harvard style."
+    }
+   }
+  },
+  "source_notes": "SOURCE.md"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "Wiley's LaTeX authoring template (\"Wiley's PDF design\", USG.cls v6.0, the successor of the NJD template; package of 2026) with Wiley's Harvard reference style, for New Phytologist; prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display, styles re-measured on 2026-11-17",
+   "page": {
+    "width_mm": 210.0,
+    "height_mm": 276.0,
+    "margins_mm": {
+     "top": 13.0,
+     "bottom": 17.2,
+     "left": 16.2,
+     "right": 16.0
+    }
+   },
+   "columns": {
+    "count": 1,
+    "gap_mm": 0.0
+   },
+   "mirror_margins": false,
+   "body": {
+    "pdf_font": "STIXTwoText",
+    "size": 10.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 12.5,
+    "justify": true,
+    "indent_mm": 0.0,
+    "first_indent_mm": 0.0,
+    "space_after_pt": 0.0,
+    "font": "Century Schoolbook"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "STIXTwoText-Bold",
+     "size": 19.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 24.0,
+     "line_pt": 21.9,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "author": {
+     "pdf_font": "STIXTwoText",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 8.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "affiliation": {
+     "pdf_font": "STIXTwoText",
+     "size": 8.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 6.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "abstract": {
+     "pdf_font": "STIXTwoText",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "indent_mm": {
+      "left": 3.1,
+      "right": 3.5
+     },
+     "before_pt": 1.0,
+     "line_pt": 13.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "abstract_title": {
+     "pdf_font": "STIXTwoText-Bold",
+     "size": 11.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 3.4,
+      "right": 0.0
+     },
+     "before_pt": 18.5,
+     "run_in": false,
+     "text": "Summary",
+     "font": "Times New Roman"
+    },
+    "h1": {
+     "pdf_font": "STIXTwoText-Bold",
+     "size": 11.0,
+     "bold": true,
+     "italic": false,
+     "caps": true,
+     "align": "left",
+     "before_pt": 29.3,
+     "run_in": false,
+     "after_pt": 8.0,
+     "font": "Times New Roman"
+    },
+    "h2": {
+     "pdf_font": "STIXTwoText-Bold",
+     "size": 11.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 22.8,
+     "run_in": false,
+     "after_pt": 8.0,
+     "font": "Times New Roman"
+    },
+    "h3": {
+     "pdf_font": "STIXTwoText-Bold",
+     "size": 10.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 20.0,
+     "run_in": false,
+     "after_pt": 8.0,
+     "font": "Times New Roman"
+    },
+    "caption": {
+     "pdf_font": "STIXTwoText",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 2.9,
+     "line_pt": 10.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_caption": {
+     "pdf_font": "STIXTwoText",
+     "size": 8.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 11.5,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "references": {
+     "pdf_font": "STIXTwoText",
+     "size": 9.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "hanging_mm": 3.7,
+     "before_pt": 5.6,
+     "line_pt": 11.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_note": {
+     "pdf_font": "STIXTwoText",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 11.3,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    }
+   },
+   "line_numbers": false,
+   "page_number": null,
+   "running_head": false,
+   "fonts": {
+    "STIXTwoMath": "Times New Roman",
+    "STIXTwoText": "Century Schoolbook",
+    "_chosen_by_width": [
+     "STIXTwoText"
+    ],
+    "STIXTwoText-Bold": "Times New Roman",
+    "STIXTwoText-BoldItalic": "Times New Roman",
+    "STIXTwoText-Italic": "Times New Roman"
+   },
+   "submission": {
+    "columns": {
+     "count": 1,
+     "gap_mm": 0.0
+    },
+    "line_numbers": true,
+    "line_pt": 20.8,
+    "running": {
+     "odd": [
+      {
+       "where": "footer",
+       "baseline_mm": 3.8,
+       "size": 7.0,
+       "parts": [
+        {
+         "align": "right",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "{page} of {pages}",
+           "pdf_font": "STIXTwoText",
+           "size": 7.0,
+           "bold": false,
+           "italic": false,
+           "font": "Century Schoolbook"
+          }
+         ]
+        }
+       ],
+       "rule_above": {
+        "pt": 0.5,
+        "color": "000000",
+        "gap_pt": 30.1,
+        "from_mm": -0.4,
+        "to_mm": 0.2
+       }
+      }
+     ],
+     "even": [
+      {
+       "where": "footer",
+       "baseline_mm": 3.8,
+       "size": 7.0,
+       "parts": [
+        {
+         "align": "left",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "{page} of {pages}",
+           "pdf_font": "STIXTwoText",
+           "size": 7.0,
+           "bold": false,
+           "italic": false,
+           "font": "Century Schoolbook"
+          }
+         ]
+        },
+        {
+         "align": "right",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "New Phytologist",
+           "pdf_font": "STIXTwoText-Italic",
+           "size": 7.0,
+           "bold": false,
+           "italic": true,
+           "font": "Times New Roman"
+          },
+          {
+           "text": ", {year}",
+           "pdf_font": "STIXTwoText",
+           "size": 7.0,
+           "bold": false,
+           "italic": false,
+           "font": "Century Schoolbook"
+          }
+         ]
+        }
+       ],
+       "rule_above": {
+        "pt": 0.5,
+        "color": "000000",
+        "gap_pt": 30.1,
+        "from_mm": -0.4,
+        "to_mm": 0.2
+       }
+      }
+     ],
+     "first": []
+    },
+    "table": {
+     "row_pt": 20.8,
+     "gaps_pt": {
+      "caption": 13.9,
+      "top": 17.8,
+      "header": 8.2,
+      "mid": 17.6,
+      "bottom": 8.4
+     }
+    },
+    "run_in": [],
+    "display": {
+     "above_pt": 10.0,
+     "below_pt": 10.0,
+     "above_short_pt": 0.0,
+     "below_short_pt": 5.0,
+     "printed_above_pt": 20.9,
+     "printed_below_pt": 8.4
+    }
+   },
+   "hand": [
+    "styles.title.before_pt"
+   ],
+   "running": {
+    "odd": [
+     {
+      "where": "footer",
+      "baseline_mm": 3.8,
+      "size": 7.0,
+      "parts": [
+       {
+        "align": "right",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "{page} of {pages}",
+          "pdf_font": "STIXTwoText",
+          "size": 7.0,
+          "bold": false,
+          "italic": false,
+          "font": "Century Schoolbook"
+         }
+        ]
+       }
+      ],
+      "rule_above": {
+       "pt": 0.5,
+       "color": "000000",
+       "gap_pt": 30.1,
+       "from_mm": -0.4,
+       "to_mm": 0.2
+      }
+     }
+    ],
+    "even": [
+     {
+      "where": "footer",
+      "baseline_mm": 3.8,
+      "size": 7.0,
+      "parts": [
+       {
+        "align": "left",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "{page} of {pages}",
+          "pdf_font": "STIXTwoText",
+          "size": 7.0,
+          "bold": false,
+          "italic": false,
+          "font": "Century Schoolbook"
+         }
+        ]
+       },
+       {
+        "align": "right",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "New Phytologist",
+          "pdf_font": "STIXTwoText-Italic",
+          "size": 7.0,
+          "bold": false,
+          "italic": true,
+          "font": "Times New Roman"
+         },
+         {
+          "text": ", {year}",
+          "pdf_font": "STIXTwoText",
+          "size": 7.0,
+          "bold": false,
+          "italic": false,
+          "font": "Century Schoolbook"
+         }
+        ]
+       }
+      ],
+      "rule_above": {
+       "pt": 0.5,
+       "color": "000000",
+       "gap_pt": 30.1,
+       "from_mm": -0.4,
+       "to_mm": 0.2
+      }
+     }
+    ],
+    "first": []
+   },
+   "table": {
+    "pdf_font": "STIXTwoText",
+    "size": 10.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.8,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.5,
+      "color": "000000"
+     },
+     "bottom": {
+      "pt": 0.8,
+      "color": "000000"
+     }
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 12.5,
+    "gaps_pt": {
+     "caption": 13.9,
+     "top": 11.9,
+     "header": 5.7,
+     "mid": 11.8,
+     "bottom": 5.9
+    },
+    "align": "center",
+    "outer_pt": 1.1,
+    "col_gap_pt": 12.6,
+    "font": "Century Schoolbook"
+   },
+   "display": {
+    "above_pt": 10.0,
+    "below_pt": 10.0,
+    "above_short_pt": 0.0,
+    "below_short_pt": 5.0,
+    "printed_above_pt": 12.6,
+    "printed_below_pt": 5.1
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 226.0,
+  "types": [
+   {
+    "name": "Single column",
+    "width_mm": 80.0
+   },
+   {
+    "name": "Double column",
+    "width_mm": 170.0
+   }
+  ],
+  "note": "80 mm column in a double-column format; largest printed figure 170 x 226 mm.",
+  "source": "New Phytologist author guidelines, 2011 (the current Wiley page couldn't be read automatically)",
+  "labels": {
+   "font": "Helvetica",
+   "size": 8.0,
+   "bold": true,
+   "case": "lower",
+   "form": "(a)",
+   "source": "New Phytologist author guidelines: bold lowercase (a), (b); size measured from a published figure (PMC13669809, 2026): 8 pt",
+   "measured": true
+  },
+  "text": {
+   "min_pt": null,
+   "max_pt": null,
+   "fonts": [],
+   "fonts_only": false,
+   "about": false,
+   "source": "New Phytologist's guidelines set no sizes or fonts for figure text"
+  },
+  "lines": {
+   "min_pt": 0.7,
+   "max_pt": null,
+   "about": true,
+   "source": "New Phytologist author guidelines: lines about 0.5 mm thick on figures drawn at twice their printed size, so about 0.7 pt printed"
+  },
+  "pictures": {
+   "photo": 300.0,
+   "combination": 600.0,
+   "line_art": 600.0,
+   "vector": [],
+   "source": "Wiley's figure guidelines (New Phytologist refers authors to them): images 300 dpi, line art 600 dpi, and figures with both follow line art"
+  },
+  "export": {
+   "formats": [
+    "pdf",
+    "eps",
+    "tiff",
+    "png",
+    "jpeg",
+    "pptx"
+   ],
+   "colour": "rgb",
+   "max_mb": 10.0,
+   "firm": false,
+   "max_dpi": null,
+   "embed_fonts": false,
+   "no_alpha": false,
+   "source": "New Phytologist author guidelines: RGB; Wiley's figure guidelines: any standard file type after acceptance (SVG isn't among those listed), under 10 MB each preferred"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://nph.onlinelibrary.wiley.com/hub/journal/14698137/about/author-guidelines",
+   "what": "Author guidelines (headings, Summary, keywords, lengths, AI, reviewers, SI, figures, references). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://nph.onlinelibrary.wiley.com/hub/journal/14698137/about/author-guidelines",
+   "what": "New Phytologist author guidelines. NOT read: HTTP 403. Search excerpts only."
+  },
+  {
+   "url": "https://authors.wiley.com/ethics-guidelines/index.html",
+   "what": "Wiley best-practice publishing ethics guidelines (publisher). Read."
+  }
+ ],
+ "evidence": {
+  "status": "browser (the Wiley author guidelines, 2026-11-16)",
+  "abstract": {
+   "structured": false,
+   "headings": [],
+   "words": 200,
+   "note": "excerpt: named 'Summary'; 'must be usable as a stand-alone document, must not exceed 200 words'; 'It should not contain citations of other papers'; described as 'a 200-word bulleted summary' (bullet points, no headings; the number of bullets was not in a verbatim excerpt)."
+  },
+  "front": [
+   {
+    "kind": "keywords",
+    "name": "Key words",
+    "required": null,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": 5,
+    "max": 8,
+    "note": "excerpt: 'five to eight key words/short phrases (in alphabetical order)' at the end of the Summary."
+   }
+  ],
+  "statements": {
+   "_all": "excerpt: research papers are arranged under 'Summary, Introduction, Materials and Methods, Results, Discussion, Acknowledgements, Competing interests, Author contributions, Data availability and References'.",
+   "author_contributions": {
+    "required": true,
+    "heading": "Author contributions",
+    "where": "after Competing interests, before Data availability",
+    "form": null,
+    "credit": false,
+    "quote": "Each article should include an Author contributions section detailing the contribution of each author to the submitted manuscript."
+   },
+   "funding": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "competing_interests": {
+    "required": true,
+    "heading": "Competing interests",
+    "where": "after Acknowledgements"
+   },
+   "data_availability": {
+    "required": true,
+    "heading": "Data availability",
+    "where": "after Author contributions, before References",
+    "note": "Wiley (read): all research in Wiley journals must include a Data Availability Statement."
+   },
+   "code_availability": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "ethics": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "acknowledgements": {
+    "required": null,
+    "heading": "Acknowledgements",
+    "where": "after Discussion"
+   },
+   "ai_use": {
+    "required": true,
+    "where": "Materials & Methods or Acknowledgements, depending on the level of use",
+    "quote": "Authors using AI-generated content (AIGC), or AI tools must describe the use of these tools transparently and in detail in the Materials & Methods or Acknowledgements section",
+    "note": "browser 2026-11-16"
+   }
+  },
+  "differs_from_prose": [
+   "Length: the author guidelines say Full Papers are 'usually in the region of 6,500–7,500 words'; the New Phytologist Foundation's call for papers says 'The word limit for research manuscripts is 6500 words'. Decided (Matthew, 2026-11-16): prose warns above 6,500, and the warning says 6,500–7,500 is usual (journal_limits.json limit_notes)."
+  ],
+  "unconfirmed": []
+ }
+}

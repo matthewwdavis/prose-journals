@@ -1,0 +1,1070 @@
+{
+ "format": 1,
+ "id": "pnas",
+ "name": "PNAS",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "National Academy of Sciences",
+ "issn": {
+  "print": "0027-8424",
+  "online": "1091-6490"
+ },
+ "aliases": [
+  "Proceedings of the National Academy of Sciences",
+  "Proc Natl Acad Sci USA"
+ ],
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "letter"
+ },
+ "captions": {
+  "label": "Fig.",
+  "bar": false
+ },
+ "figure_refs": {
+  "main": [
+   "Fig.",
+   "Figs."
+  ],
+  "panels": {
+   "case": "upper",
+   "style": {
+    "one": "closed",
+    "many": "space",
+    "list": "serial",
+    "range": "–"
+   }
+  },
+  "supp": {
+   "one": [
+    "SI Appendix, Fig. ",
+    ""
+   ],
+   "many": [
+    "SI Appendix, Figs. ",
+    ""
+   ],
+   "s": true
+  },
+  "evidence": [
+   "Fig. 1 C and D"
+  ]
+ },
+ "legends": {
+  "sep": ".",
+  "title": {
+   "bold": false,
+   "line": false
+  },
+  "panels": {
+   "open": "(",
+   "close": ")",
+   "bold": null,
+   "italic": true
+  },
+  "scale": 0.75,
+  "table": {
+   "sep": ".",
+   "title": {
+    "bold": true
+   }
+  },
+  "evidence": [
+   "Fig. 1. Title. (A) …",
+   "(measured: bold \"Fig. 1.\", regular title run in: PMC13751646 p. 2, PMC13752376 p. 3, PMC13751647 p. 2)",
+   "PMC13752376, PMC13751646",
+   "(table: \"Table 1.\" and title bold: PMC13751646 p. 8, PMC13751647 p. 3, PMC13752354 p. 2)"
+  ]
+ },
+ "supplement": {
+  "title": "SI Appendix",
+  "contents": "includes",
+  "cover_title": "Supporting Information for",
+  "fig": {
+   "one": [
+    "SI Appendix, Fig. ",
+    ""
+   ],
+   "many": [
+    "SI Appendix, Figs. ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Fig. ",
+    ""
+   ]
+  },
+  "tbl": {
+   "one": [
+    "SI Appendix, Table ",
+    ""
+   ],
+   "many": [
+    "SI Appendix, Tables ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Table ",
+    ""
+   ]
+  },
+  "data": {
+   "one": [
+    "Dataset ",
+    ""
+   ],
+   "many": [
+    "Datasets ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "SI Dataset ",
+    ""
+   ]
+  },
+  "note": null
+ },
+ "house_style": {
+  "p": {
+   "italic": true,
+   "space": true,
+   "zero": true,
+   "letter": "P"
+  },
+  "etal": {
+   "italic": false
+  },
+  "unit_space": "nbsp",
+  "thousands": {
+   "sep": ",",
+   "from": 4
+  },
+  "percent": {
+   "space": false
+  },
+  "celsius": {
+   "space": true
+  },
+  "latin": {
+   "italic": false
+  },
+  "units": {
+   "h": "h",
+   "s": "s",
+   "uL": "µL",
+   "L": "L"
+  }
+ },
+ "house_style_from": {
+  "p": "print",
+  "etal": "print",
+  "unit_space": "print",
+  "thousands": "print",
+  "percent": "print",
+  "celsius": "print",
+  "latin": "print",
+  "units": "print"
+ },
+ "abbreviations": {},
+ "table_notes": {
+  "marks": [
+   "*",
+   "†",
+   "‡",
+   "§",
+   "¶",
+   "#",
+   "‖"
+  ]
+ },
+ "cover_letter": {
+  "type": "Research Report",
+  "reviewers": null,
+  "points": [
+   "why the work matters to a broad scientific readership",
+   "any related manuscripts in press or submitted elsewhere"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Abstract",
+   "words": 250
+  },
+  "keywords": {
+   "min": 3,
+   "max": 5
+  },
+  "front": [
+   {
+    "kind": "significance",
+    "name": "Significance",
+    "required": true,
+    "limit": {
+     "words": 120,
+     "min": 50
+    },
+    "hint": "50 to 120 words, for a scientist outside the field: what was found and why it matters."
+   }
+  ],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Introduction",
+    "headed": false
+   },
+   {
+    "kind": "results",
+    "name": "Results"
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   },
+   {
+    "kind": "methods",
+    "name": "Materials and Methods",
+    "required": true
+   }
+  ],
+  "back": [
+   {
+    "kind": "data_availability",
+    "name": "Data, Materials, and Software Availability",
+    "required": true,
+    "hint": "Where the data are available: repositories and accession numbers."
+   },
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgments"
+   },
+   {
+    "kind": "references",
+    "name": "References"
+   }
+  ],
+  "evidence": [
+   "(no heading over the opening; author contributions and competing interests are its template's front-matter fields)",
+   "(PNAS's official template, 2025 edition on Overleaf, read 2026-11-16: \"between 50 and 120 words\"; pnas.org's Submitting your manuscript, Wayback copy of 2026-06-17: \"no more than 120 words\")"
+  ]
+ },
+ "submission": {
+  "first": {
+   "accepts": [
+    "pdf",
+    "docx",
+    "latex"
+   ]
+  },
+  "revision": {
+   "accepts": [
+    "docx",
+    "latex"
+   ],
+   "also": [
+    "the SI Appendix as one PDF",
+    "a point-by-point response to the reviewers"
+   ]
+  },
+  "evidence": [
+   "(pnas.org's Submitting your manuscript, browser 2026-11-16: any format at first; revised: Word, RTF or",
+   "LaTeX without embedded figures, a point-by-point response, a tracked-changes file encouraged)"
+  ]
+ },
+ "statements": {
+  "ai": "methods",
+  "evidence": [
+   "browser 2026-11-16 (editorial policies: \"in the Materials and Methods section\")"
+  ]
+ },
+ "limits": {
+  "article_type": "Research Report",
+  "source": "https://www.overleaf.com/latex/templates/template-for-preparing-your-research-report-submission-to-pnas-using-overleaf-2025/whbdryzwztnd",
+  "checked": "2026-11-16",
+  "limits": {
+   "title_chars": 135,
+   "title_words": null,
+   "abstract_words": 250,
+   "summary_words": 120,
+   "main_text_words": 4000,
+   "methods_words": null,
+   "legend_words": null,
+   "display_items": 4,
+   "figures": null,
+   "tables": null,
+   "references": 50,
+   "keywords": 5
+  },
+  "counts": "Approximate, not a hard cap. PNAS sets length in journal pages, not words: 'A standard 6-page article is approximately 4,000 words, 50 references, and 4 medium-size graphical elements (i.e., figures and tables).' 'The preferred length of Direct Submission articles remains at 6 pages, but PNAS will allow articles up to a maximum of 12 pages.' The template doesn't say which parts the 4,000 words cover, and it gives no word count for 12 pages. main_text_words, references and display_items here are those 6-page equivalents.",
+  "notes": "pnas.org (Author Center) returned HTTP 403 to automated reading. These values come from PNAS's own LaTeX template on Overleaf: author National Academy of Sciences, tagged 'PNAS - Official Templates', 2025 edition. summary_words is the Significance Statement: 'between 50 and 120 words in length', written for scientists outside the field, and required for Research Reports. Abstract: 'no more than 250 words in a single paragraph'. Keywords: 'At least three keywords are required at submission. Please provide three to five keywords, separated by the pipe symbol.' Suggested section order: introduction (no heading), results, discussion, materials and methods, acknowledgments, references. Detailed methods may go in the SI Appendix, but the main text must still carry sufficient methods. The template's footnote section says 'The article should contain only 13 footnotes'; this may be example text. Brief Reports (for comparison): 3 pages, about 1,600 words (including the manuscript text, title page, abstract and figure legends), 15 references, no significance statement, and no supporting text, tables or figures. 2026-11-16: the Internet Archive's copy (2026-06-17) of https://www.pnas.org/author-center/submitting-your-manuscript was read: title '< 135 characters'; abstract 'no more than 250 words'; Significance statement 'Include no more than 120 words' (the template's 50-word minimum stands; the page gives none); 'Include at least three keywords at submission.' 2026-11-16: pnas.org's Submitting your manuscript page read in a browser: Research Reports preferably six pages, at most 12; 'a standard six-page article is approximately 4,000 words, 50 references, and four medium-size graphical elements'; abstract no more than 250 words; significance statement no more than 120 words; title under 135 characters; at least three keywords.",
+  "unverified": null,
+  "count": {
+   "abstract": false,
+   "methods": true,
+   "legends": false
+  },
+  "summary_name": "Significance statement"
+ },
+ "references": {
+  "csl": "pnas",
+  "file": "pnas.csl"
+ },
+ "latex": {
+  "template": "publisher",
+  "class": "pnas-new",
+  "wrapper": "journal.latex",
+  "files": {
+   "pnas-new.cls": "70763e9a83dff8c940534c3e594eed7ba4db7a1115546a3275ce9d532c06d244",
+   "pnasresearcharticle.sty": "92c7be2586e72aef81342fff47a8dce94f78fdc500ef619f12e25fbbb00d9ccf",
+   "pnas-new.bst": "868c7f17aa496e0135acf3b2e0fa3c733b50795bf4edaa95ba909bcf594ff6be",
+   "jabbrv.sty": "ff83153c99dabf37773d2f677c4a58146f557ad81c0e1b3fac7afaf5738406eb",
+   "jabbrv-ltwa-all.ldf": "d7ddb625095c1aabbbfd79bcd2eeb8148b88cd6b38ca88db966e7bffeaa980d4",
+   "jabbrv-ltwa-en.ldf": "243266bc1618d002793eca40d4e520860b9e6b8fcd24e145679c351bd3c06620"
+  },
+  "publisher": "National Academy of Sciences (PNAS)",
+  "note": "PNAS LaTeX template from pnas.org's author center, December 2025 (pnas-new.cls v1.47 with pnasresearcharticle.sty and pnas-new.bst), plus the jabbrv journal-abbreviation package the class needs. PNAS_Logo.pdf ships only with PNAS's Overleaf template; without it the page-1 header shows the word PNAS.",
+  "source_notes": "SOURCE.md"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "PNAS LaTeX template from pnas.org's author center, December 2025 (pnas-new.cls v1.47 with pnasresearcharticle.sty and pnas-new.bst), plus the jabbrv journal-abbreviation package the class needs. PNAS_Logo.pdf ships only with PNAS's Overleaf template; without it the page-1 header shows the word PNAS.; prose's sample manuscript compiled by Tectonic, 2026-11-15 (tools/measure_journal_layout.py); running, table, table_note, run_in, display, styles re-measured on 2026-11-17",
+   "page": {
+    "width_mm": 206.4,
+    "height_mm": 276.1,
+    "margins_mm": {
+     "top": 12.0,
+     "bottom": 17.4,
+     "left": 13.1,
+     "right": 13.1
+    }
+   },
+   "columns": {
+    "count": 2,
+    "gap_mm": 6.2
+   },
+   "mirror_margins": false,
+   "body": {
+    "pdf_font": "LMRoman10-Regular",
+    "size": 10.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 10.9,
+    "justify": true,
+    "indent_mm": 0.0,
+    "first_indent_mm": 0.1,
+    "space_after_pt": 0.0,
+    "font": "Century Schoolbook"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 15.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 12.9,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "author": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 5.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 3.0,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "affiliation": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 5.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 0.0,
+      "right": 0.0
+     },
+     "before_pt": 3.0,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "abstract": {
+     "pdf_font": "LMRoman10-Bold",
+     "size": 10.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "indent_mm": {
+      "left": 0.1,
+      "right": 62.8
+     },
+     "before_pt": 11.3,
+     "line_pt": 12.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "h1": {
+     "pdf_font": "NimbusSanL-Bold",
+     "size": 9.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 18.2,
+     "run_in": false,
+     "after_pt": 5.0,
+     "font": "Arial"
+    },
+    "h2": {
+     "pdf_font": "NimbusSanL-Bold",
+     "size": 7.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 0.0,
+     "run_in": true,
+     "after_pt": 0.0,
+     "font": "Arial",
+     "run_in_punct": ".",
+     "run_in_gap_pt": 6.8
+    },
+    "h3": {
+     "pdf_font": "NimbusSanL-BoldItal",
+     "size": 7.5,
+     "bold": true,
+     "italic": true,
+     "caps": false,
+     "align": "left",
+     "before_pt": 10.8,
+     "run_in": true,
+     "after_pt": 0.0,
+     "font": "Arial",
+     "run_in_punct": ".",
+     "run_in_gap_pt": 6.6
+    },
+    "caption": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 6.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 7.9,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "table_caption": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 7.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 6.0,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "references": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 5.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 1.6,
+      "right": 0.0
+     },
+     "before_pt": 0.0,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "table_note": {
+     "pdf_font": "LMRoman7-Regular",
+     "size": 7.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 3.0,
+     "line_pt": 8.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "correspondence": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 5.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 0.9,
+     "run_in": false,
+     "font": "Arial"
+    }
+   },
+   "line_numbers": false,
+   "page_number": null,
+   "running_head": false,
+   "fonts": {
+    "LMMathItalic10-Regular": "Times New Roman",
+    "LMMathItalic7-Regular": "Times New Roman",
+    "LMRoman10-Bold": "Century Schoolbook",
+    "_chosen_by_width": [
+     "LMRoman10-Bold",
+     "LMRoman10-Regular",
+     "LMRoman5-Regular",
+     "LMRoman7-Regular"
+    ],
+    "LMRoman10-Regular": "Century Schoolbook",
+    "LMRoman5-Regular": "Century Schoolbook",
+    "LMRoman7-Regular": "Century Schoolbook",
+    "LMSans10-Bold": "Arial",
+    "NimbusSanL-Bold": "Arial",
+    "NimbusSanL-BoldItal": "Arial",
+    "NimbusSanL-Regu": "Arial",
+    "NimbusSanL-ReguItal": "Arial"
+   },
+   "submission": {
+    "columns": {
+     "count": 2,
+     "gap_mm": -25.6
+    },
+    "line_numbers": true,
+    "line_pt": 18.2,
+    "running": {
+     "odd": [
+      {
+       "where": "footer",
+       "baseline_mm": 9.3,
+       "size": 6.5,
+       "parts": [
+        {
+         "align": "left",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "PNAS ",
+           "pdf_font": "NimbusSanL-Bold",
+           "size": 6.5,
+           "bold": true,
+           "italic": false,
+           "font": "Arial"
+          },
+          {
+           "text": "{date}",
+           "pdf_font": "NimbusSanL-Regu",
+           "size": 6.5,
+           "bold": false,
+           "italic": false,
+           "font": "Arial"
+          }
+         ]
+        },
+        {
+         "align": "right",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "{page} of {pages}",
+           "pdf_font": "NimbusSanL-Bold",
+           "size": 6.5,
+           "bold": true,
+           "italic": false,
+           "font": "Arial"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "even": [
+      {
+       "where": "footer",
+       "baseline_mm": 9.3,
+       "size": 6.5,
+       "parts": [
+        {
+         "align": "left",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "{page} of {pages}",
+           "pdf_font": "NimbusSanL-Bold",
+           "size": 6.5,
+           "bold": true,
+           "italic": false,
+           "font": "Arial"
+          }
+         ]
+        },
+        {
+         "align": "right",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "pnas.org",
+           "pdf_font": "NimbusSanL-Regu",
+           "size": 6.5,
+           "bold": false,
+           "italic": false,
+           "font": "Arial"
+          }
+         ]
+        }
+       ]
+      }
+     ],
+     "first": [
+      {
+       "where": "footer",
+       "baseline_mm": 9.3,
+       "size": 6.5,
+       "parts": [
+        {
+         "align": "left",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "PNAS ",
+           "pdf_font": "NimbusSanL-Bold",
+           "size": 6.5,
+           "bold": true,
+           "italic": false,
+           "font": "Arial"
+          },
+          {
+           "text": "{date}",
+           "pdf_font": "NimbusSanL-Regu",
+           "size": 6.5,
+           "bold": false,
+           "italic": false,
+           "font": "Arial"
+          }
+         ]
+        },
+        {
+         "align": "right",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "{page}of {pages}",
+           "pdf_font": "NimbusSanL-Bold",
+           "size": 6.5,
+           "bold": true,
+           "italic": false,
+           "font": "Arial"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "table": {
+     "row_pt": 10.0,
+     "gaps_pt": {
+      "caption": 12.9,
+      "top": 8.7,
+      "header": 4.7,
+      "mid": 8.7,
+      "bottom": null
+     }
+    },
+    "run_in": [
+     "h2",
+     "h3"
+    ],
+    "display": {
+     "above_pt": 10.0,
+     "below_pt": 10.0,
+     "above_short_pt": 0.0,
+     "below_short_pt": 6.0,
+     "printed_above_pt": 18.2,
+     "printed_below_pt": 10.0
+    }
+   },
+   "hand": [
+    "styles.author.before_pt",
+    "styles.affiliation.before_pt",
+    "styles.affiliation.indent_mm.left",
+    "styles.affiliation.indent_mm.right",
+    "styles.affiliation.align",
+    "styles.table_caption.before_pt",
+    "styles.table_note.before_pt"
+   ],
+   "running": {
+    "odd": [
+     {
+      "where": "footer",
+      "baseline_mm": 9.3,
+      "size": 6.5,
+      "parts": [
+       {
+        "align": "left",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "PNAS ",
+          "pdf_font": "NimbusSanL-Bold",
+          "size": 6.5,
+          "bold": true,
+          "italic": false,
+          "font": "Arial"
+         },
+         {
+          "text": "{date}",
+          "pdf_font": "NimbusSanL-Regu",
+          "size": 6.5,
+          "bold": false,
+          "italic": false,
+          "font": "Arial"
+         }
+        ]
+       },
+       {
+        "align": "right",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "{page} of {pages}",
+          "pdf_font": "NimbusSanL-Bold",
+          "size": 6.5,
+          "bold": true,
+          "italic": false,
+          "font": "Arial"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "even": [
+     {
+      "where": "footer",
+      "baseline_mm": 9.3,
+      "size": 6.5,
+      "parts": [
+       {
+        "align": "left",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "{page} of {pages}",
+          "pdf_font": "NimbusSanL-Bold",
+          "size": 6.5,
+          "bold": true,
+          "italic": false,
+          "font": "Arial"
+         }
+        ]
+       },
+       {
+        "align": "right",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "pnas.org",
+          "pdf_font": "NimbusSanL-Regu",
+          "size": 6.5,
+          "bold": false,
+          "italic": false,
+          "font": "Arial"
+         }
+        ]
+       }
+      ]
+     }
+    ],
+    "first": [
+     {
+      "where": "footer",
+      "baseline_mm": 9.3,
+      "size": 6.5,
+      "parts": [
+       {
+        "align": "left",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "PNAS ",
+          "pdf_font": "NimbusSanL-Bold",
+          "size": 6.5,
+          "bold": true,
+          "italic": false,
+          "font": "Arial"
+         },
+         {
+          "text": "{date}",
+          "pdf_font": "NimbusSanL-Regu",
+          "size": 6.5,
+          "bold": false,
+          "italic": false,
+          "font": "Arial"
+         }
+        ]
+       },
+       {
+        "align": "right",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "{page}of {pages}",
+          "pdf_font": "NimbusSanL-Bold",
+          "size": 6.5,
+          "bold": true,
+          "italic": false,
+          "font": "Arial"
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "table": {
+    "pdf_font": "NimbusSanL-Regu",
+    "size": 7.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.5,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.5,
+      "color": "000000"
+     },
+     "bottom": null
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 10.0,
+    "gaps_pt": {
+     "caption": 12.9,
+     "top": 8.7,
+     "header": 4.7,
+     "mid": 8.7,
+     "bottom": null
+    },
+    "align": "left",
+    "outer_pt": 0.8,
+    "col_gap_pt": 12.9,
+    "font": "Arial"
+   },
+   "display": {
+    "above_pt": 10.0,
+    "below_pt": 10.0,
+    "above_short_pt": 0.0,
+    "below_short_pt": 6.0,
+    "printed_above_pt": 11.4,
+    "printed_below_pt": 6.5
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 225.0,
+  "types": [
+   {
+    "name": "1 column",
+    "width_mm": 87.0
+   },
+   {
+    "name": "1.5 columns",
+    "width_mm": 114.0
+   },
+   {
+    "name": "2 columns",
+    "width_mm": 178.0
+   }
+  ],
+  "note": "8.7, 11.4 or 17.8 cm wide; at most 22.5 cm tall to leave room for the legend.",
+  "source": "PNAS Digital Art Guidelines (pnas.org)",
+  "labels": {
+   "font": "Helvetica",
+   "size": 12.0,
+   "bold": false,
+   "case": "upper",
+   "form": "a",
+   "source": "PNAS's guidelines don't say; measured from a published figure (PMC12772206, 2025): 12 pt regular capitals",
+   "measured": true
+  },
+  "text": {
+   "min_pt": 6.0,
+   "max_pt": 12.0,
+   "fonts": [
+    "Arial",
+    "Helvetica",
+    "Times",
+    "Times New Roman",
+    "Symbol",
+    "Mathematical Pi",
+    "European Pi"
+   ],
+   "fonts_only": false,
+   "about": false,
+   "source": "PNAS's guidelines: 6–12 pt after reduction; standard fonts such as Arial, Helvetica, Times, Symbol"
+  },
+  "lines": {
+   "min_pt": 0.25,
+   "max_pt": null,
+   "about": false,
+   "source": "PNAS Digital Art Guidelines: graph lines at least 0.25 pt wide"
+  },
+  "pictures": {
+   "photo": 300.0,
+   "combination": 600.0,
+   "line_art": 1000.0,
+   "vector": [],
+   "source": "PNAS Digital Art Guidelines: photos at least 300 ppi, photos with type 600–900 ppi, line art 1000–1200 ppi, at publication size"
+  },
+  "export": {
+   "formats": [
+    "tiff",
+    "eps",
+    "pdf",
+    "pptx"
+   ],
+   "colour": "rgb",
+   "max_mb": null,
+   "firm": true,
+   "max_dpi": null,
+   "embed_fonts": true,
+   "no_alpha": false,
+   "source": "PNAS's submission guidelines: TIFF, EPS, PDF or PPT; its Digital Art Guidelines: original RGB colour, fonts embedded"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://www.pnas.org/author-center/editorial-and-journal-policies",
+   "what": "Editorial policies (AI in Materials and Methods; contributions from the submission system). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://www.pnas.org/author-center/submitting-your-manuscript",
+   "what": "Submitting your manuscript (lengths, order, title, keywords, footnote symbols, references, SI, revised files). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://www.overleaf.com/latex/templates/template-for-preparing-your-research-report-submission-to-pnas-using-overleaf-2025/whbdryzwztnd",
+   "what": "PNAS official LaTeX template for Research Reports (2025). Read."
+  },
+  {
+   "url": "https://www.pnas.org/author-center/submitting-your-manuscript",
+   "what": "How to Submit a Manuscript. NOT read: HTTP 403. Search excerpts only."
+  },
+  {
+   "url": "https://www.pnas.org/author-center/editorial-and-journal-policies",
+   "what": "PNAS Editorial Policies. NOT read (403). Search excerpts only."
+  },
+  {
+   "url": "https://web.archive.org/web/20260617040225/https://www.pnas.org/author-center/submitting-your-manuscript",
+   "what": "How to Submit a Manuscript: the Internet Archive's copy of 2026-06-17 of the official page. Read 2026-11-16: Significance statement 'Include no more than 120 words'; abstract 'no more than 250 words'; title '< 135 characters'; 'Include at least three keywords at submission'."
+  }
+ ],
+ "evidence": {
+  "status": "browser (pnas.org's submission and policy pages, 2026-11-16) and the official Overleaf template",
+  "abstract": {
+   "structured": false,
+   "headings": [],
+   "words": 250,
+   "note": "template: 'Please provide an abstract of no more than 250 words in a single paragraph.' excerpt: references in the abstract must be cited in full within it."
+  },
+  "front": [
+   {
+    "kind": "significance",
+    "name": "Significance Statement",
+    "required": true,
+    "words": 120,
+    "items": null,
+    "chars": null,
+    "min": 50,
+    "max": 120,
+    "note": "template (2025): 'Authors must submit a significance statement between 50 and 120 words in length'. pnas.org (wayback 2026-06-17): 'Include no more than 120 words' (no minimum given, so no conflict). min/max here are words. prose's hint now says 50 to 120 words. excerpt: no references."
+   },
+   {
+    "kind": "keywords",
+    "name": "Keywords",
+    "required": true,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": 3,
+    "max": 5,
+    "note": "template: 'At least three keywords are required at submission. Please provide three to five keywords, separated by the pipe symbol.'"
+   }
+  ],
+  "statements": {
+   "author_contributions": {
+    "required": null,
+    "heading": "Author contributions",
+    "where": "a title-page field in the template (\\authorcontributions)",
+    "form": null,
+    "credit": null,
+    "quote": "Please provide details of author contributions here.",
+    "note": "browser: 'Published contributions are taken from the submission system, not from the manuscript file' (designated research, performed research ...)."
+   },
+   "funding": {
+    "required": null,
+    "heading": null,
+    "where": null,
+    "note": "Not addressed in the template."
+   },
+   "competing_interests": {
+    "required": null,
+    "heading": "Competing interests",
+    "where": "a title-page field in the template (\\authordeclaration)",
+    "quote": "Please declare any competing interests here."
+   },
+   "data_availability": {
+    "required": true,
+    "heading": "Data, Materials, and Software Availability",
+    "where": "its own section (\\dataavail)",
+    "note": "template: authors must make materials, data and protocols, including code and scripts, available in a public repository on publication."
+   },
+   "code_availability": {
+    "required": null,
+    "heading": null,
+    "where": "within Data, Materials, and Software Availability"
+   },
+   "ethics": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "acknowledgements": {
+    "required": null,
+    "heading": "Acknowledgments",
+    "where": "single paragraph (\\acknow)"
+   },
+   "ai_use": {
+    "required": true,
+    "where": "Materials and Methods (or Acknowledgments if there is no Materials and Methods)",
+    "quote": "Use of AI and generative AI software ... during the research process must be disclosed in the Materials and Methods section (or Acknowledgments, if no Materials and Methods section is available)",
+    "note": "browser 2026-11-16"
+   }
+  },
+  "differs_from_prose": [],
+  "unconfirmed": [
+   "funding location (the order lists 'Acknowledgments and funding sources' together), ethics"
+  ]
+ }
+}

@@ -1,0 +1,972 @@
+{
+ "format": 1,
+ "id": "mbe",
+ "name": "Molecular Biology and Evolution",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "Oxford University Press",
+ "issn": {
+  "print": "0737-4038",
+  "online": "1537-1719"
+ },
+ "aliases": [
+  "MBE",
+  "Mol Biol Evol"
+ ],
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "a4"
+ },
+ "captions": {
+  "label": "Figure",
+  "bar": false
+ },
+ "text": {
+  "numbered_headings": true
+ },
+ "figure_refs": {
+  "main": [
+   "Fig.",
+   "Figs."
+  ],
+  "panels": {
+   "case": "lower",
+   "style": null
+  },
+  "supp": null,
+  "evidence": [
+   "since late 2023; Fig. S3 and Figure S3 both since Oct 2025"
+  ]
+ },
+ "legends": {
+  "sep": "",
+  "title": {
+   "bold": false,
+   "line": false
+  },
+  "panels": {
+   "open": "",
+   "close": ")",
+   "bold": null
+  },
+  "scale": 0.8,
+  "table": {
+   "sep": "",
+   "title": {
+    "bold": false
+   }
+  },
+  "evidence": [
+   "Figure 1 Title. a) …",
+   "(measured 2026-11-16: bold \"Figure 1\" with no full stop: PMC13733659 p. 3, PMC13739495 p. 4, PMC13739497 p. 3)",
+   "PMC13733663",
+   "(table: bold \"Table 1\", regular title: PMC13733659 p. 5, PMC13739495 p. 6, PMC13739497 p. 7)"
+  ]
+ },
+ "supplement": {
+  "title": "Supplementary Material",
+  "fig": {
+   "one": [
+    "supplementary fig. ",
+    ""
+   ],
+   "many": [
+    "supplementary figs. ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Supplementary Figure ",
+    ""
+   ]
+  },
+  "tbl": {
+   "one": [
+    "supplementary table ",
+    ""
+   ],
+   "many": [
+    "supplementary tables ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Supplementary Table ",
+    ""
+   ]
+  },
+  "data": {
+   "one": [
+    "supplementary data ",
+    ""
+   ],
+   "many": [
+    "supplementary data ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Supplementary Data ",
+    ""
+   ]
+  },
+  "note": null
+ },
+ "house_style": {
+  "p": {
+   "italic": true,
+   "space": true,
+   "zero": true
+  },
+  "etal": {
+   "italic": false
+  },
+  "range": "–",
+  "small": "words",
+  "thousands": {
+   "sep": ",",
+   "from": 4
+  },
+  "percent": {
+   "space": false
+  },
+  "celsius": {
+   "space": true
+  },
+  "units": {
+   "h": "h",
+   "mL": "mL",
+   "uL": "µL"
+  }
+ },
+ "house_style_from": {
+  "p": "print",
+  "etal": "print",
+  "range": "print",
+  "small": "print",
+  "thousands": "print",
+  "percent": "print",
+  "celsius": "print",
+  "units": "print"
+ },
+ "abbreviations": {},
+ "cover_letter": {
+  "type": "Discovery",
+  "reviewers": "form",
+  "points": [
+   "the significant discoveries or methodological advances",
+   "their broader impact for the scientific community",
+   "that all authors have read and approved the final version",
+   "related preprints and manuscripts, and how this paper differs from them"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Abstract",
+   "words": 250
+  },
+  "front": [
+   {
+    "kind": "graphical_abstract",
+    "name": "Graphical Abstract"
+   }
+  ],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Introduction"
+   },
+   {
+    "kind": "results",
+    "name": "Results"
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   },
+   {
+    "kind": "conclusions",
+    "name": "Conclusion"
+   },
+   {
+    "kind": "methods",
+    "name": "Materials and Methods"
+   }
+  ],
+  "back": [
+   {
+    "kind": "supplementary",
+    "name": "Supplementary Material"
+   },
+   {
+    "kind": "data_availability",
+    "name": "Data Availability",
+    "required": true,
+    "hint": "Where the data are available: repositories and accession numbers."
+   },
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgments",
+    "required": true,
+    "hint": "The people and institutions to thank. The funding goes here: each agency's official name and the full grant numbers."
+   },
+   {
+    "kind": "author_contributions",
+    "name": "Author Contributions"
+   },
+   {
+    "kind": "funding",
+    "name": "Funding"
+   },
+   {
+    "kind": "references",
+    "name": "References"
+   }
+  ],
+  "evidence": [
+   "(academic.oup.com/mbe/pages/author-guidelines, \"Preparing your manuscript\", read in a browser",
+   "2026-11-16: an abstract \"of up to 250 words\"; Introduction, Results, Discussion, Materials and",
+   "Methods; a data availability statement \"before the Acknowledgements\"; \"All manuscripts must provide funding information\" in the Acknowledgements. The rest: the published order)"
+  ]
+ },
+ "submission": {
+  "first": {
+   "accepts": [
+    "pdf"
+   ]
+  },
+  "revision": {
+   "formats": [
+    "docx",
+    "pdf"
+   ],
+   "accepts": [
+    "docx",
+    "pdf"
+   ],
+   "figure_format": "tif",
+   "dpi": 600,
+   "pdf_embedded": true
+  },
+  "alt_text": true,
+  "from": "unconfirmed",
+  "evidence": [
+   "Revision: Word without figures and a PDF with them (published as Advance Access); TIFF figures",
+   "(first: \"all new submissions be uploaded as a single PDF\"; final figures .tif; alt text required: its author guidelines, browser 2026-11-16. The revision's files: from the decision letter, unconfirmed)"
+  ]
+ },
+ "statements": {
+  "ai": "acknowledgements",
+  "evidence": [
+   "read"
+  ]
+ },
+ "limits": {
+  "article_type": "Discoveries",
+  "source": "https://academic.oup.com/mbe/pages/author-guidelines",
+  "checked": "2026-11-16",
+  "limits": {
+   "title_chars": null,
+   "title_words": null,
+   "abstract_words": 250,
+   "summary_words": null,
+   "main_text_words": null,
+   "methods_words": null,
+   "legend_words": null,
+   "display_items": null,
+   "figures": null,
+   "tables": null,
+   "references": null,
+   "keywords": null
+  },
+  "counts": null,
+  "notes": "Discoveries are MBE's full-length research articles: 'Discoveries are major research articles that typically present novel and empirical results'. The page was read directly, but its manuscript-preparation part comes after a long table of open-access institutions, past the point where the fetch tool truncates the page, so no limits could be read; see 'unverified'. 'The inclusion of a data availability statement is a requirement for papers published in the Journal.' MBE's submission-instructions page (https://academic.oup.com/mbe/pages/Submission_Online) says that for initial submission 'only a complete .pdf (that contains tables, figures, and figure captions) is required.' Submitting authors need an ORCID iD. Any AI use must be disclosed in the cover letter and in the Methods or Acknowledgements. 2026-11-16 (browser): the page's 'Preparing your manuscript' section was read: Discoveries 'have an abstract of up to 250 words'; Brief Communications 150 words and 2,000 words with three display items. No other limit.",
+  "unverified": {
+   "source": "https://academic.oup.com/mbe/pages/author-guidelines",
+   "how": "Not read: this section is past the fetch tool's truncation point. Values come from web-search excerpts of the page, which may be stale or paraphrased. Confirm in a browser before use.",
+   "limits": {
+    "abstract_words": 250
+   },
+   "counts": "No main-text limit for Discoveries appeared in the excerpts.",
+   "notes": "'Discoveries, Methods, Resources, Reviews and Protocols have an abstract of up to 250 words.' For comparison, Brief Communications and Perspectives 'begin with an abstract of up to 150 words. The main text is to be no more than 2,000 words and may contain subsections and up to three figures or tables.' New submissions are a single PDF containing 'the main text, tables, figure captions, and figures', with supplementary material in one separate PDF where possible. The abstract is typically followed by Introduction, Results, Discussion and Materials and Methods, and Results and Discussion may be combined. The cover page should have a brief, informative title accessible to general readers. No keyword, significance-statement, figure or reference limit appeared."
+  },
+  "count": {
+   "abstract": false,
+   "methods": true,
+   "legends": false
+  }
+ },
+ "references": {
+  "csl": "molecular-biology-and-evolution",
+  "file": "mbe.csl",
+  "overrides": {
+   "bibliography": {
+    "et-al-min": "6",
+    "et-al-use-first": "1"
+   },
+   "evidence": "Up to five in full (17), six or more first and 'et al' (63): PMC13729133, PMC13733659, PMC13739495, PMC13739497 (2026). The style listed ten."
+  }
+ },
+ "latex": {
+  "template": "publisher",
+  "class": "oup-authoring-template",
+  "wrapper": "journal.latex",
+  "files": {
+   "oup-authoring-template.cls": "d821dccff84d040d68c4c3d0edb97a866f0778d51b5ab265a83d589b7ea7096a",
+   "oup-abbrvnat.bst": "8004033e134786884125d7312a65f042d453c18f5970a54ecc193042904e00f9"
+  },
+  "publisher": "Oxford University Press",
+  "note": "OUP's general LaTeX template (oup-authoring-template v1.5, July 2026) with OUP's options for Molecular Biology and Evolution: modern design, large page, numbered sections, author-date citations (oup-abbrvnat)",
+  "source_notes": "SOURCE.md"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "OUP's general LaTeX template (oup-authoring-template v1.5, July 2026) with OUP's options for Molecular Biology and Evolution: modern design, large page, numbered sections, author-date citations (oup-abbrvnat); prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display, styles re-measured on 2026-11-17",
+   "page": {
+    "width_mm": 210.0,
+    "height_mm": 276.0,
+    "margins_mm": {
+     "top": 26.6,
+     "bottom": 14.5,
+     "left": 16.9,
+     "right": 15.0
+    }
+   },
+   "columns": {
+    "count": 1,
+    "gap_mm": 0.0
+   },
+   "mirror_margins": true,
+   "body": {
+    "pdf_font": "LMSans9-Regular",
+    "size": 9.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 11.5,
+    "justify": true,
+    "indent_mm": 4.5,
+    "first_indent_mm": 0.2,
+    "space_after_pt": 0.0,
+    "font": "Verdana"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 20.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 19.0,
+     "line_pt": 20.9,
+     "run_in": false,
+     "font": "Verdana"
+    },
+    "author": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 11.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 7.7,
+     "run_in": false,
+     "font": "Verdana"
+    },
+    "affiliation": {
+     "pdf_font": "LMSans8-Regular",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 4.3,
+      "right": 0.0
+     },
+     "before_pt": 14.0,
+     "run_in": false,
+     "font": "Verdana"
+    },
+    "correspondence": {
+     "pdf_font": "LMSans8-Regular",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 1.4,
+     "run_in": false,
+     "font": "Verdana"
+    },
+    "abstract": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 9.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "indent_mm": {
+      "left": 4.2,
+      "right": 0.0
+     },
+     "before_pt": 5.0,
+     "line_pt": 11.5,
+     "run_in": false,
+     "font": "Verdana"
+    },
+    "abstract_title": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 13.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 4.3,
+      "right": 0.0
+     },
+     "before_pt": 20.6,
+     "run_in": false,
+     "text": "Abstract",
+     "font": "Verdana"
+    },
+    "h1": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 15.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 9.6,
+     "run_in": false,
+     "after_pt": 5.9,
+     "font": "Verdana"
+    },
+    "h2": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 13.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 10.6,
+     "run_in": false,
+     "after_pt": 5.9,
+     "font": "Verdana"
+    },
+    "h3": {
+     "pdf_font": "LMSans10-Bold",
+     "size": 10.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 4.9,
+     "run_in": false,
+     "after_pt": 1.9,
+     "font": "Verdana"
+    },
+    "caption": {
+     "pdf_font": "LMSans8-Regular",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 3.8,
+     "line_pt": 11.0,
+     "run_in": false,
+     "font": "Verdana"
+    },
+    "table_caption": {
+     "pdf_font": "LMSans9-Regular",
+     "size": 9.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 11.1,
+     "run_in": false,
+     "font": "Verdana"
+    },
+    "references": {
+     "pdf_font": "LMSans9-Regular",
+     "size": 9.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "hanging_mm": 3.1,
+     "before_pt": 0.7,
+     "line_pt": 11.5,
+     "run_in": false,
+     "font": "Verdana"
+    },
+    "table_note": {
+     "pdf_font": "LMSans8-Regular",
+     "size": 7.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 10.4,
+     "run_in": false,
+     "font": "Verdana"
+    }
+   },
+   "line_numbers": false,
+   "page_number": "header-left",
+   "running_head": true,
+   "fonts": {
+    "CMMI6": "Times New Roman",
+    "CMMI9": "Times New Roman",
+    "CMR6": "Times New Roman",
+    "CMR9": "Times New Roman",
+    "CMSY5": "Times New Roman",
+    "CMSY7": "Times New Roman",
+    "LMRoman9-Regular": "Times New Roman",
+    "LMSans10-Bold": "Verdana",
+    "_chosen_by_width": [
+     "LMSans10-Bold",
+     "LMSans8-Oblique",
+     "LMSans8-Regular",
+     "LMSans9-Oblique",
+     "LMSans9-Regular"
+    ],
+    "LMSans8-Oblique": "Verdana",
+    "LMSans8-Regular": "Verdana",
+    "LMSans9-Oblique": "Verdana",
+    "LMSans9-Regular": "Verdana"
+   },
+   "submission": {
+    "columns": {
+     "count": 1,
+     "gap_mm": 0.0
+    },
+    "line_numbers": true,
+    "line_pt": 19.1,
+    "running": {
+     "odd": [
+      {
+       "where": "header",
+       "baseline_mm": 13.3,
+       "size": 8.0,
+       "parts": [
+        {
+         "align": "left",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "Molecular Biology and Evolution, {year}",
+           "pdf_font": "LMSans8-Oblique",
+           "size": 8.0,
+           "bold": false,
+           "italic": true,
+           "font": "Verdana"
+          }
+         ]
+        },
+        {
+         "align": "right",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "{page}",
+           "pdf_font": "LMSans10-Bold",
+           "size": 8.0,
+           "bold": true,
+           "italic": false,
+           "font": "Verdana"
+          }
+         ]
+        }
+       ],
+       "rule_below": {
+        "pt": 1.0,
+        "color": "666666",
+        "gap_pt": 13.5,
+        "from_mm": -0.4,
+        "to_mm": 0.2
+       }
+      }
+     ],
+     "even": [
+      {
+       "where": "header",
+       "baseline_mm": 13.3,
+       "size": 8.0,
+       "parts": [
+        {
+         "align": "left",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "{page}",
+           "pdf_font": "LMSans10-Bold",
+           "size": 8.0,
+           "bold": true,
+           "italic": false,
+           "font": "Verdana"
+          }
+         ]
+        },
+        {
+         "align": "right",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "Molecular Biology and Evolution, {year}",
+           "pdf_font": "LMSans8-Oblique",
+           "size": 8.0,
+           "bold": false,
+           "italic": true,
+           "font": "Verdana"
+          }
+         ]
+        }
+       ],
+       "rule_below": {
+        "pt": 1.0,
+        "color": "666666",
+        "gap_pt": 13.5,
+        "from_mm": -0.4,
+        "to_mm": 0.2
+       }
+      }
+     ],
+     "first": [
+      {
+       "where": "header",
+       "baseline_mm": 13.8,
+       "size": 6.5,
+       "parts": [
+        {
+         "align": "left",
+         "offset_mm": 0.0,
+         "runs": [
+          {
+           "text": "Molecular Biology and Evolution",
+           "pdf_font": "LMSans8-Oblique",
+           "size": 6.5,
+           "bold": false,
+           "italic": true,
+           "font": "Verdana"
+          },
+          {
+           "text": ", {year}, {page}–{pages}",
+           "pdf_font": "LMSans8-Regular",
+           "size": 6.5,
+           "bold": false,
+           "italic": false,
+           "font": "Verdana"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    "table": {
+     "row_pt": 19.1,
+     "gaps_pt": {
+      "caption": 13.8,
+      "top": 16.3,
+      "header": 7.6,
+      "mid": 16.2,
+      "bottom": 7.7
+     }
+    },
+    "run_in": [],
+    "display": {
+     "above_pt": 11.0,
+     "below_pt": 11.0,
+     "above_short_pt": 0.0,
+     "below_short_pt": 6.0,
+     "printed_above_pt": 19.1,
+     "printed_below_pt": 10.0
+    }
+   },
+   "running": {
+    "odd": [
+     {
+      "where": "header",
+      "baseline_mm": 11.7,
+      "size": 8.0,
+      "parts": [
+       {
+        "align": "left",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "Molecular Biology and Evolution, {year}",
+          "pdf_font": "LMSans8-Oblique",
+          "size": 8.0,
+          "bold": false,
+          "italic": true,
+          "font": "Verdana"
+         }
+        ]
+       },
+       {
+        "align": "right",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "{page}",
+          "pdf_font": "LMSans10-Bold",
+          "size": 8.0,
+          "bold": true,
+          "italic": false,
+          "font": "Verdana"
+         }
+        ]
+       }
+      ],
+      "rule_below": {
+       "pt": 1.0,
+       "color": "666666",
+       "gap_pt": 11.4,
+       "from_mm": -0.4,
+       "to_mm": 0.2
+      }
+     }
+    ],
+    "even": [
+     {
+      "where": "header",
+      "baseline_mm": 11.7,
+      "size": 8.0,
+      "parts": [
+       {
+        "align": "left",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "{page}",
+          "pdf_font": "LMSans10-Bold",
+          "size": 8.0,
+          "bold": true,
+          "italic": false,
+          "font": "Verdana"
+         }
+        ]
+       },
+       {
+        "align": "right",
+        "offset_mm": 0.0,
+        "runs": [
+         {
+          "text": "Molecular Biology and Evolution, {year}",
+          "pdf_font": "LMSans8-Oblique",
+          "size": 8.0,
+          "bold": false,
+          "italic": true,
+          "font": "Verdana"
+         }
+        ]
+       }
+      ],
+      "rule_below": {
+       "pt": 1.0,
+       "color": "666666",
+       "gap_pt": 11.4,
+       "from_mm": -0.4,
+       "to_mm": 0.2
+      }
+     }
+    ],
+    "first": []
+   },
+   "table": {
+    "pdf_font": "LMSans9-Regular",
+    "size": 9.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.72,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.45,
+      "color": "000000"
+     },
+     "bottom": {
+      "pt": 0.72,
+      "color": "000000"
+     }
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 11.5,
+    "gaps_pt": {
+     "caption": 13.8,
+     "top": 11.0,
+     "header": 5.3,
+     "mid": 10.8,
+     "bottom": 5.4
+    },
+    "align": "center",
+    "outer_pt": 1.3,
+    "col_gap_pt": 10.1,
+    "font": "Verdana"
+   },
+   "display": {
+    "above_pt": 11.0,
+    "below_pt": 11.0,
+    "above_short_pt": 0.0,
+    "below_short_pt": 6.0,
+    "printed_above_pt": 11.5,
+    "printed_below_pt": 6.0
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 236.0,
+  "types": [
+   {
+    "name": "Single column",
+    "width_mm": 86.0
+   },
+   {
+    "name": "Double column",
+    "width_mm": 178.0
+   }
+  ],
+  "note": "86 mm column, 178 mm full text width, 236 mm text depth (online-only journal).",
+  "source": "measured from a published article (PMC13223747, 2025); the journal publishes no figure sizes",
+  "labels": {
+   "font": "Helvetica",
+   "size": 10.0,
+   "bold": true,
+   "case": "lower",
+   "form": "(a)",
+   "source": "MBE's guidelines don't say; measured from a published figure (PMC13696352, 2026): (a), (b) in 10 pt bold",
+   "measured": true
+  },
+  "text": {
+   "min_pt": null,
+   "max_pt": null,
+   "fonts": [],
+   "fonts_only": false,
+   "about": false,
+   "source": "MBE's guidelines set no sizes or fonts for figure text"
+  },
+  "lines": {
+   "min_pt": 0.25,
+   "max_pt": 1.0,
+   "about": false,
+   "source": "OUP's guidance for preparing artwork (MBE's page refers authors to OUP's for the rest): line thickness 0.25–1 pt"
+  },
+  "pictures": {
+   "photo": 300.0,
+   "combination": 600.0,
+   "line_art": 1200.0,
+   "vector": [],
+   "source": "MBE's guidelines: 300 dpi for colour and half-tone artwork, 1200 dpi for line drawings; OUP's guidance for preparing artwork: combination half-tones 600–900 dpi"
+  },
+  "export": {
+   "formats": [
+    "tiff",
+    "eps",
+    "pptx",
+    "pdf",
+    "jpeg"
+   ],
+   "colour": "rgb_preferred",
+   "max_mb": null,
+   "firm": true,
+   "max_dpi": null,
+   "embed_fonts": true,
+   "no_alpha": false,
+   "source": "MBE's guidelines: .tif, .eps, .ppt, .xls, .doc, .pdf, .gif or .jpg; OUP's guidance for preparing artwork: RGB recommended, fonts embedded"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://academic.oup.com/mbe/pages/author-guidelines",
+   "what": "Author guidelines, now with a 'Preparing your manuscript' section (abstract 250 words, section order, single-PDF submission, alt text, data availability before Acknowledgements, funding in Acknowledgements, references). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://academic.oup.com/mbe/pages/author-guidelines",
+   "what": "MBE author guidelines. Read in full (51,291 characters): article types and policies only."
+  },
+  {
+   "url": "https://academic.oup.com/mbe/pages/Submission_Online",
+   "what": "Submission instructions. Read: files only; it points to a 'manuscript preparation' page that was not found."
+  }
+ ],
+ "evidence": {
+  "status": "browser (the author guidelines' manuscript section, 2026-11-16)",
+  "abstract": {
+   "structured": null,
+   "headings": [],
+   "words": 250,
+   "note": "browser: 'Discoveries, Methods, Resources, Reviews and Protocols have an abstract of up to 250 words.'"
+  },
+  "front": [],
+  "statements": {
+   "author_contributions": {
+    "required": null,
+    "heading": null,
+    "where": null,
+    "form": null,
+    "credit": "not mentioned",
+    "quote": null
+   },
+   "funding": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "competing_interests": {
+    "required": true,
+    "heading": null,
+    "where": "at submission; no manuscript heading or position given",
+    "quote": "The Journal requires all authors to disclose any potential conflict of interest at the point of submission."
+   },
+   "data_availability": {
+    "required": true,
+    "heading": null,
+    "where": null,
+    "quote": "The inclusion of a data availability statement is a requirement for papers published in the Journal."
+   },
+   "code_availability": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "ethics": {
+    "required": null,
+    "heading": null,
+    "where": "in Methods (human participants: approval statement)"
+   },
+   "acknowledgements": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "ai_use": {
+    "required": true,
+    "where": "cover letter AND Methods or Acknowledgements",
+    "quote": "should be disclosed both in cover letters to editors and in the Methods or Acknowledgements section of manuscripts"
+   }
+  },
+  "differs_from_prose": [],
+  "unconfirmed": [
+   "graphical abstract, keywords, running title, author contributions: not on the page",
+   "the revision's files: given in the decision letter"
+  ]
+ }
+}

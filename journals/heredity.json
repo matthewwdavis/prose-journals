@@ -1,0 +1,806 @@
+{
+ "format": 1,
+ "id": "heredity",
+ "name": "Heredity",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "Springer Nature",
+ "issn": {
+  "print": "0018-067X",
+  "online": "1365-2540"
+ },
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "a4"
+ },
+ "captions": {
+  "label": "Fig.",
+  "bar": false
+ },
+ "figure_refs": {
+  "main": [
+   "Fig.",
+   "Figs."
+  ],
+  "supp": null,
+  "panels": {
+   "case": "upper",
+   "style": null
+  },
+  "evidence": [
+   "Fig. S1 / Supplementary Fig. 1 both printed guidelines silent: mosaic's capital labels"
+  ]
+ },
+ "legends": {
+  "sep": "",
+  "title": {
+   "bold": true,
+   "line": false
+  },
+  "panels": {
+   "open": "",
+   "close": "",
+   "bold": "letter"
+  },
+  "scale": 0.8,
+  "table": {
+   "sep": ".",
+   "title": {
+    "bold": false
+   }
+  },
+  "evidence": [
+   "Fig. 1 Title. a …",
+   "(measured: bold \"Fig. 1\", bold title run in: PMC13451275 p. 4, PMC13612591 p. 3, PMC13612523 p. 3)",
+   "PMC13451275 (tagged title)",
+   "(table: bold \"Table 1.\", regular title: PMC13612591 p. 4, PMC13612523 p. 4, PMC13545244 p. 11)"
+  ]
+ },
+ "supplement": {
+  "title": "Supplementary Information",
+  "large_tables": "xlsx",
+  "fig": {
+   "one": [
+    "Supplementary Fig. ",
+    ""
+   ],
+   "many": [
+    "Supplementary Figs. ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Supplementary Figure ",
+    ""
+   ]
+  },
+  "tbl": {
+   "one": [
+    "Supplementary Table ",
+    ""
+   ],
+   "many": [
+    "Supplementary Tables ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Supplementary Table ",
+    ""
+   ]
+  },
+  "data": {
+   "one": [
+    "Supplementary Data ",
+    ""
+   ],
+   "many": [
+    "Supplementary Data ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Supplementary Data ",
+    ""
+   ]
+  },
+  "note": {
+   "one": [
+    "Supplementary Note ",
+    ""
+   ],
+   "many": [
+    "Supplementary Notes ",
+    ""
+   ],
+   "s": false,
+   "legend": [
+    "Supplementary Note ",
+    ""
+   ]
+  },
+  "evidence": [
+   "(one combined PDF; tables over a page as Excel)"
+  ]
+ },
+ "house_style": {
+  "etal": {
+   "italic": false
+  },
+  "unit_space": "nbsp",
+  "range": "–",
+  "thousands": {
+   "sep": ",",
+   "from": 4
+  },
+  "percent": {
+   "space": false
+  },
+  "celsius": {
+   "space": true
+  },
+  "latin": {
+   "italic": false
+  },
+  "units": {
+   "h": "h",
+   "s": "s"
+  }
+ },
+ "house_style_from": {
+  "etal": "print",
+  "unit_space": "print",
+  "range": "print",
+  "thousands": "stated",
+  "percent": "print",
+  "celsius": "print",
+  "latin": "print",
+  "units": "stated"
+ },
+ "abbreviations": {},
+ "cover_letter": {
+  "type": "Article",
+  "reviewers": "form",
+  "points": [
+   "why the work matters and suits Heredity's broad readership",
+   "that it is original, not published and not under consideration elsewhere",
+   "previous reviewers' comments, if another journal has considered it",
+   "a competing interests statement"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Abstract",
+   "words": 250
+  },
+  "front": [
+   {
+    "kind": "graphical_abstract",
+    "name": "Graphical abstract"
+   }
+  ],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Introduction"
+   },
+   {
+    "kind": "methods",
+    "name": "Materials and Methods"
+   },
+   {
+    "kind": "results",
+    "name": "Results"
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   }
+  ],
+  "back": [
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgements",
+    "required": true,
+    "hint": "The people and institutions to thank. Funding goes here too."
+   },
+   {
+    "kind": "author_contributions",
+    "name": "Author Contributions",
+    "required": true,
+    "hint": "Who did what (for example CRediT roles, by initials)."
+   },
+   {
+    "kind": "competing_interests",
+    "name": "Conflict of Interest",
+    "required": true,
+    "hint": "Any competing interests, or that there are none."
+   },
+   {
+    "kind": "data_availability",
+    "name": "Data Archiving",
+    "required": true,
+    "hint": "Where the data are available: repositories and accession numbers."
+   },
+   {
+    "kind": "ethics",
+    "name": "Research Ethics Statement",
+    "required": true,
+    "hint": "The ethics approval the work needed, or that none was needed."
+   },
+   {
+    "kind": "references",
+    "name": "References"
+   },
+   {
+    "kind": "figure_legends",
+    "name": "Figure legends"
+   }
+  ],
+  "evidence": [
+   "(its current guide, nature.com/hdy/authors-and-referees/gta, read 2026-11-16: these parts in this order; \"Ethics, author contributions and data availability statements are mandatory\"; a title of 150 characters or less and no running title)"
+  ]
+ },
+ "submission": {
+  "first": {
+   "formats": [
+    "docx"
+   ],
+   "accepts": [
+    "docx",
+    "latex"
+   ],
+   "figures": "separate",
+   "figure_format": "pdf",
+   "dpi": 600,
+   "naming": "Fig{n}",
+   "max_mb": 50,
+   "also": [
+    "a cover letter with the full acknowledgements and the authors' order"
+   ]
+  },
+  "revision": {
+   "accepts": [
+    "docx",
+    "latex"
+   ],
+   "tables": "end",
+   "max_mb": 50
+  },
+  "anonymised": "required",
+  "evidence": [
+   "Double-anonymised: the title page uploaded on its own; production-quality figures from the first submission; legends after the references; no TIFF, PNG or JPEG for compiled figures"
+  ]
+ },
+ "statements": {
+  "ai": "methods",
+  "evidence": [
+   "read 2026-11-16: \"Use of an LLM should be properly documented in the Methods section\""
+  ]
+ },
+ "limits": {
+  "article_type": "Original Article",
+  "source": "https://www.nature.com/hdy/authors-and-referees/gta",
+  "checked": "2026-11-16",
+  "limits": {
+   "title_chars": 150,
+   "title_words": null,
+   "abstract_words": 250,
+   "summary_words": null,
+   "main_text_words": 7000,
+   "methods_words": null,
+   "legend_words": null,
+   "display_items": 8,
+   "figures": null,
+   "tables": null,
+   "references": 100,
+   "keywords": null
+  },
+  "counts": "'Main body of text (excluding abstract, tables/figures, and references) not to exceed 7,000 words.' (HTML guide, read 2026-11-16)",
+  "notes": "Heredity's Guide for Authors PDF, 'Revised 21/02/2023'. (Read 2026-11-14; the HTML guide below supersedes it.) Abstract: 'This should not exceed 250 words', on a separate page and also in the submission form. It should state the conceptual issue(s), the approach and the main findings. Display items: 'max. 8 figures or tables'. 'Composite figures containing more than three individual figures will count as two figures.' References: 'There should normally be no more than 100 references' (author-year style). Title page: 'A succinct title', and 'A running title of no more than 150 characters' with no abbreviations (the December 2021 guide said 50 characters). Original Articles contain, in order: cover letter (with a Conflict of Interest statement), title page, abstract, introduction, materials and methods, results, discussion, acknowledgements, author contribution statement, conflict of interest, data archiving (a section titled 'Data Archiving' is mandatory), references, figure legends, tables, and figures (uploaded separately). A graphical abstract is optional (9 cm wide x 5 cm high). Each supplementary file needs a text summary of no more than 50 words. Initial submissions may be 'in any recognised double-spaced format that includes line numbers'. No keywords are requested. 2026-11-16: the current HTML guide (https://www.nature.com/hdy/authors-and-referees/gta) was read and wins over the 2023 PDF: 'Title of the paper - succinct, informative, of 150 characters or less' (no running title on its title page); 'Unstructured abstract max. 250 words; Main body of text (excluding abstract, tables/figures, and references) not to exceed 7,000 words; Max 8 tables or figures; Max 100 references'; its component list adds a Research Ethics Statement after Data archiving.",
+  "unverified": null,
+  "count": {
+   "abstract": false,
+   "methods": true,
+   "legends": false
+  }
+ },
+ "references": {
+  "csl": "heredity",
+  "file": "heredity.csl"
+ },
+ "latex": {
+  "template": "publisher",
+  "class": "sn-jnl",
+  "wrapper": "journal.latex",
+  "files": {
+   "sn-jnl.cls": "36d0c3273a59d48dc6a9c7b080dfa1ec50dc10229d8751568d1f2e490ffa5ecc",
+   "sn-basic-heredity.bst": "01e23a6434d686503f3e9cd8eabb75a16ec7708c1d72f5366cc224081b225ffc"
+  },
+  "publisher": "Springer Nature",
+  "note": "Springer Nature LaTeX template, December 2024 (v3.1): sn-jnl with Heredity's author-year references (sn-basic.bst, adapted to list six authors before et al.)",
+  "source_notes": "SOURCE.md"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "Springer Nature LaTeX template, December 2024 (v3.1): sn-jnl with Heredity's author-year references (sn-basic.bst, adapted to list six authors before et al.); prose's sample manuscript compiled by Tectonic, 2026-11-15 (tools/measure_journal_layout.py); running, table, table_note, run_in, display, styles re-measured on 2026-11-17",
+   "page": {
+    "width_mm": 210.0,
+    "height_mm": 297.0,
+    "margins_mm": {
+     "top": 27.0,
+     "bottom": 76.8,
+     "left": 35.3,
+     "right": 43.8
+    }
+   },
+   "columns": {
+    "count": 1,
+    "gap_mm": 0.0
+   },
+   "mirror_margins": true,
+   "body": {
+    "pdf_font": "LMRoman10-Regular",
+    "size": 10.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 12.0,
+    "justify": true,
+    "indent_mm": 5.3,
+    "first_indent_mm": 0.1,
+    "space_after_pt": 0.0,
+    "font": "Century Schoolbook"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "LMRoman17-Regular",
+     "size": 17.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 55.6,
+     "line_pt": 22.5,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "author": {
+     "pdf_font": "LMRoman12-Regular",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 20.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "affiliation": {
+     "pdf_font": "LMRoman12-Regular",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 3.3,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "abstract": {
+     "pdf_font": "LMRoman9-Regular",
+     "size": 9.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "indent_mm": {
+      "left": 8.6,
+      "right": 8.7
+     },
+     "before_pt": 3.2,
+     "line_pt": 11.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "abstract_title": {
+     "pdf_font": "LMRoman9-Bold",
+     "size": 9.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 24.1,
+     "run_in": false,
+     "text": "Abstract",
+     "font": "Century Schoolbook"
+    },
+    "h1": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 14.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 12.0,
+     "run_in": false,
+     "after_pt": 9.0,
+     "font": "Century Schoolbook"
+    },
+    "h2": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 12.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 12.4,
+     "run_in": false,
+     "after_pt": 6.0,
+     "font": "Century Schoolbook"
+    },
+    "h3": {
+     "pdf_font": "LMRoman12-Bold",
+     "size": 11.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 13.8,
+     "run_in": false,
+     "after_pt": 6.0,
+     "font": "Century Schoolbook"
+    },
+    "caption": {
+     "pdf_font": "LMRoman8-Regular",
+     "size": 8.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 1.6,
+     "line_pt": 11.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_caption": {
+     "pdf_font": "LMRoman10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 11.9,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "references": {
+     "pdf_font": "LMRoman10-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "hanging_mm": 3.4,
+     "before_pt": 10.0,
+     "line_pt": 12.0,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "table_note": {
+     "pdf_font": "LMRoman7-Regular",
+     "size": 7.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 5.3,
+      "right": 0.0
+     },
+     "before_pt": 12.6,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    },
+    "correspondence": {
+     "pdf_font": "LMRoman12-Regular",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 28.2,
+     "run_in": false,
+     "font": "Century Schoolbook"
+    }
+   },
+   "line_numbers": false,
+   "page_number": "footer-center",
+   "running_head": false,
+   "fonts": {
+    "CMMI10": "Times New Roman",
+    "CMMI7": "Times New Roman",
+    "CMR10": "Times New Roman",
+    "CMR7": "Times New Roman",
+    "LMRoman10-Bold": "Century Schoolbook",
+    "_chosen_by_width": [
+     "LMRoman10-Bold",
+     "LMRoman10-Regular",
+     "LMRoman12-Bold",
+     "LMRoman12-Regular",
+     "LMRoman17-Regular",
+     "LMRoman5-Regular",
+     "LMRoman7-Regular",
+     "LMRoman8-Bold",
+     "LMRoman8-Regular",
+     "LMRoman9-Bold",
+     "LMRoman9-Regular"
+    ],
+    "LMRoman10-Regular": "Century Schoolbook",
+    "LMRoman12-Bold": "Century Schoolbook",
+    "LMRoman12-Regular": "Century Schoolbook",
+    "LMRoman17-Regular": "Century Schoolbook",
+    "LMRoman8-Bold": "Century Schoolbook",
+    "LMRoman8-Regular": "Century Schoolbook",
+    "LMRoman9-Bold": "Century Schoolbook",
+    "LMRoman9-Regular": "Century Schoolbook",
+    "LMRoman5-Regular": "Century Schoolbook",
+    "LMRoman7-Regular": "Century Schoolbook"
+   },
+   "submission": {
+    "columns": {
+     "count": 1,
+     "gap_mm": 0.0
+    },
+    "line_numbers": true,
+    "line_pt": 20.0,
+    "running": null,
+    "table": {
+     "row_pt": 20.0,
+     "gaps_pt": {
+      "caption": 29.7,
+      "top": null,
+      "header": null,
+      "mid": null,
+      "bottom": null
+     }
+    },
+    "run_in": [],
+    "display": {
+     "above_pt": 12.0,
+     "below_pt": 12.0,
+     "above_short_pt": 0.0,
+     "below_short_pt": 3.0,
+     "printed_above_pt": 20.0,
+     "printed_below_pt": 5.0
+    }
+   },
+   "running": null,
+   "table": {
+    "pdf_font": "LMRoman10-Regular",
+    "size": 10.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.8,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.5,
+      "color": "000000"
+     },
+     "bottom": {
+      "pt": 0.8,
+      "color": "000000"
+     }
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 12.0,
+    "gaps_pt": {
+     "caption": 14.5,
+     "top": 11.6,
+     "header": 5.6,
+     "mid": 11.5,
+     "bottom": 5.7
+    },
+    "align": "center",
+    "outer_pt": 1.1,
+    "col_gap_pt": 12.6,
+    "font": "Century Schoolbook"
+   },
+   "display": {
+    "above_pt": 12.0,
+    "below_pt": 12.0,
+    "above_short_pt": 0.0,
+    "below_short_pt": 3.0,
+    "printed_above_pt": 13.6,
+    "printed_below_pt": 4.6
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 238.0,
+  "types": [
+   {
+    "name": "Single column",
+    "width_mm": 87.5
+   },
+   {
+    "name": "Double column",
+    "width_mm": 181.0
+   }
+  ],
+  "note": "87.5 mm column, 181 mm full text width, 238 mm text depth.",
+  "source": "measured from a published article (PMC13545244, 2025); the journal publishes no figure sizes",
+  "labels": {
+   "font": "Helvetica",
+   "size": 9.0,
+   "bold": true,
+   "case": "upper",
+   "form": "a",
+   "source": "Heredity's guidelines don't say; measured from a published figure (PMC13031541, 2025): 9 pt bold capitals",
+   "measured": true
+  },
+  "text": {
+   "min_pt": 5.0,
+   "max_pt": 7.0,
+   "fonts": [
+    "Helvetica",
+    "Arial"
+   ],
+   "fonts_only": false,
+   "about": false,
+   "source": "Springer Nature's artwork guide (linked from Heredity's): 5–7 pt, sans-serif, preferably Helvetica or Arial"
+  },
+  "lines": {
+   "min_pt": null,
+   "max_pt": null,
+   "about": false,
+   "source": "Heredity's house style asks for rules no thinner than 1 pt without saying whether that covers figure lines, and its artwork guide gives no line widths, so Check uses mosaic's 0.25 pt"
+  },
+  "pictures": {
+   "photo": 300.0,
+   "combination": null,
+   "line_art": null,
+   "vector": [
+    "line_art",
+    "combination"
+   ],
+   "source": "Nature Portfolio's guide to preparing final artwork (linked from Heredity's): photos at least 300 dpi; graphs and line art as vector files; text and lines over photos as editable vectors"
+  },
+  "export": {
+   "formats": [
+    "pdf",
+    "eps",
+    "pptx"
+   ],
+   "colour": "rgb",
+   "max_mb": 50.0,
+   "firm": false,
+   "max_dpi": null,
+   "embed_fonts": false,
+   "no_alpha": false,
+   "source": "Nature Portfolio's guide to preparing final artwork: AI, EPS, PDF or editable PowerPoint, not JPEG, PNG or TIFF; RGB; each figure under 50 MB where possible"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://www.nature.com/documents/HDY_GTA_0923.pdf",
+   "what": "Heredity Guide for Authors PDF ('Revised 21/02/2023'). Read in full (text extracted locally)."
+  },
+  {
+   "url": "https://www.nature.com/hdy/authors-and-referees/gta",
+   "what": "Current HTML guide. Read 2026-11-16 (it answered with a cookies notice the first time on 2026-11-14). It is newer than the PDF and wins where they differ. Its component list: Cover letter, Title page, Abstract, Introduction, Materials and Methods, Results, Discussion, Acknowledgements, Author contribution statement, Conflict of Interest, Data archiving, Research Ethics Statement, References, Figure legends."
+  }
+ ],
+ "evidence": {
+  "status": "read (the current HTML guide, read 2026-11-16; the 2023 PDF read 2026-11-14)",
+  "abstract": {
+   "structured": false,
+   "headings": [],
+   "words": 250,
+   "note": "PDF: 'This should not exceed 250 words and should be provided on a separate page in the file, as well as on the online submission form.' No headings are prescribed. Abbreviations 'should be defined in full at their first usage in the Abstract'. Nothing on references."
+  },
+  "front": [
+   {
+    "kind": "graphical_abstract",
+    "name": "Graphical abstract",
+    "required": false,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "'Graphical Abstracts (optional)'; uploaded as a 'Figure' labelled 'Graphical abstract'; 9 cm wide x 5 cm high, minimum 300 dpi, white background."
+   },
+   {
+    "kind": "keywords",
+    "name": null,
+    "required": null,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "The PDF asks for no keywords."
+   },
+   {
+    "kind": "running_title",
+    "name": null,
+    "required": false,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "The current HTML guide's title page has no running title, only 'Title of the paper - succinct, informative, of 150 characters or less'. The 2023 PDF's 'running title of no more than 150 characters' is superseded."
+   }
+  ],
+  "statements": {
+   "author_contributions": {
+    "required": true,
+    "heading": "Author Contributions",
+    "where": "after Acknowledgements, before Conflict of Interest (the component list calls it 'Author contribution statement')",
+    "form": "sentence",
+    "credit": "not mentioned",
+    "quote": "The statement can be up to several sentences long, describing the tasks of individual authors referred to by their initials."
+   },
+   "funding": {
+    "required": null,
+    "heading": null,
+    "where": "in Acknowledgements ('should include sources of support including sponsorship (e.g. grants, university, charity, commercial organisation)')"
+   },
+   "competing_interests": {
+    "required": true,
+    "heading": "Conflict of Interest",
+    "where": "in the manuscript before the References, and also in the cover letter, on the title page and in the submission form",
+    "quote": "These statements acknowledging or denying conflicts of interest must be included in the manuscript under the heading Conflict of Interest.",
+    "note": "If none: 'the statement will simply read that the authors have nothing to disclose' (PDF). The HTML guide's component list says 'Conflict of Interest'; its paragraph on it is headed 'Competing Interests'."
+   },
+   "data_availability": {
+    "required": true,
+    "heading": "Data Archiving",
+    "where": "own section after Conflict of Interest, before References",
+    "quote": "Original Articles must contain a section entitled 'Data Archiving' which specifies where the data used in the paper can be accessed.",
+    "note": "The component list writes 'Data archiving'; the paragraph and 'Articles must contain a section entitled ‘Data Archiving’' write it with a capital A."
+   },
+   "code_availability": {
+    "required": null,
+    "heading": null,
+    "where": null,
+    "note": "No heading. 'Where a paper describes new simulations or analytical methods, Heredity requires authors to make any relevant software publicly available, wherever possible.'"
+   },
+   "ethics": {
+    "required": true,
+    "heading": "Research Ethics Statement",
+    "where": "own section after Data Archiving, before References (the HTML guide's component list)",
+    "note": "HTML guide, read 2026-11-16. Under its 'Research Ethics Statement' heading it covers human and animal research (committee and reference number). The 2023 PDF had no such section.",
+    "quote": "Ethics, author contributions and data availability statements are mandatory in all papers and must be included in the article files on submission."
+   },
+   "acknowledgements": {
+    "required": true,
+    "heading": "Acknowledgements",
+    "where": "after Discussion; listed among the components original articles 'must contain'. The title page is submitted 'excluding acknowledgements'."
+   },
+   "ai_use": {
+    "required": true,
+    "where": "Methods (or a suitable alternative part if there is no Methods)",
+    "quote": "Use of an LLM should be properly documented in the Methods section (and if a Methods section is not available, in a suitable alternative part) of the manuscript.",
+    "note": "HTML guide, read 2026-11-16 (not in the 2023 PDF)."
+   }
+  },
+  "differs_from_prose": [],
+  "unconfirmed": []
+ }
+}

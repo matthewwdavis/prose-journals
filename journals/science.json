@@ -1,0 +1,731 @@
+{
+ "format": 1,
+ "id": "science",
+ "name": "Science",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "AAAS (Science)",
+ "issn": {
+  "print": "0036-8075",
+  "online": "1095-9203"
+ },
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "letter"
+ },
+ "captions": {
+  "label": "Fig.",
+  "bar": false
+ },
+ "figure_refs": {
+  "main": [
+   "Fig.",
+   "Figs."
+  ],
+  "range": " to ",
+  "panels": {
+   "case": "upper",
+   "style": {
+    "one": "closed",
+    "many": "comma",
+    "list": "serial",
+    "range": " to "
+   }
+  },
+  "supp": {
+   "one": [
+    "fig. ",
+    ""
+   ],
+   "many": [
+    "figs. ",
+    ""
+   ],
+   "s": true
+  },
+  "evidence": [
+   "Fig. 1, B and C"
+  ]
+ },
+ "legends": {
+  "sep": ".",
+  "title": {
+   "bold": true,
+   "line": false
+  },
+  "panels": {
+   "open": "(",
+   "close": ")",
+   "bold": "letter"
+  },
+  "scale": 0.9,
+  "evidence": [
+   "Fig. 1. Title. (A) …",
+   "(measured 2026-11-16 in a typeset PDF, Science 394 (6825), 10.1126/science.aee0342, p. 3, 4, 6, 8:",
+   "\"Fig. 1.\" and the title bold (BentonSansCond-Bold), the title run in, then \"(\" regular, \"A\" bold,",
+   "\")\" regular; legend 7.5 pt over 8.5 pt text = 0.88, so 0.9)",
+   "PMC13637827, PMC7619443"
+  ]
+ },
+ "supplement": {
+  "title": "Supplementary Materials",
+  "refs": "main",
+  "contents": "includes",
+  "cover_title": "Supplementary Materials for",
+  "fig": {
+   "one": [
+    "fig. ",
+    ""
+   ],
+   "many": [
+    "figs. ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Fig. ",
+    ""
+   ]
+  },
+  "tbl": {
+   "one": [
+    "table ",
+    ""
+   ],
+   "many": [
+    "tables ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Table ",
+    ""
+   ]
+  },
+  "data": {
+   "one": [
+    "data ",
+    ""
+   ],
+   "many": [
+    "data ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Data ",
+    ""
+   ]
+  },
+  "note": null
+ },
+ "abbreviations": {
+  "abstract": "none"
+ },
+ "table_notes": {
+  "marks": [
+   "*",
+   "†",
+   "‡",
+   "§",
+   "¶",
+   "#"
+  ]
+ },
+ "cover_letter": {
+  "type": "Research Article",
+  "reviewers": "form",
+  "points": [
+   "the paper's title and its main point",
+   "any pre-submission discussion with the editors",
+   "that it isn't published or under consideration elsewhere, and how it is original",
+   "where the data are available, and any restrictions on them"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Abstract",
+   "words": 125
+  },
+  "front": [
+   {
+    "kind": "one_sentence_summary",
+    "name": "One-sentence summary"
+   }
+  ],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Introduction",
+    "headed": false
+   },
+   {
+    "kind": "results",
+    "name": "Results",
+    "headed": false
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   }
+  ],
+  "back": [
+   {
+    "kind": "references",
+    "name": "References and Notes"
+   },
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgments"
+   },
+   {
+    "kind": "funding",
+    "name": "Funding",
+    "required": true,
+    "hint": "The grants and funders that supported the work."
+   },
+   {
+    "kind": "author_contributions",
+    "name": "Author contributions",
+    "required": true,
+    "hint": "Who did what (for example CRediT roles, by initials)."
+   },
+   {
+    "kind": "competing_interests",
+    "name": "Competing interests",
+    "required": true,
+    "hint": "Any competing interests, or that there are none."
+   },
+   {
+    "kind": "data_availability",
+    "name": "Data, code, and materials availability",
+    "required": true,
+    "hint": "Where the data are available: repositories and accession numbers."
+   },
+   {
+    "kind": "supplementary",
+    "name": "Supplementary Materials"
+   },
+   {
+    "kind": "methods",
+    "name": "Materials and Methods"
+   }
+  ],
+  "evidence": [
+   "(no heading over the opening nor \"Results\"; Materials and Methods heads the",
+   "Supplementary Materials; the statements as run-in paragraphs after the acknowledgments.",
+   "science.org's instructions for an initial and for a revised manuscript, read in a browser",
+   "2026-11-16: \"The abstract should be 125 words or less\"; Acknowledgments with Funding,",
+   "Author contributions, Diversity, equity, ethics, and inclusion (optional), Competing interests, and Data, code, and materials availability. Neither page asks for a one-sentence summary: kept as an optional part, so one you have still prints)"
+  ]
+ },
+ "submission": {
+  "first": {
+   "formats": [
+    "docx",
+    "pdf"
+   ],
+   "accepts": [
+    "docx",
+    "pdf"
+   ],
+   "also": [
+    "the supplementary materials, added to the end of the combined PDF"
+   ]
+  },
+  "revision": {
+   "accepts": [
+    "docx"
+   ],
+   "also": [
+    "the supplementary materials as one PDF"
+   ]
+  },
+  "from": "unconfirmed",
+  "evidence": [
+   "The first submission: a Word file and a combined PDF of everything (the supplement too)"
+  ]
+ },
+ "statements": {
+  "ai": "acknowledgements",
+  "evidence": [
+   "browser 2026-11-16 (editorial policies: cover letter, and methods or acknowledgments)"
+  ]
+ },
+ "limits": {
+  "article_type": "Research Article",
+  "source": "https://www.science.org/content/page/instructions-preparing-initial-manuscript",
+  "checked": "2026-11-16",
+  "limits": {
+   "title_chars": 96,
+   "title_words": null,
+   "abstract_words": 125,
+   "summary_words": null,
+   "main_text_words": 3000,
+   "methods_words": null,
+   "legend_words": 200,
+   "display_items": 5,
+   "figures": null,
+   "tables": null,
+   "references": 50,
+   "keywords": null
+  },
+  "counts": "'Research Articles should not exceed 3000 words (for the main text), plus an abstract, 3 to 5 display items (figures or tables) with brief legends, about 50 main-text references, and a structured acknowledgments section.' Materials and Methods go in the supplementary materials. An extended format online: 'the main text can be up to 6000 words, with as many as 6 display items ... and up to 100 main-text references', justified in the cover letter. (https://www.science.org/content/page/science-information-authors (read in a browser 2026-11-16))",
+  "notes": "science.org's instructions for an initial manuscript and for a revised one (read in a browser 2026-11-16; the initial page's Internet Archive copy of 2025-08-10 says the same): 'Titles should be no more than 96 characters (including spaces)'; 'The abstract should be 125 words or less', with no citations or abbreviations; figure captions start with a bold short title and no caption is over 200 words. Parts, in order: Title, Authors, Affiliations, Abstract, Main Text, References and Notes, Acknowledgments (with Funding, Author contributions, Diversity, equity, ethics, and inclusion [optional], Competing interests, and Data, code, and materials availability), List of Supplementary Materials, figure and table captions. Neither page asks for a one-sentence summary. Length limits: see counts (the information-for-authors page, read in a browser 2026-11-16).",
+  "unverified": null,
+  "count": {
+   "abstract": false,
+   "methods": true,
+   "legends": false
+  }
+ },
+ "references": {
+  "csl": "science",
+  "file": "science.csl"
+ },
+ "latex": {
+  "template": "standard",
+  "wrapper": "journal.latex",
+  "files": {
+   "scicite.sty": "8030d7867d4094da12e59f3f0a6bc1d646d9c8454518872086d34bf25bbf2a99",
+   "sciencemag.bst": "2ce0f9f1dad69ab331fbf1a8d0210d757f85043025f777ba01e53533c3b659c3"
+  },
+  "publisher": "American Association for the Advancement of Science (Science)",
+  "note": "Science-family LaTeX template v1.1, April 2026 (its preamble, scicite.sty and sciencemag.bst as in v1.0; the article class with Science's preamble, scicite.sty citations and the sciencemag reference style). Science's production converts LaTeX and asks authors to add no packages; this package adds the few pandoc's output needs (longtable, booktabs, multirow, calc, etoolbox, pdflscape, hyperref).",
+  "source_notes": "SOURCE.md"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "Science-family LaTeX template v1.0, July 2024 (the article class with Science's preamble, scicite.sty citations and the sciencemag reference style). Science's production converts LaTeX and asks authors to add no packages; this package adds the few pandoc's output needs (longtable, booktabs, multirow, calc, etoolbox, pdflscape, hyperref).; prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display, styles re-measured on 2026-11-17",
+   "page": {
+    "width_mm": 215.9,
+    "height_mm": 279.4,
+    "margins_mm": {
+     "top": 26.7,
+     "bottom": 24.5,
+     "left": 25.4,
+     "right": 25.2
+    }
+   },
+   "columns": {
+    "count": 1,
+    "gap_mm": 0.0
+   },
+   "mirror_margins": false,
+   "body": {
+    "pdf_font": "TeXGyreTermesX-Regular",
+    "size": 12.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 21.7,
+    "justify": true,
+    "indent_mm": 6.2,
+    "first_indent_mm": 0.1,
+    "space_after_pt": 0.0,
+    "font": "Times New Roman"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "TeXGyreTermesX-Bold",
+     "size": 20.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 49.9,
+     "line_pt": 37.4,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "author": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 14.5,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 27.4,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "affiliation": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 9.7,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "abstract": {
+     "pdf_font": "TeXGyreTermesX-Bold",
+     "size": 12.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "indent_mm": {
+      "left": 10.6,
+      "right": 10.8
+     },
+     "before_pt": 35.0,
+     "line_pt": 21.7,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "h1": {
+     "pdf_font": "TeXGyreTermesX-Bold",
+     "size": 17.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 31.0,
+     "run_in": false,
+     "after_pt": 12.3,
+     "font": "Times New Roman"
+    },
+    "h2": {
+     "pdf_font": "TeXGyreTermesX-Bold",
+     "size": 14.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 26.7,
+     "run_in": false,
+     "after_pt": 8.0,
+     "font": "Times New Roman"
+    },
+    "h3": {
+     "pdf_font": "TeXGyreTermesX-Bold",
+     "size": 12.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 24.8,
+     "run_in": false,
+     "after_pt": 8.0,
+     "font": "Times New Roman"
+    },
+    "caption": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 10.5,
+     "line_pt": 20.3,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "table_caption": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 15.6,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "references": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "hanging_mm": 5.0,
+     "before_pt": 19.6,
+     "line_pt": 21.7,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "correspondence": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 13.7,
+     "run_in": false,
+     "font": "Times New Roman"
+    },
+    "table_note": {
+     "pdf_font": "TeXGyreTermesX-Regular",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 21.4,
+     "run_in": false,
+     "font": "Times New Roman"
+    }
+   },
+   "line_numbers": false,
+   "page_number": "footer-center",
+   "running_head": false,
+   "fonts": {
+    "NewTXMI": "Times New Roman",
+    "TeXGyreTermesX-Bold": "Times New Roman",
+    "TeXGyreTermesX-Italic": "Times New Roman",
+    "TeXGyreTermesX-Regular": "Times New Roman",
+    "txmiaX": "Times New Roman",
+    "txsys": "Times New Roman"
+   },
+   "submission": {
+    "columns": {
+     "count": 1,
+     "gap_mm": 0.0
+    },
+    "line_numbers": true,
+    "line_pt": 21.7,
+    "running": null,
+    "table": {
+     "row_pt": 21.7,
+     "gaps_pt": {
+      "caption": 16.5,
+      "top": 19.0,
+      "header": 8.9,
+      "mid": 18.8,
+      "bottom": 9.0
+     }
+    },
+    "run_in": [],
+    "display": {
+     "above_pt": 12.0,
+     "below_pt": 12.0,
+     "above_short_pt": 0.0,
+     "below_short_pt": 6.5,
+     "printed_above_pt": 21.6,
+     "printed_below_pt": 6.0
+    }
+   },
+   "running": null,
+   "table": {
+    "pdf_font": "TeXGyreTermesX-Regular",
+    "size": 12.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.96,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.6,
+      "color": "000000"
+     },
+     "bottom": {
+      "pt": 0.96,
+      "color": "000000"
+     }
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 21.7,
+    "gaps_pt": {
+     "caption": 16.5,
+     "top": 19.0,
+     "header": 8.9,
+     "mid": 18.8,
+     "bottom": 9.0
+    },
+    "align": "center",
+    "outer_pt": 1.1,
+    "col_gap_pt": 12.6,
+    "font": "Times New Roman"
+   },
+   "display": {
+    "above_pt": 12.0,
+    "below_pt": 12.0,
+    "above_short_pt": 0.0,
+    "below_short_pt": 6.5,
+    "printed_above_pt": 21.6,
+    "printed_below_pt": 6.0
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 199.0,
+  "types": [
+   {
+    "name": "1 column",
+    "width_mm": 57.0
+   },
+   {
+    "name": "2 columns",
+    "width_mm": 121.0
+   },
+   {
+    "name": "3 columns",
+    "width_mm": 184.0
+   }
+  ],
+  "note": "5.7, 12.1 or 18.4 cm wide; 19.9 cm deep leaves room for the legend below the figure.",
+  "source": "Science's manuscript instructions (widths) and the Science family figure guide, 2026 (depth)",
+  "labels": {
+   "font": "Helvetica",
+   "size": 10.0,
+   "bold": true,
+   "case": "upper",
+   "form": "a",
+   "source": "Science's manuscript instructions: capital A, B, C, 10 pt bold",
+   "measured": false
+  },
+  "text": {
+   "min_pt": 5.0,
+   "max_pt": null,
+   "fonts": [
+    "Helvetica"
+   ],
+   "fonts_only": false,
+   "about": false,
+   "source": "Science's manuscript instructions: about 7 pt and never below 5 pt; sans-serif, Helvetica preferred"
+  },
+  "lines": {
+   "min_pt": 0.5,
+   "max_pt": null,
+   "about": false,
+   "source": "Science's manuscript instructions: lines at least 0.5 pt at the final reduced size (its 2022 figure guide says 0.28 pt)"
+  },
+  "pictures": {
+   "photo": 300.0,
+   "combination": 300.0,
+   "line_art": 300.0,
+   "vector": [],
+   "source": "Science's revised-manuscript instructions: greyscale and colour images, and line art that isn't vector, at least 300 dpi at final size"
+  },
+  "export": {
+   "formats": [
+    "pdf",
+    "eps",
+    "tiff"
+   ],
+   "colour": "cmyk_preferred",
+   "max_mb": null,
+   "firm": true,
+   "max_dpi": null,
+   "embed_fonts": false,
+   "no_alpha": false,
+   "source": "Science's revised-manuscript instructions: PDF, EPS or AI preferred, TIFF for raster figures, not Word or PowerPoint; its 2022 figure guide asks for CMYK colour unless the paper is online only"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://www.science.org/content/page/science-information-authors",
+   "what": "Information for authors (Research Article lengths). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://www.science.org/content/page/instructions-preparing-initial-manuscript",
+   "what": "Instructions for preparing an initial manuscript. Read: read in a browser 2026-11-16; also its Internet Archive copy of 2025-08-10, which says the same."
+  },
+  {
+   "url": "https://www.science.org/content/page/instructions-authors-new-research-articles",
+   "what": "Instructions for authors of new research articles. NOT read (403). Search excerpts only."
+  },
+  {
+   "url": "https://www.science.org/content/page/science-journals-editorial-policies",
+   "what": "Science Journals: Editorial Policies. NOT read (403). Search excerpts only."
+  },
+  {
+   "url": "https://www.science.org/content/page/instructions-preparing-revised-manuscript",
+   "what": "Instructions for preparing a revised manuscript. Read: read in a browser 2026-11-16 (programs got HTTP 403, and the Archive's copies hold no text)."
+  }
+ ],
+ "evidence": {
+  "status": "browser (the initial- and revised-manuscript pages, information for authors, editorial policies, 2026-11-16)",
+  "abstract": {
+   "structured": false,
+   "headings": [],
+   "words": 125,
+   "note": "browser: 'The abstract should be 125 words or less.' 'Please do not include citations or abbreviations in the Abstract.'"
+  },
+  "front": [
+   {
+    "kind": "one_sentence_summary",
+    "name": "One-sentence summary",
+    "required": false,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "browser: neither the initial- nor the revised-manuscript page asks for one. prose keeps it as an optional part (one you have still prints; none is added)."
+   }
+  ],
+  "statements": {
+   "_all": "browser: Acknowledgments after the last numbered reference, then under these headings: Funding; Author contributions (by initials, CRediT encouraged); Diversity, equity, ethics, and inclusion [optional]; Competing interests; Data, code, and materials availability. Then List of Supplementary Materials.",
+   "author_contributions": {
+    "required": true,
+    "heading": "Author contributions",
+    "where": "in Acknowledgments",
+    "form": "list",
+    "credit": "encouraged",
+    "quote": null,
+    "note": "browser: identified by initials in an itemized list; 'We encourage you to follow the CRediT taxonomy.'"
+   },
+   "funding": {
+    "required": true,
+    "heading": "Funding",
+    "where": "in Acknowledgments"
+   },
+   "competing_interests": {
+    "required": true,
+    "heading": "Competing interests",
+    "where": "in Acknowledgments; all authors also complete a Conflict of Interest form"
+   },
+   "data_availability": {
+    "required": true,
+    "heading": "Data, code, and materials availability",
+    "where": "in Acknowledgments",
+    "note": "browser: the heading is 'Data, code, and materials availability' (prose had 'Data and materials availability')."
+   },
+   "code_availability": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "ethics": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "acknowledgements": {
+    "required": null,
+    "heading": "Acknowledgments",
+    "where": "after the last numbered reference"
+   },
+   "ai_use": {
+    "required": true,
+    "where": "cover letter AND the methods or acknowledgments section",
+    "quote": "Authors who use AI-assisted technologies ... should note this in the cover letter and in the methods section or acknowledgments section of the manuscript",
+    "note": "browser 2026-11-16"
+   }
+  },
+  "differs_from_prose": [],
+  "unconfirmed": [],
+  "other": {
+   "captions": "browser: each figure caption starts with a bold short title; no caption is over 200 words.",
+   "title": "browser: no more than 96 characters."
+  }
+ }
+}

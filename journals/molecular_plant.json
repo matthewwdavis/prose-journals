@@ -1,0 +1,798 @@
+{
+ "format": 1,
+ "id": "molecular_plant",
+ "name": "Molecular Plant",
+ "version": "1.0.0",
+ "kind": "journal",
+ "publisher": "Cell Press",
+ "issn": {
+  "print": "1674-2052",
+  "online": "1752-9867"
+ },
+ "aliases": [
+  "Mol Plant"
+ ],
+ "verified": {
+  "status": "verified",
+  "by": "prose (built in)",
+  "date": "2026-11-16"
+ },
+ "maintainers": [
+  {
+   "name": "Matthew Davis",
+   "github": "matthewwdavis"
+  }
+ ],
+ "page": {
+  "paper": "letter"
+ },
+ "captions": {
+  "label": "Figure",
+  "bar": false
+ },
+ "figure_refs": {
+  "main": [
+   "Figure",
+   "Figures"
+  ],
+  "list": "serial",
+  "panels": {
+   "case": "upper",
+   "style": {
+    "repeat": true,
+    "list": "serial",
+    "range": "–",
+    "plural": "list"
+   }
+  },
+  "supp": {
+   "one": [
+    "Figure ",
+    ""
+   ],
+   "many": [
+    "Figures ",
+    ""
+   ],
+   "s": true
+  },
+  "evidence": [
+   "Figures 1A and 1B; Figure 1A–1E",
+   "(Cell Press's supplemental information guidelines, to which its author page refers, and its own \"See also Figure S1.\": \"Figure S1, Table S1 ... (not 'Supplemental Figure 1')\", browser",
+   "2026-11-16; its print has \"Supplemental Figure 1\", which its copyeditors set. Kept: Matthew's decision, 2026-11-16)"
+  ]
+ },
+ "legends": {
+  "sep": ".",
+  "title": {
+   "bold": true,
+   "line": true
+  },
+  "panels": {
+   "open": "(",
+   "close": ")",
+   "bold": "all",
+   "newline": true
+  },
+  "scale": 0.9,
+  "evidence": [
+   "as Cell (Cell Press)",
+   "(measured: \"Figure 1. Title.\" all bold on its own line: 10.1016/j.molp.2024.10.010 p. 2,",
+   "10.1016/j.molp.2025.10.001 p. 3, typeset PDFs from edepot.wur.nl and ddd.uab.cat)",
+   "PMC13139043, PMC13448761"
+  ]
+ },
+ "supplement": {
+  "title": "Supplemental Information",
+  "fig": {
+   "one": [
+    "Figure ",
+    ""
+   ],
+   "many": [
+    "Figures ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Figure ",
+    ""
+   ]
+  },
+  "tbl": {
+   "one": [
+    "Table ",
+    ""
+   ],
+   "many": [
+    "Tables ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Table ",
+    ""
+   ]
+  },
+  "data": {
+   "one": [
+    "Data ",
+    ""
+   ],
+   "many": [
+    "Data ",
+    ""
+   ],
+   "s": true,
+   "legend": [
+    "Data ",
+    ""
+   ]
+  },
+  "note": null,
+  "evidence": [
+   "(Figure S1, Table S1, Data S1: Cell Press's SI guidelines, browser 2026-11-16)"
+  ]
+ },
+ "house_style": {
+  "p": {
+   "italic": true,
+   "space": true,
+   "zero": true,
+   "letter": "p"
+  },
+  "etal": {
+   "italic": false
+  },
+  "unit_space": "nbsp",
+  "range": "–",
+  "thousands": {
+   "sep": " ",
+   "from": 5
+  },
+  "percent": {
+   "space": false
+  },
+  "celsius": {
+   "space": false
+  },
+  "latin": {
+   "italic": true
+  },
+  "units": {
+   "h": "h",
+   "s": "s",
+   "mL": "ml",
+   "uL": "μl"
+  }
+ },
+ "house_style_from": {
+  "p": "print",
+  "etal": "print",
+  "unit_space": "print",
+  "range": "print",
+  "thousands": "print",
+  "percent": "print",
+  "celsius": "print",
+  "latin": "print",
+  "units": "print"
+ },
+ "abbreviations": {
+  "legends": true
+ },
+ "cover_letter": {
+  "type": "Research article",
+  "reviewers": "form",
+  "points": [
+   "a brief account of the state of the art and the significance of the findings",
+   "whether it is meant for a special issue"
+  ]
+ },
+ "structure": {
+  "abstract": {
+   "name": "Abstract",
+   "words": 250
+  },
+  "keywords": {
+   "min": 1
+  },
+  "running_title": {
+   "chars": 50
+  },
+  "front": [],
+  "body": [
+   {
+    "kind": "introduction",
+    "name": "Introduction"
+   },
+   {
+    "kind": "results",
+    "name": "Results"
+   },
+   {
+    "kind": "discussion",
+    "name": "Discussion"
+   },
+   {
+    "kind": "methods",
+    "name": "Methods"
+   },
+   {
+    "kind": "data_availability",
+    "name": "Data availability",
+    "required": true,
+    "hint": "Where the data are available: repositories and accession numbers."
+   }
+  ],
+  "back": [
+   {
+    "kind": "funding",
+    "name": "Funding"
+   },
+   {
+    "kind": "author_contributions",
+    "name": "Author contributions",
+    "required": true,
+    "hint": "Who did what (for example CRediT roles, by initials)."
+   },
+   {
+    "kind": "acknowledgements",
+    "name": "Acknowledgments"
+   },
+   {
+    "kind": "competing_interests",
+    "name": "Declaration of interests",
+    "required": true,
+    "hint": "Any competing interests, or that there are none."
+   },
+   {
+    "kind": "ai_declaration",
+    "name": "Declaration of Generative AI and AI-assisted technologies in the writing process"
+   },
+   {
+    "kind": "references",
+    "name": "References"
+   },
+   {
+    "kind": "figure_legends",
+    "name": "Figure legends"
+   },
+   {
+    "kind": "supplementary",
+    "name": "Supplemental information"
+   }
+  ],
+  "evidence": [
+   "(cell.com/molecular-plant/authors, Wayback copy of 2025-05-28, read 2026-11-16: no short summary; \"several keywords\" under the abstract, no number; a \"Data availability\" section at the end of the methods; Funding \"You may use\"; Declaration of interests \"required for all papers\"; the AI declaration in a section of its own after it)"
+  ]
+ },
+ "submission": {
+  "first": {
+   "accepts": [
+    "pdf"
+   ],
+   "max_mb": 20
+  },
+  "revision": {
+   "accepts": [
+    "docx"
+   ]
+  },
+  "evidence": [
+   "First: one PDF of everything (20 MB at most); final: Word, figures as files, the supplement one Word or",
+   "PDF file (cell.com/molecular-plant/authors, browser 2026-11-16)"
+  ]
+ },
+ "statements": {
+  "contributions": "credit_list",
+  "evidence": [
+   "browser 2026-11-16: initials, \"but we would also encourage you to use the CRediT taxonomy\"                # read in a browser 2026-11-16: a \"Disclosure of AI Use\" section in Materials and methods"
+  ]
+ },
+ "limits": {
+  "article_type": "Research Article",
+  "source": "https://www.cell.com/molecular-plant/authors",
+  "checked": "2026-11-16",
+  "limits": {
+   "title_chars": 150,
+   "title_words": null,
+   "abstract_words": 250,
+   "summary_words": null,
+   "main_text_words": 7000,
+   "methods_words": null,
+   "legend_words": null,
+   "display_items": 7,
+   "figures": null,
+   "tables": null,
+   "references": null,
+   "keywords": null
+  },
+  "counts": "'A research article should not exceed 7,000 words in the main text (excluding the title page, references, figure legends, and tables) and have no more than 7 display items (main figures and tables).' (https://www.cell.com/molecular-plant/article-types, Research article tab (read in a browser 2026-11-16))",
+  "notes": "The live author page (https://www.cell.com/molecular-plant/authors (read in a browser 2026-11-16)): 'The abstract consists of a single paragraph of no more than 250 words'; 'Please include several keywords with your submission under the abstract' (no number); a running title of 'no more than 50 characters, including spaces'; the title 'should occupy no more than three lines of type. Each line should contain no more than 50 characters, including spaces' (title_chars 150 is that, three lines of 50). Its article-types page gives the 7,000 words and 7 display items. Text in Word, 12-point Times New Roman, 1.5 line spacing, continuous line numbers. (2026-11-16 earlier: the same from the Internet Archive's copy of 2025-05-28.)",
+  "unverified": null,
+  "count": {
+   "abstract": false,
+   "methods": true,
+   "legends": false
+  }
+ },
+ "references": {
+  "csl": "molecular-plant",
+  "file": "molecular_plant.csl"
+ },
+ "latex": {
+  "template": "publisher",
+  "wrapper": "journal.latex",
+  "files": {},
+  "publisher": "Cell Press",
+  "note": "Cell Press LaTeX template, version 1.10 (May 2025), with Molecular Plant's author-year references (molecular_plant.bst: Cell Press's numbered.bst, unnumbered and in alphabetical order)",
+  "fetch": {
+   "store": "cell_press",
+   "publisher": "Cell Press",
+   "what": "the Cell Press LaTeX template (cell-press-latex-template.zip)",
+   "page": "https://www.cell.com/article-templates",
+   "files": {
+    "numbered.bst": "37c1228a7cbede2f2b0827f1fc2ee826ae17ce9192b23b6b55d3675de8e349e6"
+   },
+   "derived": {
+    "molecular_plant.bst": {
+     "from": "numbered.bst",
+     "edits": "molecular_plant.edits.json"
+    }
+   }
+  },
+  "source_notes": "SOURCE.md"
+ },
+ "word": {
+  "layout": {
+   "measured_from": "Cell Press LaTeX template, version 1.10 (May 2025), with Molecular Plant's author-year references (molecular_plant.bst: Cell Press's numbered.bst, unnumbered and in alphabetical order); prose's sample manuscript compiled by Tectonic, 2026-11-15; legends and table captions re-measured 2026-11-16 after the legend labels changed (tools/measure_journal_layout.py); running, table, table_note, run_in, display re-measured on 2026-11-16",
+   "page": {
+    "width_mm": 210.0,
+    "height_mm": 297.0,
+    "margins_mm": {
+     "top": 18.3,
+     "bottom": 26.2,
+     "left": 16.2,
+     "right": 16.2
+    }
+   },
+   "columns": {
+    "count": 1,
+    "gap_mm": 0.0
+   },
+   "mirror_margins": false,
+   "body": {
+    "pdf_font": "NimbusSanL-Regu",
+    "size": 12.0,
+    "bold": false,
+    "italic": false,
+    "caps": false,
+    "line_pt": 14.4,
+    "justify": true,
+    "indent_mm": 6.6,
+    "first_indent_mm": 0.2,
+    "space_after_pt": 0.0,
+    "font": "Arial"
+   },
+   "styles": {
+    "title": {
+     "pdf_font": "NimbusSanL-Bold",
+     "size": 12.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 0.0,
+     "line_pt": 14.4,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "author": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 0.0,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "affiliation": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "indent_mm": {
+      "left": 2.0,
+      "right": 0.0
+     },
+     "before_pt": 37.8,
+     "run_in": true,
+     "font": "Arial"
+    },
+    "abstract": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "before_pt": 14.4,
+     "line_pt": 14.4,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "abstract_title": {
+     "pdf_font": "NimbusSanL-Bold",
+     "size": 17.0,
+     "bold": true,
+     "italic": false,
+     "caps": true,
+     "align": "left",
+     "before_pt": 27.7,
+     "run_in": false,
+     "text": "Abstract",
+     "font": "Arial"
+    },
+    "h1": {
+     "pdf_font": "NimbusSanL-Bold",
+     "size": 17.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 23.4,
+     "run_in": false,
+     "after_pt": 14.4,
+     "font": "Arial"
+    },
+    "h2": {
+     "pdf_font": "NimbusSanL-Bold",
+     "size": 14.5,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 20.9,
+     "run_in": false,
+     "after_pt": 9.4,
+     "font": "Arial"
+    },
+    "h3": {
+     "pdf_font": "NimbusSanL-Bold",
+     "size": 12.0,
+     "bold": true,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 20.4,
+     "run_in": false,
+     "after_pt": 9.4,
+     "font": "Arial"
+    },
+    "caption": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 5.7,
+     "line_pt": 13.5,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "table_caption": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 11.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "center",
+     "before_pt": 10.9,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "references": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 12.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "both",
+     "hanging_mm": 4.1,
+     "before_pt": 10.0,
+     "line_pt": 14.4,
+     "run_in": false,
+     "font": "Arial"
+    },
+    "table_note": {
+     "pdf_font": "NimbusSanL-Regu",
+     "size": 10.0,
+     "bold": false,
+     "italic": false,
+     "caps": false,
+     "align": "left",
+     "before_pt": 10.0,
+     "run_in": false,
+     "font": "Arial"
+    }
+   },
+   "line_numbers": false,
+   "page_number": "footer-center",
+   "running_head": false,
+   "fonts": {
+    "CMMI12": "Times New Roman",
+    "CMMI8": "Times New Roman",
+    "CMR12": "Times New Roman",
+    "CMR8": "Times New Roman",
+    "NimbusSanL-Bold": "Arial",
+    "NimbusSanL-Regu": "Arial",
+    "NimbusSanL-ReguItal": "Arial"
+   },
+   "submission": {
+    "columns": {
+     "count": 1,
+     "gap_mm": 0.0
+    },
+    "line_numbers": false,
+    "line_pt": 17.9,
+    "running": null,
+    "table": {
+     "row_pt": 17.9,
+     "gaps_pt": {
+      "caption": 14.5,
+      "top": 16.5,
+      "header": 7.8,
+      "mid": 16.3,
+      "bottom": 8.0
+     }
+    },
+    "run_in": [],
+    "display": {
+     "above_pt": 12.0,
+     "below_pt": 12.0,
+     "above_short_pt": 0.0,
+     "below_short_pt": 6.5,
+     "printed_above_pt": 18.0,
+     "printed_below_pt": 8.1
+    }
+   },
+   "running": null,
+   "table": {
+    "pdf_font": "NimbusSanL-Regu",
+    "size": 12.0,
+    "header_bold": false,
+    "rules": {
+     "top": {
+      "pt": 0.94,
+      "color": "000000"
+     },
+     "header": {
+      "pt": 0.59,
+      "color": "000000"
+     },
+     "bottom": {
+      "pt": 0.94,
+      "color": "000000"
+     }
+    },
+    "vertical": false,
+    "caption": "above",
+    "row_pt": 14.4,
+    "gaps_pt": {
+     "caption": 14.5,
+     "top": 14.0,
+     "header": 6.8,
+     "mid": 13.9,
+     "bottom": 6.9
+    },
+    "align": "center",
+    "outer_pt": 1.5,
+    "col_gap_pt": 13.5,
+    "font": "Arial"
+   },
+   "display": {
+    "above_pt": 12.0,
+    "below_pt": 12.0,
+    "above_short_pt": 0.0,
+    "below_short_pt": 6.5,
+    "printed_above_pt": 14.5,
+    "printed_below_pt": 6.5
+   }
+  }
+ },
+ "figures": {
+  "depth_mm": 200.0,
+  "types": [
+   {
+    "name": "1 column",
+    "width_mm": 85.0
+   },
+   {
+    "name": "1.5 columns",
+    "width_mm": 114.0
+   },
+   {
+    "name": "Full width",
+    "width_mm": 174.0
+   }
+  ],
+  "note": "A Cell Press journal: 85, 114 or 174 mm wide; at most 20 cm tall.",
+  "source": "Cell Press figure guidelines (Molecular Plant isn't among the journals with different sizes)",
+  "labels": {
+   "font": "Arial",
+   "size": 9.0,
+   "bold": true,
+   "case": "upper",
+   "form": "a",
+   "source": "Molecular Plant's guidelines: capital letters in Helvetica or Arial; size and weight measured from a published Cell figure (Cell Press publishes Molecular Plant, and no Molecular Plant figure PDF could be had; PMC11813165, 2025): 9 pt bold",
+   "measured": true
+  },
+  "text": {
+   "min_pt": 6.0,
+   "max_pt": 8.0,
+   "fonts": [
+    "Helvetica",
+    "Arial"
+   ],
+   "fonts_only": true,
+   "about": true,
+   "source": "Molecular Plant's guidelines: Helvetica or Arial only; text about 6–8 pt (Cell Press figure guidelines)"
+  },
+  "lines": {
+   "min_pt": 0.5,
+   "max_pt": 1.5,
+   "about": false,
+   "source": "Cell Press figure guidelines (Molecular Plant's page links to them): line weights 0.5–1.5 pt"
+  },
+  "pictures": {
+   "photo": 300.0,
+   "combination": 300.0,
+   "line_art": 1000.0,
+   "vector": [],
+   "source": "Molecular Plant's final file checklist: colour figures at least 300 dpi; line art at least 1,000 dpi (Cell Press figure guidelines)"
+  },
+  "export": {
+   "formats": [
+    "tiff",
+    "eps",
+    "pdf",
+    "pptx",
+    "jpeg"
+   ],
+   "colour": "rgb",
+   "max_mb": 20.0,
+   "firm": true,
+   "max_dpi": null,
+   "embed_fonts": true,
+   "no_alpha": false,
+   "source": "Molecular Plant's final file checklist: TIFF, EPS, PDF, AI, PPT or JPG; RGB, at most 20 MB a figure and fonts embedded (Cell Press figure guidelines)"
+  }
+ },
+ "sources": [
+  {
+   "url": "https://www.cell.com/information-for-authors/supplemental-information",
+   "what": "Cell Press supplemental information guidelines, which the author page refers to: Figure S1, Table S1, Data S1. Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://www.cell.com/molecular-plant/article-types",
+   "what": "Article types, Research article tab (7,000 words, 7 display items). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://www.cell.com/molecular-plant/authors",
+   "what": "The live author page (sections and order, abstract, keywords, running title, title lines, AI heading, contributions, submission files, legends, table footnotes). Read in a browser 2026-11-16."
+  },
+  {
+   "url": "https://www.cell.com/molecular-plant/authors",
+   "what": "Information for authors: Molecular Plant. The live page returns HTTP 403; its Wayback copy of 2025-05-28 (https://web.archive.org/web/20250528221721/https://www.cell.com/molecular-plant/authors) was read 2026-11-16. Section order: 'title, authors, affiliations, contact information, additional title page footnotes, running title, abstract, introduction, results, discussion, methods, funding, author contributions, acknowledgments, declaration of interests, references, figure legends, figures and tables, and supplemental information.'"
+  },
+  {
+   "url": "https://www.elsevier.com/about/policies-and-standards/generative-ai-policies-for-journals",
+   "what": "Elsevier generative AI policies for journals (publisher). Read; not confirmed to be what Molecular Plant's page says."
+  }
+ ],
+ "evidence": {
+  "status": "browser (the live author page and the article-types page, 2026-11-16)",
+  "abstract": {
+   "structured": false,
+   "headings": [],
+   "words": 250,
+   "note": "wayback: 'The abstract consists of a single paragraph of no more than 250 words.' 'References should not be cited in the abstract.'"
+  },
+  "front": [
+   {
+    "kind": "running_title",
+    "name": "Running title",
+    "required": true,
+    "words": null,
+    "items": null,
+    "chars": 50,
+    "min": null,
+    "max": null,
+    "note": "wayback: 'The running title should be no more than 50 characters, including spaces.'"
+   },
+   {
+    "kind": "keywords",
+    "name": "Keywords",
+    "required": true,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": 1,
+    "max": null,
+    "note": "wayback: 'Please include several keywords with your submission under the abstract.' No number; prose asks for at least one."
+   },
+   {
+    "kind": "short_summary",
+    "name": null,
+    "required": false,
+    "words": null,
+    "items": null,
+    "chars": null,
+    "min": null,
+    "max": null,
+    "note": "Not in the page's section list or anywhere on it (its only 'significance statement' is for presubmission inquiries); prose dropped its Short summary for Molecular Plant (2026-11-16)."
+   }
+  ],
+  "statements": {
+   "author_contributions": {
+    "required": true,
+    "heading": "Author contributions",
+    "where": "after Funding, before Acknowledgments",
+    "form": "sentence",
+    "credit": "encouraged",
+    "quote": "We are happy for you to use a traditional format ... but we would also encourage you to use the CRediT taxonomy instead.",
+    "note": "Initials; a traditional sentence format is accepted, 'but we would also encourage you to use the CRediT taxonomy instead'."
+   },
+   "funding": {
+    "required": false,
+    "heading": "Funding",
+    "where": "first section after Methods",
+    "quote": "You may use this section to list any funding sources and/or grant numbers that supported the work."
+   },
+   "competing_interests": {
+    "required": true,
+    "heading": "Declaration of interests",
+    "where": "after Acknowledgments, before References",
+    "quote": "This section is required for all papers.",
+    "note": "If none: 'The authors declare no competing interests.' It must match the declaration of interests form."
+   },
+   "data_availability": {
+    "required": true,
+    "heading": "Data availability",
+    "where": "at the end of the methods (just before the acknowledgments)",
+    "quote": "A section with the heading “Data availability” should be included at the end of the methods (just before the acknowledgments)."
+   },
+   "code_availability": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "ethics": {
+    "required": null,
+    "heading": null,
+    "where": null
+   },
+   "acknowledgements": {
+    "required": false,
+    "heading": "Acknowledgments",
+    "where": "after Author contributions",
+    "quote": "This section may acknowledge contributions from non-authors."
+   },
+   "ai_use": {
+    "required": true,
+    "where": "a section of its own after the Declaration of interests",
+    "quote": "The statement should be placed in a new section after the ‘Declaration of interests’ section, entitled ‘Declaration of Generative AI and AI-assisted technologies in the writing process’.",
+    "note": "wayback copy of 2025-05-28."
+   }
+  },
+  "differs_from_prose": [],
+  "unconfirmed": [
+   "highlights, graphical abstract, 'In a Nutshell': not on the live page"
+  ]
+ }
+}
