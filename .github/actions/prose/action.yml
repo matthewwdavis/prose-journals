@@ -87,12 +87,15 @@ runs:
     - name: Choose the environment (prose's own environment.yml, else the library's copy)
       shell: bash
       run: |
-        if [ -f prose-src/environment.yml ]; then cp prose-src/environment.yml "$RUNNER_TEMP/environment.yml"
-        else cp .github/ci-environment.yml "$RUNNER_TEMP/environment.yml"; fi
+        # (in the workspace: setup-miniconda reads environment-file relative to it, so an absolute
+        # path under runner.temp isn't found)
+        mkdir -p .ci-env
+        if [ -f prose-src/environment.yml ]; then cp prose-src/environment.yml .ci-env/environment.yml
+        else cp .github/ci-environment.yml .ci-env/environment.yml; fi
     - uses: conda-incubator/setup-miniconda@be893c923ea9cf1cf7cd510fbdde27c7e18cbdcb   # v4.1.0
       with:
         activate-environment: prose
-        environment-file: ${{ runner.temp }}/environment.yml
+        environment-file: .ci-env/environment.yml
         auto-activate-base: false
         miniforge-version: latest
         conda-remove-defaults: "true"

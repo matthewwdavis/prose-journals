@@ -22,3 +22,4 @@ measured/
 *.zip
 
 .DS_Store
+.ci-env/
