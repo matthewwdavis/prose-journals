@@ -10,7 +10,7 @@ import subprocess
 import pytest
 from conftest import ROOT, good_journal, run, write
 
-from tools import build_site, measure_layout, publisher, summarize
+from tools import build_site, common, measure_layout, publisher, summarize
 
 SCRIPTS = os.path.join(ROOT, ".github", "scripts")
 HAVE_BASH_GIT = bool(shutil.which("bash") and shutil.which("git"))
@@ -148,3 +148,23 @@ def test_the_preview_site_lists_every_journal(tmp_path):
     page = (site / "index.html").read_text()
     assert page.count("<li>") == 16 and 'href="previews/nature/page-1.png"' in page and "no preview yet" in page
     assert (site / ".nojekyll").is_file()
+
+
+def test_the_preview_site_says_which_previews_couldnt_be_made_and_why(tmp_path, monkeypatch, capsys):
+    site, reports = tmp_path / "site", tmp_path / "reports"
+    (site / "previews" / "nature").mkdir(parents=True)
+    (site / "previews" / "nature" / "page-1.png").write_bytes(b"png")
+    common.write_report(str(reports / "nature.md"), "preview", "passed", [], "preview made (PDF)")
+    common.write_report(str(reports / "plant_journal.md"), "preview", "failed",
+                        ["journals/plant_journal.json: the preview couldn't be made: ValueError: The LaTeX class isn't among the journal's files."],
+                        "preview not made")
+    monkeypatch.setenv("GITHUB_ACTIONS", "true")
+    assert build_site.main([str(site), "--reports", str(reports), "--missing-out", str(tmp_path / "missing.txt")]) == 0
+    page = (site / "index.html").read_text()
+    assert "no preview yet" not in page
+    assert "The preview couldn't be made: ValueError: The LaTeX class isn&#x27;t among the journal&#x27;s files." in page
+    assert page.count("The preview couldn't be made") == 15   # (every journal but Nature: the others have no report)
+    missing = (tmp_path / "missing.txt").read_text().splitlines()
+    assert len(missing) == 15 and "The Plant Journal: ValueError: The LaTeX class isn't among the journal's files." in missing
+    out = capsys.readouterr().out
+    assert out.count("::error title=Preview not made::") == 15

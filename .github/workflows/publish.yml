@@ -68,6 +68,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    outputs:
+      missing: ${{ steps.render.outputs.missing }}
     defaults:
       run:
         shell: bash -el {0}
@@ -85,6 +87,7 @@ jobs:
           ref: ${{ vars.PROSE_REF || 'main' }}
           cache: save
       - name: Render every journal's preview
+        id: render
         env:
           PROSE_SRC: ${{ steps.prose.outputs.prose-src }}
           PROBLEM: ${{ steps.prose.outputs.problem }}
@@ -99,7 +102,10 @@ jobs:
           for f in journals/*.json; do
             python tools/render_preview.py "$f" --out site/previews --report "reports/$(basename "$f" .json).md"
           done
-          python tools/build_site.py site
+          # (a journal whose preview couldn't be made says why on the site, is an error on this run,
+          # and fails the run's last job once the other previews are published)
+          python tools/build_site.py site --reports reports --missing-out missing.txt
+          echo "missing=$(wc -l < missing.txt | tr -d ' ')" >> "$GITHUB_OUTPUT"
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9   # v7.0.2
         if: always()
         with:
@@ -123,3 +129,20 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346   # v5.0.1
+
+  every-preview:
+    name: every preview made
+    needs: [site, deploy]
+    if: always() && needs.site.result == 'success'
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Fail when a journal's preview couldn't be made
+        env:
+          MISSING: ${{ needs.site.outputs.missing }}
+        run: |
+          if [ "${MISSING:-0}" != "0" ]; then
+            echo "::error title=Previews not made::$MISSING journal preview(s) couldn't be made. The previews job's errors and the preview-reports artifact say why; the site says so beside each."
+            exit 1
+          fi
+          echo "Every journal's preview was made."
